@@ -11,6 +11,9 @@ describe("header phone contact", () => {
   });
 
   it("keeps the desktop contact compact and prevents primary navigation crowding", () => {
+    expect(navigation).toContain('className="desktop-nav"');
+    expect(styles).toContain("grid-template-columns: auto minmax(0, 1fr) auto");
+    expect(styles).toContain(".desktop-nav { display: flex;");
     expect(styles).toContain(".nav-phone { display: inline-flex;");
     expect(styles).toContain("@media (max-width: 1050px) { .nav-phone, .nav-booking { display: none; } }");
   });

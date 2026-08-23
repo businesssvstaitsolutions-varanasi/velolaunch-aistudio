@@ -283,3 +283,9 @@
 - [x] Validate modal operation, responsive layouts, and safe placeholder labelling before checkpointing.
 - [x] Make placeholder and approval-required labels explicit across all client-preview blocks.
 - [x] Reset booking-preview state when its dialog closes so each opening starts with the calendar form.
+
+# Header Layout Regression
+
+- [x] Inspect the desktop header wrap shown in the supplied screenshot and identify the conflicting layout rules.
+- [x] Recompose the desktop header so booking, phone, navigation, and CTA remain on one balanced row.
+- [x] Verify desktop and mobile header behavior, then run the quality checks before checkpointing.
