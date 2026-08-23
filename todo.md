@@ -116,3 +116,9 @@
 - [x] Inspect the capability grid’s remaining empty space at desktop and mobile sizes.
 - [x] Increase service-card sizing and grid alignment to fill the available visual area.
 - [x] Validate the adjusted service cards and production build before checkpointing.
+
+# Marquee Direction and PWA
+
+- [x] Inspect and correct the technology-logo marquee so it visibly moves right to left.
+- [x] Add manifest, app icons, and service-worker registration for an installable PWA.
+- [x] Validate marquee direction, installation metadata, offline fallback, and production build before checkpointing.

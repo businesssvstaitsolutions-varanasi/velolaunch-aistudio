@@ -97,7 +97,17 @@
 }
 
 .technology-marquee-track {
-  animation-duration: 22s;
+  width: max-content;
+  gap: 0;
+  animation: technology-ticker 18s linear infinite;
+  will-change: transform;
+}
+
+.technology-marquee-set {
+  display: flex;
+  align-items: center;
+  flex: none;
+  gap: 1.4rem;
 }
 
 .editorial-art-interlude {
@@ -161,5 +171,11 @@
 
   .capabilities-layout .service-card {
     min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .technology-marquee-track {
+    animation: none;
   }
 }

@@ -53,7 +53,7 @@ export default function Home() {
           <div className="technology-ecosystem-head"><p className="section-tag">03 — Technology ecosystem</p><p id="ecosystem-title">Examples of the tools we evaluate for product work. Names are shown for context only; they do not imply partnership or endorsement.</p></div>
           <div className="technology-marquee" aria-label="Technology ecosystem examples">
             <div className="technology-marquee-track">
-              {[...technologyEcosystem, ...technologyEcosystem].map((brand, index) => <span className="technology-logo" role="img" aria-label={brand.name} aria-hidden={index >= technologyEcosystem.length ? "true" : undefined} key={`${brand.name}-${index}`}><img src={brand.logo} alt="" /></span>)}
+              {[0, 1].map((setIndex) => <div className="technology-marquee-set" aria-hidden={setIndex === 1 ? "true" : undefined} key={setIndex}>{technologyEcosystem.map((brand) => <span className="technology-logo" role="img" aria-label={brand.name} key={brand.name}><img src={brand.logo} alt="" /></span>)}</div>)}
             </div>
           </div>
         </section>
