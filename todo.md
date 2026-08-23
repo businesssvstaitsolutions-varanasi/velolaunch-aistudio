@@ -32,3 +32,9 @@
 - [x] Reduce the public page to a clearer visual system with stronger proportions and fewer decorative mechanisms.
 - [x] Rebuild the homepage composition around a quiet, distinctive brand first impression.
 - [x] Verify the corrective redesign on desktop and mobile before checkpointing.
+
+# Supplied Hero Artwork
+
+- [x] Stage the supplied VeloLaunch hero artwork as a managed website asset.
+- [x] Replace the current hero visual with the supplied artwork and a right-side supporting content overlay.
+- [x] Verify the artwork-led hero on desktop and mobile before checkpointing.

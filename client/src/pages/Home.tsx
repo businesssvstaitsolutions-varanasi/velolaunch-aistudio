@@ -11,25 +11,17 @@ export default function Home() {
       <Navigation />
 
       <main id="main-content">
-        <section className="editorial-hero" aria-labelledby="hero-title">
-          <div className="hero-copy-block">
-            <div className="hero-brand-stamp" aria-label="VeloLaunch">
-              <img src={siteConfig.assets.mark} alt="" aria-hidden="true" />
-              <span>VeloLaunch</span>
-            </div>
-            <p className="editorial-kicker">VeloLaunch / AI-first product systems</p>
-            <h1 id="hero-title">Make the product<br /><em>make sense.</em></h1>
-            <p className="hero-lede">We shape the product, intelligence, and software behind the next important thing your business needs to become.</p>
+        <section className="hero-artwork" aria-labelledby="hero-title">
+          <img className="hero-artwork-image" src={siteConfig.assets.heroArtwork} alt="VeloLaunch metallic mark, rocket, and planetary launch artwork." fetchPriority="high" />
+          <div className="hero-artwork-copy">
+            <p className="hero-artwork-kicker">Product systems / 01</p>
+            <h1 id="hero-title">Build for the moment things become <em>real.</em></h1>
+            <p>VeloLaunch brings product thinking, AI systems, and software delivery into a single accountable practice.</p>
             <div className="hero-actions">
-              <Button asChild className="button-ink"><a href="#contact">Start a conversation <ArrowRight size={16} aria-hidden="true" /></a></Button>
-              <a className="editorial-text-link focus-ring" href="#services">How we work <ArrowRight size={15} aria-hidden="true" /></a>
+              <Button asChild className="button-light"><a href="#contact">Start a conversation <ArrowRight size={16} aria-hidden="true" /></a></Button>
+              <a className="hero-text-link focus-ring" href="#services">How we work <ArrowRight size={15} aria-hidden="true" /></a>
             </div>
           </div>
-
-          <figure className="hero-editorial-image">
-            <img src={siteConfig.assets.heroCore} alt="A precision-machined V-shaped core made from brushed aluminum and graphite." fetchPriority="high" />
-            <figcaption>Product systems, built from the inside out.</figcaption>
-          </figure>
         </section>
 
         <section className="editorial-statement" aria-labelledby="statement-title">

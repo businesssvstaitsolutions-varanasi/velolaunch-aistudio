@@ -34,6 +34,7 @@ export const siteConfig = {
   contactPath: "#contact",
   assets: {
     mark: "/manus-storage/VeloLaunch_82dd907a.ico",
+    heroArtwork: "/manus-storage/velolaunch-hero-artwork_6ca194d6.png",
     heroCore: "/manus-storage/velolaunch-hero-core_20778025.png",
     constellation: "/manus-storage/velolaunch-product-constellation_95bf849c.png",
     intelligentStack: "/manus-storage/velolaunch-intelligent-stack_aaf96b24.png",
