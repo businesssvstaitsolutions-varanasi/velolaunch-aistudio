@@ -26,8 +26,10 @@ export default function Home() {
           <div className="hero-content">
             <div className="hero-brand-lockup" aria-label="VeloLaunch">
               <img src={siteConfig.assets.mark} alt="" aria-hidden="true" />
-              <span>VeloLaunch</span>
-              <i>Systems field</i>
+              <div>
+                <span>VeloLaunch</span>
+                <i>AI-first product systems</i>
+              </div>
             </div>
             <div className="eyebrow hero-eyebrow">
               <span className="eyebrow-line" />
@@ -56,9 +58,25 @@ export default function Home() {
               <span>Operating mode</span>
               <strong>{siteConfig.launchMode}</strong>
             </div>
+
+            <div className="hero-signal-panel" aria-label="VeloLaunch operating sequence">
+              <div className="hero-signal-heading"><span className="section-index-dot" /><span>Operating sequence</span></div>
+              <div className="hero-signal-items">
+                <div><span>01</span><strong>Frame</strong><small>the product</small></div>
+                <div><span>02</span><strong>Design</strong><small>the system</small></div>
+                <div><span>03</span><strong>Engineer</strong><small>the intelligence</small></div>
+                <div><span>04</span><strong>Deliver</strong><small>the surface</small></div>
+              </div>
+            </div>
           </div>
 
           <div className="hero-art" aria-label="Precision-machined VeloLaunch core visual">
+            <div className="hero-trajectory" aria-hidden="true">
+              <span className="trajectory-arc trajectory-arc-one" />
+              <span className="trajectory-arc trajectory-arc-two" />
+              <span className="trajectory-arc trajectory-arc-three" />
+              <span className="trajectory-node" />
+            </div>
             <div className="hero-art-frame" />
             <img
               className="hero-core-image"
@@ -66,6 +84,7 @@ export default function Home() {
               alt="A precision-machined V-shaped core made from brushed aluminum and graphite."
               fetchPriority="high"
             />
+            <div className="hero-art-signal" aria-hidden="true"><span>VL / vector field</span><span>01—04</span></div>
             <div className="hero-art-caption" aria-hidden="true">
               <span>VL—CORE / 01</span>
               <span>Aligned for momentum</span>
