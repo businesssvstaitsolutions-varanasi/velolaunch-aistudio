@@ -126,6 +126,11 @@
   line-height: 0.7;
 }
 
+.technology-marquee-shell {
+  position: relative;
+  margin-top: 1.6rem;
+}
+
 .technology-marquee-set {
   display: flex;
   align-items: center;

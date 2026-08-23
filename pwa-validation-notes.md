@@ -21,3 +21,9 @@ The latest live inspection again confirmed the underlying runtime was translatin
 The first native-scroll attempt exposed the actual issue: the two repeated logo sets were narrower than the desktop viewport, so `scrollLeft` reached its 355px maximum and stopped. The correction adds a third repeated set, ensuring a full cycle of scroll range before a seamless reset.
 
 The final simplified CSS ticker was directly verified in the exact preview. Its browser-reported animation was `technology-logo-roll`, with a running play state and a 4.5-second duration. Its transform changed from `translateX(-55.5605px)` to `translateX(-142.464px)` over 500ms, confirming visible leftward motion without JavaScript scroll or requestAnimationFrame control.
+
+The reusable `InfiniteMarquee` is now active in the exact preview. Its browser-reported animation is `infinite-marquee-left-to-right` with a 30-second duration; its transform moved from -362.259px to -347.189px over 500ms, confirming left-to-right travel. The synthetic hover event did not set a real CSS hover state, so pause behavior will be checked with an actual pointer move.
+
+The first actual pointer move landed below the logo row after anchor positioning had shifted the viewport. The marquee correctly reported no hover and a running animation; the pointer will be moved directly over the visible row in the next check.
+
+With the pointer moved directly over the visible logo row, the live browser reported `hovering: true` and `animationPlayState: "paused"`. This confirms the requested hover pause works on the reusable 30-second CSS-only marquee.

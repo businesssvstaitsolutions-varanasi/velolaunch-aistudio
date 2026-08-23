@@ -168,3 +168,9 @@
 - [x] Implement an accessible website chatbot with a callback-request handoff for questions that need commercial follow-up.
 - [x] Validate chatbot answer routing, handoff behavior, and desktop/mobile usability before checkpointing.
 - [x] Open and exercise the chatbot panel at mobile width before delivery.
+
+# Reusable InfiniteMarquee Component
+
+- [x] Inspect the current technology ticker integration and retain its approved logo asset configuration.
+- [x] Create `InfiniteMarquee.jsx` and `Marquee.css` with the requested CSS-only left-to-right seamless loop and hover pause.
+- [x] Replace the existing homepage ticker and verify the component in desktop and mobile layouts before checkpointing.
