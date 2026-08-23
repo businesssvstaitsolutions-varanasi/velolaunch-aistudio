@@ -12,6 +12,9 @@ describe("forthcoming product waitlist and capability-pill consistency", () => {
     expect(home).toContain("<ProductWaitlistForm />");
     expect(form).toContain("trpc.waitlist.create.useMutation");
     expect(form).toContain("Join the waitlist");
+    expect(form).toContain("We will never spam you.");
+    expect(form).toContain("Thank you for your interest.");
+    expect(form).toContain('className="waitlist-thank-you"');
   });
 
   it("centers and adds hover feedback to homepage and detail capability pills", () => {

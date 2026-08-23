@@ -243,3 +243,11 @@
 - [x] Keep “Clarity is a technical decision.” on one line at desktop width.
 - [x] Validate desktop continuity and mobile readability before checkpointing.
 - [x] Directly measure desktop single-line continuity and mobile wrapping in live browser viewports.
+
+# Heading Continuity and Waitlist Thank-You Experience
+
+- [x] Audit key section headings and identify safe single-line desktop candidates.
+- [x] Apply responsive single-line desktop styling to suitable key section headings without mobile overflow.
+- [x] Add a concise no-spam privacy reassurance beneath the waitlist email form.
+- [x] Add a smooth waitlist success animation with a clear thank-you message.
+- [x] Validate heading continuity, waitlist privacy copy, and success feedback across desktop and mobile before checkpointing.

@@ -69,3 +69,7 @@ Direct live footer inspection confirmed the branded rail, start-conversation CTA
 The Principles headline was reviewed at 1280px and 375px widths. It remains on one uninterrupted line across the desktop heading track, while mobile continues to wrap naturally without overflow.
 
 Direct browser measurement confirmed the headline uses one 51.7px line within a 977px desktop track at 1280px width, with no overflow. At 375px mobile width, it uses two readable 42.3px lines and still fits its 338px content track.
+
+The waitlist now displays the no-spam reassurance beneath its fields. Following the confirmed idempotent `velolaunch@gmail.com` submission, the live form displayed the new check-mark thank-you state and its animated status panel.
+
+At 1280px, the statement, Capabilities, Products, and Principles headings each measured as one fitting line with no-wrap applied. At 375px, each heading returned to normal wrapping and fit within its content width. The privacy text and animated thank-you panel were present at both widths.
