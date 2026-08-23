@@ -142,3 +142,9 @@
 - [x] Prepare the supplied popup visual and responsive callback form composition.
 - [x] Implement desktop exit-intent and mobile one-minute engagement triggers with callback submission.
 - [x] Validate callback capture, accessibility, trigger frequency, and desktop/mobile popup layouts before checkpointing.
+
+# Popup Blur and Live Logo Motion Correction
+
+- [x] Inspect the current popup backdrop and exact live logo-strip behavior.
+- [x] Strengthen the popup backdrop blur and replace any unreliable logo-strip movement implementation.
+- [x] Verify blurred popup presentation and visible right-to-left logo movement before checkpointing.

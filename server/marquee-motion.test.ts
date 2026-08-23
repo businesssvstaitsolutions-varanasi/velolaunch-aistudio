@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { advanceMarqueeOffset } from "../client/src/lib/marqueeMotion";
+import { advanceMarqueeOffset, advanceMarqueeScrollPosition } from "../client/src/lib/marqueeMotion";
 
 describe("advanceMarqueeOffset", () => {
   it("moves a marquee continuously from right to left", () => {
@@ -18,5 +18,10 @@ describe("advanceMarqueeOffset", () => {
 
   it("does not advance when the cycle width is unavailable", () => {
     expect(advanceMarqueeOffset(-20, 500, 0, 92)).toBe(0);
+  });
+
+  it("advances native scroll position so content visibly travels right to left", () => {
+    expect(advanceMarqueeScrollPosition(0, 500, 778, 240)).toBe(120);
+    expect(advanceMarqueeScrollPosition(700, 500, 778, 240)).toBe(42);
   });
 });

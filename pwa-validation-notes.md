@@ -15,3 +15,7 @@ The deterministic replacement was verified independently of CSS animation: the m
 The exact preview URL was rechecked while document visibility was `visible` and reduced motion was disabled. Its inline transform changed from `translate3d(-394.852px, 0px, 0px)` to `translate3d(-487.598px, 0px, 0px)` in one second, confirming the live runtime moves leftward. The next adjustment therefore focuses on making that motion more conspicuous to human viewers rather than restoring a stopped animation.
 
 After increasing speed to 240px/second, the exact preview showed the visible `Auto ←` cue and a 540px modular transform change in one second. Its raw coordinate wrapped from -648.521px to -108.41px at the repeated-set boundary; this is expected for the seamless loop and must be evaluated modulo the first-set width rather than by simple numeric comparison.
+
+The latest live inspection again confirmed the underlying runtime was translating leftward by 116.904px over 500ms while reduced motion was disabled, even with the callback popup open. Because the user still cannot perceive the motion, the next implementation replaces direct translation with a discrete, visible positional shift of logo content rather than relying on subtle continuous motion alone.
+
+The first native-scroll attempt exposed the actual issue: the two repeated logo sets were narrower than the desktop viewport, so `scrollLeft` reached its 355px maximum and stopped. The correction adds a third repeated set, ensuring a full cycle of scroll range before a seamless reset.
