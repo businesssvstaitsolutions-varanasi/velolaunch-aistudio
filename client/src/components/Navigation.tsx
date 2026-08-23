@@ -15,7 +15,7 @@ export function Navigation() {
   return (
     <header className="site-header" aria-label="Site header">
       <nav className="site-nav" aria-label="Primary navigation">
-        <BrandMark />
+        <BrandMark showAttribution />
         <div className="nav-links">
           {links.map((link) => <a key={link.href} className="nav-link focus-ring" href={link.href}>{link.label}</a>)}
         </div>

@@ -50,3 +50,8 @@
 - [x] Stage the supplied transparent VeloLaunch logo as a managed website asset.
 - [x] Replace the header mark and browser favicon with the transparent logo.
 - [x] Verify the updated logo presentation and production build before checkpointing.
+
+# Header Attribution
+
+- [x] Add “A Company by Smart Vista IT Solutions” beneath the VeloLaunch header title.
+- [x] Verify the attributed header lockup at desktop and mobile navigation sizes.
