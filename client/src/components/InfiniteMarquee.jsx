@@ -14,7 +14,7 @@ export function InfiniteMarquee({ icons = placeholderLogos, ariaLabel = "Company
   const visibleIcons = icons.length > 0 ? icons : placeholderLogos;
   const groups = Array.from({ length: Math.ceil(visibleIcons.length / groupSize) }, (_, index) => visibleIcons.slice(index * groupSize, (index + 1) * groupSize));
   const usesFiveLogoGroups = groupSize === 5 && groups.length === 2 && groups.every(group => group.length === 5);
-  const displayGroups = usesFiveLogoGroups ? [groups[0], groups[1], groups[0]] : [visibleIcons, visibleIcons];
+  const displayGroups = usesFiveLogoGroups ? groups : [visibleIcons, visibleIcons];
 
   return (
     <div className={`infinite-marquee${usesFiveLogoGroups ? " infinite-marquee--five-groups" : ""}`} aria-label={ariaLabel}>

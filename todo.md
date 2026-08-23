@@ -182,3 +182,12 @@
 - [x] Validate desktop/mobile group visibility, transition timing, and loop continuity before checkpointing.
 - [x] Review the GPT-enhanced five-logo marquee at mobile width after the grouped implementation.
 - [x] Directly confirm the final group wraps back to the first group without a visual snap.
+
+# Marquee Fade and Faster Cadence
+
+- [x] Inspect the current grouped animation timing and transition boundaries.
+- [x] Rework the fade so complete five-logo panels crossfade without exposing partial or duplicate groups.
+- [x] Keep each complete group visible for three seconds while preserving the CSS-only loop and hover pause.
+- [x] Directly inspect desktop and mobile fade moments to confirm exactly five logos remain framed throughout the cycle.
+- [x] Re-run the type check, tests, and production build before checkpointing.
+- [x] Freeze the final crossfade at its midpoint on a mobile viewport and confirm the five-slot frame remains aligned.

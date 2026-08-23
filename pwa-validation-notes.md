@@ -31,3 +31,9 @@ With the pointer moved directly over the visible logo row, the live browser repo
 The GPT-enhanced five-logo marquee was then verified live. Its grouped animation reported a 12-second cycle: sampling at 0 and 4 seconds produced the same first-group transform, sampling at 6 seconds moved to the second group, and sampling at 6 and 10 seconds held the second group. This establishes a five-second hold before each group transition while preserving the loop.
 
 The full mobile homepage review showed the grouped marquee remains compact in the responsive layout. For continuity, the live animation was sampled at 0ms, 11,999ms, and 12,000ms: the first and wrapped states used the same repeated first-group position, while the pre-wrap state differed. Because the first group is repeated at both ends of the track, the final-to-first transition remains visually seamless.
+
+After the cadence refinement, the live grouped marquee reported an 8-second cycle. At 0ms and 3,000ms the first group held fully opaque; at 3,500ms and 7,500ms the transition opacity changed; at 6,000ms the second group was visible; and at 8,000ms the loop returned to full opacity.
+
+The final fade implementation uses two absolute, exactly aligned logo panels rather than a translating track. At the 3,500ms fade midpoint, live DOM sampling found two panels with five logo slots each, matching panel bounds, and 0.5 opacity per panel. The transition therefore crossfades in place without exposing partial or offset logo groups.
+
+The final midpoint was also checked in the browser’s actual 375px by 812px emulated mobile viewport. Both crossfading panels remained exactly aligned at 338px wide inside the mobile content frame, each retained five logo slots, and each reported 0.5 opacity. The compact mobile frame therefore preserves the same artifact-free five-slot transition.
