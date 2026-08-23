@@ -46,8 +46,8 @@ export default function Home() {
               ))}
             </div>
             <figure className="editorial-inset-image">
-              <img src={siteConfig.assets.intelligentStack} alt="A layered metallic sculpture representing an intelligent engineering stack." loading="lazy" />
-              <figcaption>Strategy, design, models, systems.</figcaption>
+              <img src={siteConfig.assets.supportVertical} alt="VeloLaunch product-development artwork showing a luminous portal and product systems." loading="lazy" />
+              <figcaption>VeloLaunch / product development field</figcaption>
             </figure>
           </div>
         </section>
@@ -66,6 +66,13 @@ export default function Home() {
               </article>
             ))}
           </div>
+        </section>
+
+        <section className="editorial-art-interlude" aria-label="VeloLaunch product development artwork">
+          <figure>
+            <img src={siteConfig.assets.supportHorizon} alt="VeloLaunch product-development artwork with a metallic mark traveling through a luminous landscape." loading="lazy" />
+            <figcaption>VeloLaunch / From idea to impact</figcaption>
+          </figure>
         </section>
 
         <section id="company" className="editorial-company" aria-labelledby="company-title">

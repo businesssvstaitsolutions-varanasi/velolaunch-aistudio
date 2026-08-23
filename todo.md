@@ -38,3 +38,9 @@
 - [x] Stage the supplied VeloLaunch hero artwork as a managed website asset.
 - [x] Replace the current hero visual with the supplied artwork and a right-side supporting content overlay.
 - [x] Verify the artwork-led hero on desktop and mobile before checkpointing.
+
+# Supporting Visual Assets
+
+- [x] Stage the two newly supplied VeloLaunch visuals as managed website assets.
+- [x] Add the supporting visuals to complementary homepage sections without replacing the hero artwork.
+- [x] Verify the updated visual hierarchy on desktop and mobile before checkpointing.
