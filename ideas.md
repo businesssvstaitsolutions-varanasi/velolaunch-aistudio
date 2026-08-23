@@ -67,3 +67,11 @@ The initial implementation uses a configuration-driven `PRELAUNCH` site mode. Pr
 - Every major section retains the precision rail through offset section labels, numerals, rules, or node logic; a centered marketing rhythm is the exception.
 - Velo Blue is reserved for operational meaning: primary action emphasis, active/system states, key numerals, and engineering diagram signals.
 - Visual assets are annotated as VeloLaunch system objects through measured overlays and repeated core geometry, rather than functioning as atmospheric hardware imagery alone.
+
+## Corrective Direction — Editorial Product Studio
+
+The previous public page accumulated too many simultaneous ideas: a floating control-plane header, oversized dark hero, multiple micro-annotation systems, bento cards, grids, signal panels, and several image treatments. Individually defensible elements competed with each other, so the result read as a collection of effects rather than a designed whole.
+
+The replacement direction uses an **editorial product studio** system. It pairs a warm off-white field with deep ink typography, one controlled Velo Blue signal, a compact black navigation rail, and a single large hero image. There are no glass panels, neon-style glows, telemetry overlays, floating widgets, or decorative 3D layers in the public route. Every section has one job: introduce the brand, establish the delivery proposition, explain capability, establish the company, or start a conversation.
+
+The proportions are intentionally generous: large type, wide margins, fewer cards, and image blocks treated as physical editorial inserts. Information density lives in a concise services list rather than throughout the entire page. The official VeloLaunch mark remains the header and favicon anchor; the built 3D component stays isolated for a future product-specific experience instead of being forced into the homepage.

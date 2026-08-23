@@ -25,3 +25,10 @@
 - [x] Add a safe, configuration-gated Supabase authentication and consultation-data integration surface.
 - [x] Add a performance-conscious 3D enhancement with static and reduced-motion fallbacks.
 - [x] Run the redesigned application and validate build, accessibility, responsive behavior, and key risk mitigations.
+
+# Corrective Visual Redesign
+
+- [x] Audit the current public experience and document the visual problems to remove.
+- [x] Reduce the public page to a clearer visual system with stronger proportions and fewer decorative mechanisms.
+- [x] Rebuild the homepage composition around a quiet, distinctive brand first impression.
+- [x] Verify the corrective redesign on desktop and mobile before checkpointing.
