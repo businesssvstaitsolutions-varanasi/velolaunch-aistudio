@@ -2,6 +2,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 import { ConsultationForm } from "@/components/ConsultationForm";
+import { CompanyVideo } from "@/components/CompanyVideo";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SiteFooter } from "@/components/SiteFooter";
 import { principles, services, siteConfig } from "@/content/site";
@@ -75,7 +76,7 @@ export default function Home() {
         </section>
 
         <section id="company" className="editorial-company" aria-labelledby="company-title">
-          <figure className="company-image"><img src={siteConfig.assets.launchTable} alt="A dark engineering workstation with precision-made product artifacts." loading="lazy" /><figcaption>VL / Product material study</figcaption></figure>
+          <CompanyVideo src={siteConfig.assets.companyVideo} />
           <div className="company-copy">
             <p className="section-tag">06 — Company</p>
             <h2 id="company-title">Less theater. More product.</h2>

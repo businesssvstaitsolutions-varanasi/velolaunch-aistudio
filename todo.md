@@ -71,3 +71,9 @@
 
 - [x] Increase the VeloLaunch header logo slightly without disrupting the title or attribution.
 - [x] Verify the adjusted lockup on desktop and mobile before checkpointing.
+
+# Company Video
+
+- [x] Stage the supplied company-section video as a managed website asset.
+- [x] Replace the “Less theater. More product.” still image with in-view video playback and an audible-autoplay fallback.
+- [x] Verify the company video placement and responsive behavior before checkpointing.
