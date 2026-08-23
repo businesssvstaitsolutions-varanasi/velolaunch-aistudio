@@ -8,6 +8,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { SiteFooter } from "@/components/SiteFooter";
 import { TechnologyMarquee } from "@/components/TechnologyMarquee";
 import { ProductWaitlistForm } from "@/components/ProductWaitlistForm";
+import { OpeningStatement } from "@/components/OpeningStatement";
 import { forthcomingHomepageProducts, principles, services, siteConfig } from "@/content/site";
 
 export default function Home() {
@@ -30,12 +31,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="editorial-statement" aria-labelledby="statement-title">
-          <div className="editorial-statement-aside"><p className="section-tag">01 — VeloLaunch</p><span aria-hidden="true" /></div>
-          <div className="editorial-statement-main">
-            <h2 id="statement-title">A product company for decisions that cannot stay hypothetical.</h2>
-            <p className="editorial-statement-summary">VeloLaunch brings product thinking, AI systems, and software engineering into a single accountable delivery practice.</p>
-          </div>
+        <OpeningStatement />
+        <section className="opening-proof-strip" aria-label="How VeloLaunch approaches product work">
+          <dl><div><dt>Decision-led</dt><dd>Start with operating reality.</dd></div><div><dt>AI-conscious</dt><dd>Keep human judgment in the loop.</dd></div><div><dt>Built to evolve</dt><dd>Design for the next decision.</dd></div></dl>
+        </section>
+        <section className="client-proof-section" aria-labelledby="client-proof-title">
+          <div className="client-proof-intro"><p className="section-tag">01B — Client proof</p><h2 id="client-proof-title">Client work is shared when permission is clear.</h2></div>
+          <div className="client-proof-empty"><span>Approval-gated</span><p>Approved client logos and case studies will appear here once their teams are ready for public reference.</p><a className="editorial-text-link focus-ring" href="#contact">Discuss your next product decision <ArrowRight size={15} aria-hidden="true" /></a></div>
         </section>
 
         <section id="services" className="editorial-section capabilities-section" aria-labelledby="services-title">

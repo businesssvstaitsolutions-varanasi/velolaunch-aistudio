@@ -81,3 +81,7 @@ Direct live measurement confirmed a 64px heading-to-grid break, 24px desktop car
 The refined opening statement was directly inspected in the desktop browser. Its section label now sits on a dedicated ruled rail, the headline leads the main column, and the supporting copy is visually anchored beneath it on the far edge of the composition.
 
 At a true 375px mobile viewport, the opening statement resolves to a grid with the label rail stacked above the content, a visible lower rule, normal headline wrapping without overflow, and supporting copy positioned beneath the headline.
+
+Direct desktop inspection confirmed the opening statement reached its visible reveal state, the proof strip contains three positioning-led points, the client section remains explicitly approval-gated, and the supplied phone contact is a visible `tel:+19746271143` header link.
+
+At a true 375px mobile viewport, the statement remained visible after reveal, both the proof strip and client section resolved to a single readable column, the desktop phone link was intentionally hidden, and the same `tel:+19746271143` link appeared after opening the mobile menu.

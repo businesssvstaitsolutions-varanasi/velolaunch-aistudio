@@ -536,6 +536,27 @@
 @media (min-width: 1100px) { .editorial-statement { grid-template-columns: 12rem minmax(0, 1fr); }.editorial-statement-main h2 { max-width: none; }.editorial-statement-summary { justify-self: end; text-align: right; } }
 @media (max-width: 700px) { .editorial-statement { display: grid; gap: 2.3rem; min-height: 0; padding-top: 4rem; padding-bottom: 4rem; }.editorial-statement-aside { border-right: 0; border-bottom: 1px solid var(--soft-rule); gap: 1.6rem; padding: 0 0 1.25rem; }.editorial-statement-main h2 { max-width: 14ch; }.editorial-statement-summary { margin-top: 1.65rem; text-align: left; } }
 
+@media (prefers-reduced-motion: no-preference) { .editorial-statement[data-reveal="pending"] .editorial-statement-aside, .editorial-statement[data-reveal="pending"] .editorial-statement-main { opacity: 0; transform: translateY(1rem); }.editorial-statement .editorial-statement-aside, .editorial-statement .editorial-statement-main { transition: opacity 520ms var(--ease-out), transform 520ms var(--ease-out); }.editorial-statement[data-reveal="visible"] .editorial-statement-aside, .editorial-statement[data-reveal="visible"] .editorial-statement-main { opacity: 1; transform: translateY(0); }.editorial-statement[data-reveal="visible"] .editorial-statement-main { transition-delay: 80ms; } }
+.opening-proof-strip { max-width: 1320px; margin: 0 auto; border-top: 1px solid var(--soft-rule); border-bottom: 1px solid var(--soft-rule); padding: clamp(1.35rem, 2.5vw, 2.1rem) 2rem; }
+.opening-proof-strip dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; }
+.opening-proof-strip dl > div { border-right: 1px solid var(--soft-rule); padding: 0 clamp(1rem, 2.5vw, 2.6rem); }
+.opening-proof-strip dl > div:first-child { padding-left: 0; }
+.opening-proof-strip dl > div:last-child { border-right: 0; padding-right: 0; }
+.opening-proof-strip dt { color: var(--ink); font: 600 clamp(0.78rem, 1vw, 0.92rem)/1.1 "DM Sans", sans-serif; }
+.opening-proof-strip dd { margin: 0.45rem 0 0; color: #5a5954; font-size: 0.72rem; line-height: 1.5; }
+@media (max-width: 700px) { .opening-proof-strip { padding: 1.1rem 1.2rem; }.opening-proof-strip dl { grid-template-columns: 1fr; gap: 0.9rem; }.opening-proof-strip dl > div, .opening-proof-strip dl > div:first-child, .opening-proof-strip dl > div:last-child { border-right: 0; border-bottom: 1px solid var(--soft-rule); padding: 0 0 0.9rem; }.opening-proof-strip dl > div:last-child { border-bottom: 0; padding-bottom: 0; } }
+
+.client-proof-section { display: grid; grid-template-columns: minmax(14rem, 0.82fr) minmax(0, 1.18fr); gap: clamp(2rem, 8vw, 10rem); max-width: 1320px; margin: 0 auto; border-bottom: 1px solid var(--soft-rule); padding: clamp(3.8rem, 7vw, 7rem) 2rem; }
+.client-proof-intro h2 { max-width: 12ch; margin-top: 0.85rem; font-size: clamp(1.85rem, 3.2vw, 3.6rem); font-weight: 600; letter-spacing: -0.06em; line-height: 0.94; }
+.client-proof-empty { display: grid; align-content: center; justify-items: start; border: 1px dashed #aaa8a1; background: rgb(255 255 255 / 0.26); padding: clamp(1.5rem, 4vw, 3.4rem); }
+.client-proof-empty > span { color: var(--blue); font: 500 0.56rem/1 "DM Mono", monospace; letter-spacing: 0.07em; text-transform: uppercase; }
+.client-proof-empty > p { max-width: 32rem; margin-top: 1.1rem; color: #4d4c47; font-size: 1rem; line-height: 1.65; }
+.client-proof-empty .editorial-text-link { margin-top: 1.45rem; }
+.nav-phone { display: inline-flex; align-items: center; gap: 0.35rem; color: #d8dce3; font: 500 0.58rem/1 "DM Mono", monospace; letter-spacing: 0.025em; text-decoration: none; white-space: nowrap; transition: color 160ms var(--ease-out); }
+.nav-phone:hover { color: #a9c8ff; }
+@media (max-width: 1050px) { .nav-phone { display: none; } }
+@media (max-width: 700px) { .client-proof-section { grid-template-columns: 1fr; gap: 2rem; padding: 3.4rem 1.2rem; }.client-proof-intro h2 { max-width: 14ch; }.client-proof-empty { padding: 1.35rem; } }
+
 .home-products .section-heading { margin-bottom: clamp(2.9rem, 5vw, 4.6rem); }
 .home-products .home-product-grid { gap: clamp(1.2rem, 1.9vw, 1.75rem); border-top: 0; padding-top: 0; }
 .home-products .forthcoming-product-card { min-height: 17rem; padding: clamp(1.2rem, 1.8vw, 1.65rem); }

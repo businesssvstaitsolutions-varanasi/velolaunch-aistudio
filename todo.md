@@ -264,3 +264,12 @@
 - [x] Inspect the opening statement’s headline, supporting copy, and desktop grid balance.
 - [x] Refine the editorial statement composition with improved visual hierarchy and intentional spacing.
 - [x] Validate the opening statement at desktop and mobile widths before checkpointing.
+
+# Opening Transition, Trust Section, and Header Contact
+
+- [x] Review the opening statement, header composition, and approved client-content boundary.
+- [x] Add a subtle reduced-motion-safe scroll reveal to the opening statement.
+- [x] Add a compact proof-point strip beneath the opening statement using approved positioning language only.
+- [x] Add an approval-gated client logos and case-studies section with an honest empty state until approved material is supplied.
+- [x] Add the supplied dummy phone contact to the header without crowding primary navigation.
+- [x] Validate animation, content safeguards, desktop/mobile layouts, and header contact before checkpointing.
