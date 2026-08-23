@@ -56,3 +56,77 @@
 @media (max-width: 850px) { .service-matrix, .detail-grid, .detail-contact, .site-footer-pro { grid-template-columns: 1fr; }.service-card-stack { grid-template-columns: 1fr; }.home-products-panel { align-items: start; flex-direction: column; }.footer-links { grid-template-columns: repeat(3, 1fr); }.route-hero h1, .detail-hero h1 { font-size: clamp(3.4rem, 11vw, 6.3rem); } }
 @media (max-width: 600px) { .route-main, .detail-main { padding-right: 1.15rem; padding-left: 1.15rem; }.route-hero { padding-bottom: 4.5rem; }.route-hero h1, .detail-hero h1, .not-published h1 { font-size: clamp(3rem, 14vw, 4.8rem); }.route-cta { align-items: start; flex-direction: column; }.back-link { margin-bottom: 2.5rem; }.detail-contact { margin-top: 4.5rem; }.offer-table { overflow-x: auto; }.offer-table-head, .offer-table-row { min-width: 46rem; }.footer-links { grid-template-columns: 1fr 1fr; }.footer-baseline { align-items: start; flex-direction: column; }.site-footer-pro { padding-right: 1.15rem; padding-left: 1.15rem; }.product-grid { grid-template-columns: 1fr; }.home-products-panel > div { align-items: flex-start; flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; } }
+
+/* Spacing refinement: preserve the editorial cadence while removing unused vertical air. */
+.editorial-statement,
+.editorial-section,
+.editorial-contact {
+  padding-block: clamp(2.75rem, 4.5vw, 4.4rem);
+}
+
+.editorial-statement {
+  align-items: start;
+  row-gap: 1.15rem;
+}
+
+.editorial-statement > p:last-child {
+  align-self: start;
+}
+
+.section-heading {
+  margin-bottom: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.capabilities-layout {
+  gap: clamp(1.5rem, 3.5vw, 4rem);
+}
+
+.technology-ecosystem {
+  padding-top: clamp(2.25rem, 3.5vw, 3.25rem);
+  padding-bottom: clamp(2.25rem, 3.5vw, 3.25rem);
+}
+
+.editorial-art-interlude {
+  padding-bottom: clamp(2.75rem, 4.5vw, 4.4rem);
+}
+
+.company-feature {
+  padding-top: clamp(2.75rem, 4.5vw, 4.4rem);
+}
+
+.company-feature .company-copy {
+  padding-bottom: clamp(1.75rem, 3vw, 2.75rem);
+}
+
+.editorial-contact {
+  gap: clamp(2rem, 4.5vw, 5rem);
+}
+
+@media (max-width: 600px) {
+  .editorial-statement,
+  .editorial-section,
+  .editorial-contact {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+
+  .section-heading {
+    margin-bottom: 1.5rem;
+  }
+
+  .technology-ecosystem {
+    padding: 2.35rem 1.15rem;
+  }
+
+  .editorial-art-interlude {
+    padding-bottom: 3.25rem;
+  }
+
+  .company-feature {
+    padding-top: 3.25rem;
+  }
+
+  .company-feature .company-copy {
+    padding-bottom: 2rem;
+  }
+}

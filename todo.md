@@ -98,3 +98,9 @@
 - [x] Source legible logo marks for the contextual technology ecosystem marquee.
 - [x] Replace text-only marquee entries with semantic logo marks while preserving the automatic motion and disclosure.
 - [x] Verify logo legibility and marquee behavior across desktop and mobile before checkpointing.
+
+# Spacing Refinement Follow-up
+
+- [x] Audit the public homepage on desktop and mobile to identify remaining unintended blank spaces.
+- [x] Tighten the affected section spacing without compromising readable hierarchy or the full-width company video.
+- [x] Verify the refined layout and production build before checkpointing.
