@@ -466,6 +466,7 @@
   .website-chatbot-launcher { padding: 0.72rem 0.85rem; }
 }
 .service-card-tags { justify-content: center; }
+.service-card-tags span { display: inline-flex; align-items: center; justify-content: center; text-align: center; }
 
 .home-product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; border-top: 1px solid var(--ink); margin-top: 1.5rem; padding-top: 1rem; }
 .forthcoming-product-card { display: grid; align-content: space-between; min-height: 15rem; border: 1px solid var(--ink); background: #111214; color: #f4f4f0; padding: 1.1rem; }

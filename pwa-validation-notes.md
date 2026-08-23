@@ -45,3 +45,9 @@ The service-card capability tags now use centered wrapped alignment. Desktop rev
 Direct live geometry checks confirmed the shared tag groups use `justify-content: center`. At both 375px mobile width and 1280px desktop width, all four service cards reported zero-pixel row-center offsets for every wrapped tag line.
 
 The homepage Products section now presents the four supplied forthcoming products. Desktop review confirmed a four-card horizontal row with a visible Releasing Soon label per card; the 375px mobile review confirmed the cards stack cleanly with their titles, descriptions, and statuses retained.
+
+Desktop and 375px mobile reviews show the capability labels remain centered within their rounded pills while preserving the existing wrapped tag-group alignment.
+
+Direct live inspection of all 16 capability pills confirmed centered alignment properties: each has centered cross-axis and main-axis alignment with `text-align: center`. The browser resolves the inline-flex declaration to flex because each pill participates in a flex tag group; the centered behavior is preserved.
+
+A true 375px by 812px mobile browser inspection also found all 16 capability pills present and confirmed their centered alignment properties without exception.

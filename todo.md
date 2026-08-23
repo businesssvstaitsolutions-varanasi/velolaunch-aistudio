@@ -210,3 +210,10 @@
 - [x] Inspect the current homepage Products section and preserve its existing heading and navigation.
 - [x] Add four horizontal forthcoming-product cards with supplied titles, concise descriptions, and “Releasing Soon” status labels.
 - [x] Validate the product-card grid, statuses, and responsive layout before checkpointing.
+
+# Centered Capability Pill Labels
+
+- [x] Inspect the shared capability-pill span styling and identify the text-alignment update.
+- [x] Center every capability label inside its pill while preserving the existing tag-group layout.
+- [x] Validate pill-label centering on desktop and mobile, then run quality checks before checkpointing.
+- [x] Directly confirm centered pill-label styles in a true 375px mobile viewport.
