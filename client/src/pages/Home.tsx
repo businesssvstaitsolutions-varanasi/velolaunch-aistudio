@@ -31,11 +31,11 @@ export default function Home() {
         </section>
 
         <section className="editorial-statement" aria-labelledby="statement-title">
-          <div className="editorial-statement-aside">
-            <p className="section-tag">01 — VeloLaunch</p>
+          <div className="editorial-statement-aside"><p className="section-tag">01 — VeloLaunch</p><span aria-hidden="true" /></div>
+          <div className="editorial-statement-main">
+            <h2 id="statement-title">A product company for decisions that cannot stay hypothetical.</h2>
             <p className="editorial-statement-summary">VeloLaunch brings product thinking, AI systems, and software engineering into a single accountable delivery practice.</p>
           </div>
-          <h2 id="statement-title">A product company for decisions that cannot stay hypothetical.</h2>
         </section>
 
         <section id="services" className="editorial-section capabilities-section" aria-labelledby="services-title">

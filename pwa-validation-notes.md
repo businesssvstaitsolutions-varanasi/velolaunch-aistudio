@@ -77,3 +77,7 @@ At 1280px, the statement, Capabilities, Products, and Principles headings each m
 The Products section was reviewed at desktop and 375px mobile widths after spacing refinement. Product cards have clearer gutters, the waitlist is separated from the card grid with a more deliberate break, and the closing-action panel has independent breathing room; mobile preserves the hierarchy in a readable stack.
 
 Direct live measurement confirmed a 64px heading-to-grid break, 24px desktop card gutter, 64px grid-to-waitlist break, and 64px waitlist-to-action-panel break at 1280px. At 375px, the four cards stack in order with 38px heading separation and 42px breaks around the waitlist and actions.
+
+The refined opening statement was directly inspected in the desktop browser. Its section label now sits on a dedicated ruled rail, the headline leads the main column, and the supporting copy is visually anchored beneath it on the far edge of the composition.
+
+At a true 375px mobile viewport, the opening statement resolves to a grid with the label rail stacked above the content, a visible lower rule, normal headline wrapping without overflow, and supporting copy positioned beneath the headline.

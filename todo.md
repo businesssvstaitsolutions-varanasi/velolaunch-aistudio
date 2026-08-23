@@ -258,3 +258,9 @@
 - [x] Increase visual separation and balance across the Products section without changing approved content.
 - [x] Validate the improved Products rhythm on desktop and mobile before checkpointing.
 - [x] Directly measure Products heading, card grid, waitlist, and closing-action separation at desktop and mobile widths.
+
+# Opening Editorial Statement Refinement
+
+- [x] Inspect the opening statement’s headline, supporting copy, and desktop grid balance.
+- [x] Refine the editorial statement composition with improved visual hierarchy and intentional spacing.
+- [x] Validate the opening statement at desktop and mobile widths before checkpointing.

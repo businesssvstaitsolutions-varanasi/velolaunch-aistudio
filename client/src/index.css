@@ -527,6 +527,15 @@
 
 @media (min-width: 1100px) { .editorial-statement, .editorial-section .section-heading { grid-template-columns: 12rem minmax(0, 1fr); }.editorial-statement h2, .editorial-section .section-heading h2 { max-width: none; font-size: clamp(2.45rem, 3.45vw, 3.7rem); white-space: nowrap; }.editorial-statement h2 { font-size: clamp(2.35rem, 3vw, 3.25rem); }.principles-section .section-heading h2 { font-size: clamp(2.5rem, 4.3vw, 4.4rem); } }
 
+.editorial-statement { align-items: stretch; gap: clamp(2.2rem, 5vw, 6rem); min-height: clamp(19rem, 28vw, 26rem); padding-top: clamp(4.5rem, 8vw, 8rem); padding-bottom: clamp(4.5rem, 8vw, 8rem); }
+.editorial-statement-aside { display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid var(--soft-rule); padding-right: clamp(1.25rem, 2vw, 2rem); }
+.editorial-statement-aside > span { display: block; width: 1.65rem; height: 1px; background: var(--blue); }
+.editorial-statement-main { display: grid; align-content: space-between; min-width: 0; }
+.editorial-statement-main h2 { max-width: 19ch; }
+.editorial-statement-summary { max-width: 29rem; margin-top: clamp(3rem, 6vw, 6rem); color: #4d4c47; font-size: clamp(1rem, 1.25vw, 1.18rem); line-height: 1.62; }
+@media (min-width: 1100px) { .editorial-statement { grid-template-columns: 12rem minmax(0, 1fr); }.editorial-statement-main h2 { max-width: none; }.editorial-statement-summary { justify-self: end; text-align: right; } }
+@media (max-width: 700px) { .editorial-statement { display: grid; gap: 2.3rem; min-height: 0; padding-top: 4rem; padding-bottom: 4rem; }.editorial-statement-aside { border-right: 0; border-bottom: 1px solid var(--soft-rule); gap: 1.6rem; padding: 0 0 1.25rem; }.editorial-statement-main h2 { max-width: 14ch; }.editorial-statement-summary { margin-top: 1.65rem; text-align: left; } }
+
 .home-products .section-heading { margin-bottom: clamp(2.9rem, 5vw, 4.6rem); }
 .home-products .home-product-grid { gap: clamp(1.2rem, 1.9vw, 1.75rem); border-top: 0; padding-top: 0; }
 .home-products .forthcoming-product-card { min-height: 17rem; padding: clamp(1.2rem, 1.8vw, 1.65rem); }
