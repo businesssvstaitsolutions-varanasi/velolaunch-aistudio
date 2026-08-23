@@ -110,3 +110,9 @@
 - [x] Inspect and restore continuous automatic movement for the technology-logo marquee.
 - [x] Recompose the introductory statement to remove the unused gap shown in the supplied reference.
 - [x] Validate marquee motion and introductory spacing on desktop and mobile before checkpointing.
+
+# Service Card Density Refinement
+
+- [x] Inspect the capability grid’s remaining empty space at desktop and mobile sizes.
+- [x] Increase service-card sizing and grid alignment to fill the available visual area.
+- [x] Validate the adjusted service cards and production build before checkpointing.

@@ -148,3 +148,18 @@
     padding-bottom: 2rem;
   }
 }
+
+@media (min-width: 851px) {
+  .capabilities-layout {
+    align-items: stretch;
+  }
+
+  .capabilities-layout .service-card-stack {
+    align-self: stretch;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .capabilities-layout .service-card {
+    min-height: 0;
+  }
+}
