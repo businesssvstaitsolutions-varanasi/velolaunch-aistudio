@@ -104,6 +104,29 @@
   will-change: transform;
 }
 
+.technology-marquee-motion-cue {
+  position: absolute;
+  z-index: 2;
+  right: 0.65rem;
+  top: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.22rem;
+  border: 1px solid rgb(20 21 23 / 0.2);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  color: #4d4c47;
+  padding: 0.17rem 0.34rem;
+  font: 0.48rem/1 "DM Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.technology-marquee-motion-cue b {
+  color: var(--blue);
+  font-size: 0.78rem;
+  line-height: 0.7;
+}
+
 .technology-marquee-set {
   display: flex;
   align-items: center;
@@ -145,6 +168,10 @@
 
   .technology-ecosystem {
     padding: 2.35rem 1.15rem;
+  }
+
+  .technology-marquee-motion-cue {
+    right: 0.35rem;
   }
 
   .editorial-art-interlude {

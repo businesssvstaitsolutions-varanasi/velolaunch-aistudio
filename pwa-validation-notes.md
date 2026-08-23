@@ -11,3 +11,7 @@ The active cache is `velolaunch-shell-v1`. Both the homepage shell and manifest 
 The final live animation check compared the marquee transform over 500 milliseconds: it advanced from -40.4191px to -61.6332px while reduced motion was disabled, explicitly confirming continuous right-to-left movement.
 
 The deterministic replacement was verified independently of CSS animation: the marquee's inline transform advanced from `translate3d(-550.33px, 0px, 0px)` to `translate3d(-605.981px, 0px, 0px)` over 600 milliseconds, while computed CSS animation was `none`. This confirms requestAnimationFrame is directly producing visible leftward movement.
+
+The exact preview URL was rechecked while document visibility was `visible` and reduced motion was disabled. Its inline transform changed from `translate3d(-394.852px, 0px, 0px)` to `translate3d(-487.598px, 0px, 0px)` in one second, confirming the live runtime moves leftward. The next adjustment therefore focuses on making that motion more conspicuous to human viewers rather than restoring a stopped animation.
+
+After increasing speed to 240px/second, the exact preview showed the visible `Auto ←` cue and a 540px modular transform change in one second. Its raw coordinate wrapped from -648.521px to -108.41px at the repeated-set boundary; this is expected for the seamless loop and must be evaluated modulo the first-set width rather than by simple numeric comparison.

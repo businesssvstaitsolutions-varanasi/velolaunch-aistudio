@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { technologyEcosystem } from "@/content/site";
 import { advanceMarqueeOffset } from "@/lib/marqueeMotion";
 
-const MARQUEE_SPEED_PX_PER_SECOND = 92;
+const MARQUEE_SPEED_PX_PER_SECOND = 240;
 
 export function TechnologyMarquee() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -48,6 +48,7 @@ export function TechnologyMarquee() {
 
   return (
     <div className="technology-marquee" aria-label="Technology ecosystem examples">
+      <span className="technology-marquee-motion-cue" aria-hidden="true">Auto <b>←</b></span>
       <div className="technology-marquee-track" ref={trackRef}>
         {[0, 1].map(setIndex => (
           <div className="technology-marquee-set" aria-hidden={setIndex === 1 ? "true" : undefined} key={setIndex}>

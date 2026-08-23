@@ -129,3 +129,9 @@
 - [x] Replace the ticker motion with a deterministic right-to-left implementation.
 - [x] Directly verify visible desktop and mobile marquee movement before checkpointing.
 - [x] Add a narrow-cycle test confirming continued leftward deterministic movement at mobile-sized widths.
+
+# Live Preview Marquee Visibility Correction
+
+- [x] Inspect the exact live preview’s marquee runtime state and refresh path.
+- [x] Increase marquee motion salience and add an unambiguous moving-state treatment.
+- [x] Verify right-to-left movement in the exact live preview before checkpointing.
