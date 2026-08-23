@@ -310,3 +310,9 @@
 - [x] Add Notify Me actions to product cards that capture interest for the selected product.
 - [x] Add accessible category filters to the Products page without fabricating product metadata.
 - [x] Verify routes, filters, notification capture, responsive layout, and quality checks before checkpointing.
+
+# Products Page Search
+
+- [x] Inspect the existing category-filter control and responsive Products-page layout.
+- [x] Add accessible keyword search that combines with category filtering.
+- [x] Verify search results, no-results state, mobile layout, and quality checks before checkpointing.
