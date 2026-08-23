@@ -154,3 +154,9 @@
 - [x] Inspect the current ticker code and identify the browser-visible motion failure.
 - [x] Replace it with a simple native CSS right-to-left animation.
 - [x] Verify visibly changing live animation state before checkpointing.
+
+# Header Brand Lockup Enlargement
+
+- [x] Inspect the current header brand lockup sizing and mobile breakpoint behavior.
+- [x] Increase the header logo, title, and Smart Vista subtitle while preserving navigation balance.
+- [x] Validate the enlarged header on desktop and mobile before checkpointing.

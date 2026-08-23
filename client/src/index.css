@@ -207,6 +207,70 @@
   }
 }
 
+/* Enlarged VeloLaunch header lockup. */
+.site-nav {
+  min-height: 5.15rem;
+}
+
+.brand-mark {
+  gap: 0.7rem;
+}
+
+.brand-mark img {
+  width: 2.55rem;
+  height: 2.55rem;
+}
+
+.brand-mark .brand-copy {
+  gap: 0.2rem;
+}
+
+.brand-mark .brand-title {
+  font-size: 1.08rem;
+}
+
+.brand-mark .brand-attribution {
+  font-size: 0.52rem;
+}
+
+@media (max-width: 850px) {
+  .site-nav {
+    min-height: 4.85rem;
+  }
+
+  .mobile-menu {
+    top: 4.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    min-height: 4.5rem;
+  }
+
+  .brand-mark {
+    gap: 0.55rem;
+  }
+
+  .brand-mark img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .brand-mark .brand-title {
+    font-size: 0.98rem;
+  }
+
+  .brand-mark .brand-attribution {
+    max-width: 14rem;
+    font-size: 0.45rem;
+  }
+
+  .mobile-menu {
+    top: 4.5rem;
+  }
+}
+
 .callback-popup-dialog {
   display: grid;
   grid-template-columns: minmax(17rem, 0.92fr) minmax(22rem, 1.08fr);
