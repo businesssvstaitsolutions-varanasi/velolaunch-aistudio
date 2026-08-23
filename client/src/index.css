@@ -99,9 +99,8 @@
 .technology-marquee-track {
   width: max-content;
   gap: 0;
-  animation: none !important;
-  transform: none;
-  will-change: scroll-position;
+  animation: technology-logo-roll 4.5s linear infinite;
+  will-change: transform;
 }
 
 .technology-marquee-motion-cue {
@@ -230,12 +229,16 @@
 }
 
 .technology-marquee {
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden;
   scrollbar-width: none;
 }
 
 .technology-marquee::-webkit-scrollbar { display: none; }
+
+@keyframes technology-logo-roll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 
 .callback-popup-visual {
   min-height: 27rem;

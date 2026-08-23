@@ -148,3 +148,9 @@
 - [x] Inspect the current popup backdrop and exact live logo-strip behavior.
 - [x] Strengthen the popup backdrop blur and replace any unreliable logo-strip movement implementation.
 - [x] Verify blurred popup presentation and visible right-to-left logo movement before checkpointing.
+
+# Reliable Logo Ticker Replacement
+
+- [x] Inspect the current ticker code and identify the browser-visible motion failure.
+- [x] Replace it with a simple native CSS right-to-left animation.
+- [x] Verify visibly changing live animation state before checkpointing.

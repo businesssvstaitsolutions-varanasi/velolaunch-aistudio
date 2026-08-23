@@ -19,3 +19,5 @@ After increasing speed to 240px/second, the exact preview showed the visible `Au
 The latest live inspection again confirmed the underlying runtime was translating leftward by 116.904px over 500ms while reduced motion was disabled, even with the callback popup open. Because the user still cannot perceive the motion, the next implementation replaces direct translation with a discrete, visible positional shift of logo content rather than relying on subtle continuous motion alone.
 
 The first native-scroll attempt exposed the actual issue: the two repeated logo sets were narrower than the desktop viewport, so `scrollLeft` reached its 355px maximum and stopped. The correction adds a third repeated set, ensuring a full cycle of scroll range before a seamless reset.
+
+The final simplified CSS ticker was directly verified in the exact preview. Its browser-reported animation was `technology-logo-roll`, with a running play state and a 4.5-second duration. Its transform changed from `translateX(-55.5605px)` to `translateX(-142.464px)` over 500ms, confirming visible leftward motion without JavaScript scroll or requestAnimationFrame control.
