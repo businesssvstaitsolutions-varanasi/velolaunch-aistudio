@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 import { ProductCard } from "@/components/ProductCard";
 import { SectionIntro } from "@/components/SectionIntro";
+import { ConsultationForm } from "@/components/ConsultationForm";
+import { VeloCoreScene } from "@/components/VeloCoreScene";
 import { getVisibleProducts, principles, services, siteConfig } from "@/content/site";
 
 const visibleProducts = getVisibleProducts(siteConfig.launchMode);
@@ -71,18 +73,9 @@ export default function Home() {
           </div>
 
           <div className="hero-art" aria-label="Precision-machined VeloLaunch core visual">
-            <div className="hero-trajectory" aria-hidden="true">
-              <span className="trajectory-arc trajectory-arc-one" />
-              <span className="trajectory-arc trajectory-arc-two" />
-              <span className="trajectory-arc trajectory-arc-three" />
-              <span className="trajectory-node" />
-            </div>
-            <div className="hero-art-frame" />
-            <img
-              className="hero-core-image"
+            <VeloCoreScene
               src={siteConfig.assets.heroCore}
               alt="A precision-machined V-shaped core made from brushed aluminum and graphite."
-              fetchPriority="high"
             />
             <div className="hero-art-signal" aria-hidden="true"><span>VL / vector field</span><span>01—04</span></div>
             <div className="hero-art-caption" aria-hidden="true">
@@ -237,9 +230,7 @@ export default function Home() {
           </div>
           <div className="contact-action">
             <span className="contact-availability"><span className="status-pulse" aria-hidden="true" /> Discovery conversations</span>
-            <Button asChild className="button-metal contact-button">
-              <a href="mailto:hello@velolaunch.com?subject=VeloLaunch%20discovery%20conversation">Book a discovery call <ArrowUpRight size={16} aria-hidden="true" /></a>
-            </Button>
+            <ConsultationForm />
             <span className="contact-note">hello@velolaunch.com</span>
           </div>
         </section>
@@ -248,6 +239,7 @@ export default function Home() {
       <footer className="site-footer">
         <a className="footer-mark focus-ring" href="#top"><Box size={16} aria-hidden="true" /> VeloLaunch</a>
         <span>AI-first software development by Smart Vista IT Solutions.</span>
+        <a className="footer-access focus-ring" href="/operations">Staff access</a>
         <span>© {new Date().getFullYear()} VeloLaunch</span>
       </footer>
     </div>
