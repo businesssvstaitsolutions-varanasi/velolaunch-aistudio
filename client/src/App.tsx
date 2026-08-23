@@ -3,8 +3,9 @@
  */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { WebsiteChatbot } from "@/components/WebsiteChatbot";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -33,12 +34,15 @@ function Router() {
 }
 
 function App() {
+  const [location] = useLocation();
+
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
           <Router />
+          {location !== "/operations" ? <WebsiteChatbot /> : null}
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

@@ -160,3 +160,11 @@
 - [x] Inspect the current header brand lockup sizing and mobile breakpoint behavior.
 - [x] Increase the header logo, title, and Smart Vista subtitle while preserving navigation balance.
 - [x] Validate the enlarged header on desktop and mobile before checkpointing.
+
+# Grounded Website Chatbot
+
+- [x] Inspect the existing chat and consultation components and define the chatbot's approved answer boundaries.
+- [x] Build a predictable answer catalogue for VeloLaunch services, AI-assisted development, DevOps, and pricing guidance.
+- [x] Implement an accessible website chatbot with a callback-request handoff for questions that need commercial follow-up.
+- [x] Validate chatbot answer routing, handoff behavior, and desktop/mobile usability before checkpointing.
+- [x] Open and exercise the chatbot panel at mobile width before delivery.
