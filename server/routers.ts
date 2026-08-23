@@ -9,7 +9,9 @@ import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
 export const consultationInputSchema = z.object({
   name: z.string().trim().min(2, "Please add your name").max(120),
   email: z.string().trim().email("Please add a valid email").max(320),
+  phone: z.string().trim().regex(/^[+()\d][+()\d\s.-]{5,31}$/, "Please add a valid callback number").max(32).optional(),
   scope: z.string().trim().min(16, "A little more project context helps us prepare").max(2000),
+  source: z.enum(["website", "callback-popup"]).optional(),
   website: z.string().max(0).optional(),
 });
 
@@ -35,7 +37,7 @@ export const appRouter = router({
   consultations: router({
     create: publicProcedure.input(consultationInputSchema).mutation(async ({ input }) => {
       if (input.website) throw new TRPCError({ code: "BAD_REQUEST", message: "Invalid request" });
-      await createConsultation({ name: input.name, email: input.email, scope: input.scope });
+      await createConsultation({ name: input.name, email: input.email, phone: input.phone, scope: input.scope, source: input.source });
       return { accepted: true } as const;
     }),
     list: adminProcedure.query(() => listConsultations()),

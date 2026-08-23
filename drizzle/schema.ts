@@ -16,6 +16,7 @@ export const consultations = mysqlTable("consultations", {
   id: int("id").autoincrement().primaryKey(),
   name: varchar("name", { length: 120 }).notNull(),
   email: varchar("email", { length: 320 }).notNull(),
+  phone: varchar("phone", { length: 32 }),
   scope: text("scope").notNull(),
   status: mysqlEnum("status", ["new", "reviewing", "closed"]).default("new").notNull(),
   source: varchar("source", { length: 48 }).default("website").notNull(),

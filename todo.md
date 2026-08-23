@@ -135,3 +135,10 @@
 - [x] Inspect the exact live preview’s marquee runtime state and refresh path.
 - [x] Increase marquee motion salience and add an unambiguous moving-state treatment.
 - [x] Verify right-to-left movement in the exact live preview before checkpointing.
+
+# Callback Popup
+
+- [x] Inspect the existing consultation intake and define respectful session-level trigger safeguards.
+- [x] Prepare the supplied popup visual and responsive callback form composition.
+- [x] Implement desktop exit-intent and mobile one-minute engagement triggers with callback submission.
+- [x] Validate callback capture, accessibility, trigger frequency, and desktop/mobile popup layouts before checkpointing.

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 import { ConsultationForm } from "@/components/ConsultationForm";
 import { CompanyVideo } from "@/components/CompanyVideo";
+import { CallbackPopup } from "@/components/CallbackPopup";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SiteFooter } from "@/components/SiteFooter";
 import { TechnologyMarquee } from "@/components/TechnologyMarquee";
@@ -104,6 +105,7 @@ export default function Home() {
       </main>
 
       <SiteFooter />
+      <CallbackPopup />
     </div>
   );
 }

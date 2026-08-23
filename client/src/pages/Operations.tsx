@@ -51,7 +51,7 @@ function OperationsContent() {
               {consultations.data.map((item) => (
                 <tr key={item.id}>
                   <td>{new Date(item.createdAt).toLocaleDateString()}</td>
-                  <td><strong>{item.name}</strong><a href={`mailto:${item.email}`}>{item.email}</a></td>
+                  <td><strong>{item.name}</strong><a href={`mailto:${item.email}`}>{item.email}</a>{item.phone ? <a href={`tel:${item.phone}`}>{item.phone}</a> : null}</td>
                   <td>{item.scope}</td>
                   <td>
                     <select

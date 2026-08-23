@@ -72,6 +72,7 @@ export const siteConfig = {
     constellation: "/manus-storage/velolaunch-product-constellation_95bf849c.png",
     intelligentStack: "/manus-storage/velolaunch-intelligent-stack_aaf96b24.png",
     launchTable: "/manus-storage/velolaunch-launch-table_9919b679.png",
+    callbackPopup: "/manus-storage/velolaunch-callback-popup_df302f04.png",
   },
 } as const;
 

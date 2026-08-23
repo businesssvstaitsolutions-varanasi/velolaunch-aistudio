@@ -50,15 +50,16 @@ export async function getUserByOpenId(openId: string) {
   return result[0];
 }
 
-export async function createConsultation(input: { name: string; email: string; scope: string }) {
+export async function createConsultation(input: { name: string; email: string; phone?: string; scope: string; source?: string }) {
   const db = await getDb();
   if (!db) throw new Error("Consultation storage is unavailable");
 
   await db.insert(consultations).values({
     name: input.name,
     email: input.email,
+    phone: input.phone ?? null,
     scope: input.scope,
-    source: "website",
+    source: input.source ?? "website",
   });
 }
 

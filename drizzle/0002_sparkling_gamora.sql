@@ -1,0 +1,1 @@
+ALTER TABLE `consultations` ADD `phone` varchar(32);
