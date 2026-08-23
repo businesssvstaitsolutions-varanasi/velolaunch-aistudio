@@ -39,3 +39,7 @@ The final fade implementation uses two absolute, exactly aligned logo panels rat
 The final midpoint was also checked in the browser’s actual 375px by 812px emulated mobile viewport. Both crossfading panels remained exactly aligned at 338px wide inside the mobile content frame, each retained five logo slots, and each reported 0.5 opacity. The compact mobile frame therefore preserves the same artifact-free five-slot transition.
 
 The technology ecosystem now uses a static grid rather than animated panels. Live desktop review confirmed all ten approved logos appear together in a single row with no motion cue, while the 375px mobile review confirmed the same ten logos wrap into two compact rows of five and remain visible.
+
+The service-card capability tags now use centered wrapped alignment. Desktop review confirmed the tag clusters sit at the visual center of each dark service card, and the 375px mobile review confirmed their wrapped rows remain centered and legible.
+
+Direct live geometry checks confirmed the shared tag groups use `justify-content: center`. At both 375px mobile width and 1280px desktop width, all four service cards reported zero-pixel row-center offsets for every wrapped tag line.

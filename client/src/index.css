@@ -465,3 +465,5 @@
   .website-chatbot-messages { max-height: 16.5rem; }
   .website-chatbot-launcher { padding: 0.72rem 0.85rem; }
 }
+
+.service-card-tags { justify-content: center; }

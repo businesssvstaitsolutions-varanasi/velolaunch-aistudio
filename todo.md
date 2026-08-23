@@ -197,3 +197,10 @@
 - [x] Review the marquee integration and retain the ten approved technology logos.
 - [x] Replace marquee behavior with a stable, non-animated all-ten-logo presentation.
 - [x] Validate all logo visibility on desktop and mobile, then run quality checks before checkpointing.
+
+# Centered Service Capability Tags
+
+- [x] Inspect the shared service-card tag layout and identify the alignment rule to update.
+- [x] Center each capability-tag group inside its service card across breakpoints.
+- [x] Validate desktop and mobile tag alignment, then run quality checks before checkpointing.
+- [x] Directly confirm centered tag-row geometry in live desktop and mobile service cards.
