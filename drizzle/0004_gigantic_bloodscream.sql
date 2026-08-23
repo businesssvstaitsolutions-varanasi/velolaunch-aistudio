@@ -1,0 +1,2 @@
+ALTER TABLE `productWaitlist` DROP INDEX `productWaitlist_email_unique`;--> statement-breakpoint
+ALTER TABLE `productWaitlist` ADD CONSTRAINT `productWaitlist_email_productName_unique` UNIQUE(`email`,`productName`);

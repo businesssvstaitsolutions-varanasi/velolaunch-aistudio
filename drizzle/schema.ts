@@ -1,4 +1,4 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { int, mysqlEnum, mysqlTable, text, timestamp, unique, varchar } from "drizzle-orm/mysql-core";
 
 export const users = mysqlTable("users", {
   id: int("id").autoincrement().primaryKey(),
@@ -39,8 +39,19 @@ export const productOffers = mysqlTable("productOffers", {
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
 });
 
+export const productWaitlist = mysqlTable("productWaitlist", {
+  id: int("id").autoincrement().primaryKey(),
+  email: varchar("email", { length: 320 }).notNull(),
+  productName: varchar("productName", { length: 180 }).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+}, (table) => [
+  unique("productWaitlist_email_productName_unique").on(table.email, table.productName),
+]);
+
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 export type Consultation = typeof consultations.$inferSelect;
 export type ConsultationStatus = Consultation["status"];
 export type ProductOffer = typeof productOffers.$inferSelect;
+export type ProductWaitlist = typeof productWaitlist.$inferSelect;

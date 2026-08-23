@@ -51,3 +51,13 @@ Desktop and 375px mobile reviews show the capability labels remain centered with
 Direct live inspection of all 16 capability pills confirmed centered alignment properties: each has centered cross-axis and main-axis alignment with `text-align: center`. The browser resolves the inline-flex declaration to flex because each pill participates in a flex tag group; the centered behavior is preserved.
 
 A true 375px by 812px mobile browser inspection also found all 16 capability pills present and confirmed their centered alignment properties without exception.
+
+The forthcoming-product waitlist was live-checked on the homepage: the email field, four-product selector, and Join the waitlist action render together, and an empty email produces the expected client-side validation message without creating a record. The server-side input contract additionally rejects honeypot submissions in tests.
+
+On the AI-Powered Development detail page, the capability labels are centered. Hovering a label visibly changes its border and background and moves it upward by one pixel, while preserving centered text alignment.
+
+The combined forthcoming-product cards and waitlist form were reviewed on desktop and at 375px mobile width. The desktop presentation retains a compact side-by-side form, while mobile stacks the fields, action, and supporting message in a readable single-column sequence.
+
+The waitlist success path is covered through an isolated tRPC mutation test, which confirms a valid email and product selection are forwarded to waitlist storage without adding test records to the live database. Invalid-email feedback is browser-tested and honeypot rejection is schema-tested.
+
+With user confirmation, `velolaunch@gmail.com` was submitted for the default Apex Turbo Smart Tab Organizer and Memory Saver selection. The live form displayed its interest-list success message. A separate live submission with the hidden honeypot populated was rejected and displayed the generic retry message, without creating an interest record.

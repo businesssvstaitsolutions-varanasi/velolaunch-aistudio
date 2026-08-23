@@ -1,7 +1,7 @@
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 import { COOKIE_NAME } from "@shared/const";
-import { createConsultation, listConsultations, listPublicProductOffers, updateConsultationStatus } from "./db";
+import { createConsultation, joinProductWaitlist, listConsultations, listPublicProductOffers, updateConsultationStatus } from "./db";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
@@ -16,6 +16,18 @@ export const consultationInputSchema = z.object({
 });
 
 const consultationStatusSchema = z.enum(["new", "reviewing", "closed"]);
+const forthcomingProductNames = [
+  "Apex Turbo Smart Tab Organizer and Memory Saver",
+  "FinAura AI - Powered Finance Vault",
+  "PlutoLearn AI - Powered EdTech Platform",
+  "VeloTools - 1000+ Powerful Tools",
+] as const;
+
+export const productWaitlistInputSchema = z.object({
+  email: z.string().trim().email("Please add a valid email").max(320),
+  productName: z.enum(forthcomingProductNames),
+  website: z.string().max(0).optional(),
+});
 
 const adminProcedure = protectedProcedure.use(({ ctx, next }) => {
   if (ctx.user.role !== "admin") {
@@ -50,6 +62,13 @@ export const appRouter = router({
   }),
   offers: router({
     listPublic: publicProcedure.query(() => listPublicProductOffers()),
+  }),
+  waitlist: router({
+    create: publicProcedure.input(productWaitlistInputSchema).mutation(async ({ input }) => {
+      if (input.website) throw new TRPCError({ code: "BAD_REQUEST", message: "Invalid request" });
+      await joinProductWaitlist({ email: input.email, productName: input.productName });
+      return { accepted: true } as const;
+    }),
   }),
 });
 

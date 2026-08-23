@@ -1,6 +1,6 @@
 import { desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { ConsultationStatus, InsertUser, consultations, productOffers, users } from "../drizzle/schema";
+import { ConsultationStatus, InsertUser, consultations, productOffers, productWaitlist, users } from "../drizzle/schema";
 import { ENV } from "./_core/env";
 
 let database: ReturnType<typeof drizzle> | null = null;
@@ -79,4 +79,13 @@ export async function listPublicProductOffers() {
   const db = await getDb();
   if (!db) throw new Error("Offer storage is unavailable");
   return db.select().from(productOffers).where(eq(productOffers.public, 1)).orderBy(desc(productOffers.updatedAt));
+}
+
+export async function joinProductWaitlist(input: { email: string; productName: string }) {
+  const db = await getDb();
+  if (!db) throw new Error("Waitlist storage is unavailable");
+
+  await db.insert(productWaitlist).values(input).onDuplicateKeyUpdate({
+    set: { productName: input.productName, updatedAt: new Date() },
+  });
 }

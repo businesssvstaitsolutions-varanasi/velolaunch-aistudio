@@ -217,3 +217,15 @@
 - [x] Center every capability label inside its pill while preserving the existing tag-group layout.
 - [x] Validate pill-label centering on desktop and mobile, then run quality checks before checkpointing.
 - [x] Directly confirm centered pill-label styles in a true 375px mobile viewport.
+
+# Forthcoming Product Waitlist and Capability Pill Consistency
+
+- [x] Review the existing consultation data flow and service-detail tag markup for reuse.
+- [x] Add a validated waitlist email capture flow for interest in forthcoming products.
+- [x] Apply centered capability-pill label styling to all service detail pages.
+- [x] Add a subtle, accessible hover treatment to homepage and detail capability pills.
+- [x] Validate waitlist submission, desktop/mobile layouts, and hover behavior before checkpointing.
+- [x] Preserve separate waitlist interest records when one email selects multiple forthcoming products.
+- [x] Live-test invalid email, successful submission, honeypot rejection, and responsive waitlist states.
+- [x] Live-submit the user-provided waitlist address and verify the success message.
+- [x] Directly verify the waitlist honeypot is rejected by the live mutation path.

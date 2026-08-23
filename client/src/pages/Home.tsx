@@ -7,6 +7,7 @@ import { CallbackPopup } from "@/components/CallbackPopup";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SiteFooter } from "@/components/SiteFooter";
 import { TechnologyMarquee } from "@/components/TechnologyMarquee";
+import { ProductWaitlistForm } from "@/components/ProductWaitlistForm";
 import { forthcomingHomepageProducts, principles, services, siteConfig } from "@/content/site";
 
 export default function Home() {
@@ -72,6 +73,7 @@ export default function Home() {
               </article>
             ))}
           </div>
+          <ProductWaitlistForm />
           <div className="home-products-panel"><p>VeloLaunch product records, availability, and offer terms are released only when they are approved for the people making the next decision.</p><div><a className="button-ink focus-ring" href="/products">Explore our products <ArrowUpRight size={16} aria-hidden="true" /></a><a className="editorial-text-link focus-ring" href="/offers">View the offer board <ArrowUpRight size={15} aria-hidden="true" /></a></div></div>
         </section>
 

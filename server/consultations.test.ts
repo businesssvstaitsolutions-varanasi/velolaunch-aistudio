@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { consultationInputSchema } from "./routers";
+import { consultationInputSchema, productWaitlistInputSchema } from "./routers";
 
 describe("consultation input validation", () => {
   it("accepts concise, complete discovery context", () => {
@@ -28,5 +28,10 @@ describe("consultation input validation", () => {
 
   it("rejects malformed callback numbers", () => {
     expect(() => consultationInputSchema.parse({ name: "Avery Chen", email: "avery@example.com", phone: "call me", scope: "Please call me back to discuss an intelligent product launch." })).toThrow();
+  });
+
+  it("accepts valid product waitlist interest and rejects bot input", () => {
+    expect(productWaitlistInputSchema.parse({ email: "avery@example.com", productName: "FinAura AI - Powered Finance Vault", website: "" })).toMatchObject({ email: "avery@example.com" });
+    expect(() => productWaitlistInputSchema.parse({ email: "avery@example.com", productName: "FinAura AI - Powered Finance Vault", website: "filled" })).toThrow();
   });
 });
