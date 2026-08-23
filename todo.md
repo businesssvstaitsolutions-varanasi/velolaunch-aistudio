@@ -295,3 +295,9 @@
 - [x] Inspect the excessive blank space shown between the opening-statement headline and supporting copy.
 - [x] Rebalance the desktop statement grid and rail so the composition is intentional and compact.
 - [x] Verify wide desktop and mobile statement layouts, then run quality checks before checkpointing.
+
+# Products Page Forthcoming Cards
+
+- [x] Inspect the existing Products route and the supplied four-card visual reference.
+- [x] Render the approved four forthcoming-product cards on the dedicated Products page.
+- [x] Verify desktop/mobile card consistency and run quality checks before checkpointing.
