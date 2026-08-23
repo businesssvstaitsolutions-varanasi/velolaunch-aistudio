@@ -526,3 +526,12 @@
 @media (max-width: 480px) { .footer-links { grid-template-columns: 1fr 1fr; }.footer-link-group:last-child { grid-column: 1 / -1; }.footer-brand-lockup strong { font-size: 1.26rem; } }
 
 @media (min-width: 1100px) { .editorial-statement, .editorial-section .section-heading { grid-template-columns: 12rem minmax(0, 1fr); }.editorial-statement h2, .editorial-section .section-heading h2 { max-width: none; font-size: clamp(2.45rem, 3.45vw, 3.7rem); white-space: nowrap; }.editorial-statement h2 { font-size: clamp(2.35rem, 3vw, 3.25rem); }.principles-section .section-heading h2 { font-size: clamp(2.5rem, 4.3vw, 4.4rem); } }
+
+.home-products .section-heading { margin-bottom: clamp(2.9rem, 5vw, 4.6rem); }
+.home-products .home-product-grid { gap: clamp(1.2rem, 1.9vw, 1.75rem); border-top: 0; padding-top: 0; }
+.home-products .forthcoming-product-card { min-height: 17rem; padding: clamp(1.2rem, 1.8vw, 1.65rem); }
+.home-products .product-waitlist { gap: clamp(2rem, 5vw, 5rem); margin-top: clamp(2.8rem, 5vw, 4.8rem); padding-top: clamp(1.55rem, 2.5vw, 2.25rem); }
+.home-products .product-waitlist form { row-gap: 1rem; column-gap: 1.25rem; }
+.home-products .product-waitlist-privacy { margin-top: 0.15rem; }
+.home-products .home-products-panel { margin-top: clamp(2.8rem, 5vw, 4.8rem); padding-top: clamp(1.55rem, 2.5vw, 2.25rem); }
+@media (max-width: 600px) { .home-products .section-heading { margin-bottom: 2.4rem; }.home-products .forthcoming-product-card { min-height: 12.5rem; }.home-products .product-waitlist, .home-products .home-products-panel { margin-top: 2.6rem; } }

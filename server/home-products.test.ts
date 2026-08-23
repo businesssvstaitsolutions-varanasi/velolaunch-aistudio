@@ -20,4 +20,10 @@ describe("forthcoming homepage products", () => {
     expect(styles).toContain("grid-template-columns: repeat(2, minmax(0, 1fr))");
     expect(styles).toContain(".forthcoming-product-card-head strong");
   });
+
+  it("gives the product cards, waitlist, and closing actions distinct breathing room", () => {
+    expect(styles).toContain(".home-products .section-heading { margin-bottom:");
+    expect(styles).toContain(".home-products .product-waitlist { gap:");
+    expect(styles).toContain(".home-products .home-products-panel { margin-top:");
+  });
 });

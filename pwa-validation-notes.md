@@ -73,3 +73,7 @@ Direct browser measurement confirmed the headline uses one 51.7px line within a 
 The waitlist now displays the no-spam reassurance beneath its fields. Following the confirmed idempotent `velolaunch@gmail.com` submission, the live form displayed the new check-mark thank-you state and its animated status panel.
 
 At 1280px, the statement, Capabilities, Products, and Principles headings each measured as one fitting line with no-wrap applied. At 375px, each heading returned to normal wrapping and fit within its content width. The privacy text and animated thank-you panel were present at both widths.
+
+The Products section was reviewed at desktop and 375px mobile widths after spacing refinement. Product cards have clearer gutters, the waitlist is separated from the card grid with a more deliberate break, and the closing-action panel has independent breathing room; mobile preserves the hierarchy in a readable stack.
+
+Direct live measurement confirmed a 64px heading-to-grid break, 24px desktop card gutter, 64px grid-to-waitlist break, and 64px waitlist-to-action-panel break at 1280px. At 375px, the four cards stack in order with 38px heading separation and 42px breaks around the waitlist and actions.

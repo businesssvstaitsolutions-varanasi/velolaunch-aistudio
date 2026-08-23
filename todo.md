@@ -251,3 +251,10 @@
 - [x] Add a concise no-spam privacy reassurance beneath the waitlist email form.
 - [x] Add a smooth waitlist success animation with a clear thank-you message.
 - [x] Validate heading continuity, waitlist privacy copy, and success feedback across desktop and mobile before checkpointing.
+
+# Products Section Spacing Refinement
+
+- [x] Inspect the current product-card, waitlist, and closing-action spacing.
+- [x] Increase visual separation and balance across the Products section without changing approved content.
+- [x] Validate the improved Products rhythm on desktop and mobile before checkpointing.
+- [x] Directly measure Products heading, card grid, waitlist, and closing-action separation at desktop and mobile widths.
