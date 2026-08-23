@@ -92,3 +92,9 @@
 - [x] Reflow the company section so the supplied video can span the full available width.
 - [x] Preserve the supplied video’s native aspect ratio without cropping or forced cover behavior.
 - [x] Verify the full-width video and supporting company copy on desktop and mobile before checkpointing.
+
+# Technology Logo Marquee
+
+- [x] Source legible logo marks for the contextual technology ecosystem marquee.
+- [x] Replace text-only marquee entries with semantic logo marks while preserving the automatic motion and disclosure.
+- [x] Verify logo legibility and marquee behavior across desktop and mobile before checkpointing.

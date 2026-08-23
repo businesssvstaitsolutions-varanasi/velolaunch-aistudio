@@ -5,7 +5,7 @@ import { ConsultationForm } from "@/components/ConsultationForm";
 import { CompanyVideo } from "@/components/CompanyVideo";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SiteFooter } from "@/components/SiteFooter";
-import { principles, services, siteConfig } from "@/content/site";
+import { principles, services, siteConfig, technologyEcosystem } from "@/content/site";
 
 export default function Home() {
   return (
@@ -51,10 +51,7 @@ export default function Home() {
           <div className="technology-ecosystem-head"><p className="section-tag">03 — Technology ecosystem</p><p id="ecosystem-title">Examples of the tools we evaluate for product work. Names are shown for context only; they do not imply partnership or endorsement.</p></div>
           <div className="technology-marquee" aria-label="Technology ecosystem examples">
             <div className="technology-marquee-track">
-              {[
-                "Amazon AWS", "Google GCP", "Oracle Cloud", "GitHub Copilot", "Windsurf", "Cursor", "Manus AI", "Anthropic", "Google DeepMind",
-                "Amazon AWS", "Google GCP", "Oracle Cloud", "GitHub Copilot", "Windsurf", "Cursor", "Manus AI", "Anthropic", "Google DeepMind",
-              ].map((name, index) => <span key={`${name}-${index}`}>{name}</span>)}
+              {[...technologyEcosystem, ...technologyEcosystem].map((brand, index) => <span className="technology-logo" role="img" aria-label={brand.name} aria-hidden={index >= technologyEcosystem.length ? "true" : undefined} key={`${brand.name}-${index}`}><img src={brand.logo} alt="" /></span>)}
             </div>
           </div>
         </section>

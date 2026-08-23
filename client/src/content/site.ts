@@ -162,6 +162,18 @@ export const services: readonly Service[] = [
 export const publicProducts: readonly PublicProduct[] = [];
 export const publicOffers: readonly OfferListing[] = [];
 
+export const technologyEcosystem = [
+  { name: "Amazon AWS", logo: "/manus-storage/aws_dd46d96f.png" },
+  { name: "Google Cloud", logo: "/manus-storage/gcp_20cad8d6.svg" },
+  { name: "Oracle Cloud", logo: "/manus-storage/oracle_63792664.png" },
+  { name: "GitHub Copilot", logo: "/manus-storage/github-copilot_788911c6.svg" },
+  { name: "Windsurf", logo: "/manus-storage/windsurf_95ad3057.svg" },
+  { name: "Cursor", logo: "/manus-storage/cursor_2fa88289.svg" },
+  { name: "Manus AI", logo: "/manus-storage/manus_0eda502d.png" },
+  { name: "Anthropic", logo: "/manus-storage/anthropic_3f95b697.svg" },
+  { name: "Google DeepMind", logo: "/manus-storage/google-deepmind_9c6b74d0.svg" },
+] as const;
+
 export function getService(slug?: string) {
   return services.find((service) => service.slug === slug);
 }
