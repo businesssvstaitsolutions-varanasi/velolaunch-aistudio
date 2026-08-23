@@ -27,3 +27,7 @@ The reusable `InfiniteMarquee` is now active in the exact preview. Its browser-r
 The first actual pointer move landed below the logo row after anchor positioning had shifted the viewport. The marquee correctly reported no hover and a running animation; the pointer will be moved directly over the visible row in the next check.
 
 With the pointer moved directly over the visible logo row, the live browser reported `hovering: true` and `animationPlayState: "paused"`. This confirms the requested hover pause works on the reusable 30-second CSS-only marquee.
+
+The GPT-enhanced five-logo marquee was then verified live. Its grouped animation reported a 12-second cycle: sampling at 0 and 4 seconds produced the same first-group transform, sampling at 6 seconds moved to the second group, and sampling at 6 and 10 seconds held the second group. This establishes a five-second hold before each group transition while preserving the loop.
+
+The full mobile homepage review showed the grouped marquee remains compact in the responsive layout. For continuity, the live animation was sampled at 0ms, 11,999ms, and 12,000ms: the first and wrapped states used the same repeated first-group position, while the pre-wrap state differed. Because the first group is repeated at both ends of the track, the final-to-first transition remains visually seamless.

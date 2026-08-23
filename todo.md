@@ -174,3 +174,11 @@
 - [x] Inspect the current technology ticker integration and retain its approved logo asset configuration.
 - [x] Create `InfiniteMarquee.jsx` and `Marquee.css` with the requested CSS-only left-to-right seamless loop and hover pause.
 - [x] Replace the existing homepage ticker and verify the component in desktop and mobile layouts before checkpointing.
+
+# Five-Logo GPT Marquee
+
+- [x] Inspect the existing technology asset list and define five-logo group ordering.
+- [x] Add the GPT logo and implement five-logo groups with five-second automatic transitions and continuous looping.
+- [x] Validate desktop/mobile group visibility, transition timing, and loop continuity before checkpointing.
+- [x] Review the GPT-enhanced five-logo marquee at mobile width after the grouped implementation.
+- [x] Directly confirm the final group wraps back to the first group without a visual snap.

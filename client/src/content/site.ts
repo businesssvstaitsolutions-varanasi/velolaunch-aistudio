@@ -173,6 +173,7 @@ export const technologyEcosystem = [
   { name: "Manus AI", logo: "/manus-storage/manus_0eda502d.png" },
   { name: "Anthropic", logo: "/manus-storage/anthropic_3f95b697.svg" },
   { name: "Google DeepMind", logo: "/manus-storage/google-deepmind_9c6b74d0.svg" },
+  { name: "OpenAI GPT", logo: "/manus-storage/openai-gpt_4d966a65.webp" },
 ] as const;
 
 export function getService(slug?: string) {
