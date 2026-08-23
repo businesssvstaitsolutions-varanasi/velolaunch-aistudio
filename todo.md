@@ -273,3 +273,13 @@
 - [x] Add an approval-gated client logos and case-studies section with an honest empty state until approved material is supplied.
 - [x] Add the supplied dummy phone contact to the header without crowding primary navigation.
 - [x] Validate animation, content safeguards, desktop/mobile layouts, and header contact before checkpointing.
+
+# Safe Client Preview and Header/Privacy Modals
+
+- [x] Review existing dialog patterns and client-section markup for reusable modal behavior.
+- [x] Add neutral, clearly labelled logo-placement blocks and a no-claims case-study layout preview.
+- [x] Add a Book a Call button beside the header phone number with a simple accessible calendar modal.
+- [x] Add a Privacy Policy link below the waitlist that opens an accessible text modal.
+- [x] Validate modal operation, responsive layouts, and safe placeholder labelling before checkpointing.
+- [x] Make placeholder and approval-required labels explicit across all client-preview blocks.
+- [x] Reset booking-preview state when its dialog closes so each opening starts with the calendar form.

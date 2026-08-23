@@ -22,8 +22,10 @@ describe("opening statement transition", () => {
 
   it("keeps client proof approval-gated until verified material is supplied", () => {
     expect(home).toContain('className="client-proof-section"');
-    expect(home).toContain("Approval-gated");
-    expect(home).toContain("will appear here once their teams are ready for public reference");
+    expect(home).toContain('className="client-logo-preview"');
+    expect(home).toContain("Placeholder logo");
+    expect(home).toContain("Approval required");
+    expect(home).toContain("Preview only — no client, partnership, or outcome is represented.");
     expect(home).not.toContain("Trusted by");
   });
 });

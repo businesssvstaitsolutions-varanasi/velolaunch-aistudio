@@ -37,7 +37,11 @@ export default function Home() {
         </section>
         <section className="client-proof-section" aria-labelledby="client-proof-title">
           <div className="client-proof-intro"><p className="section-tag">01B — Client proof</p><h2 id="client-proof-title">Client work is shared when permission is clear.</h2></div>
-          <div className="client-proof-empty"><span>Approval-gated</span><p>Approved client logos and case studies will appear here once their teams are ready for public reference.</p><a className="editorial-text-link focus-ring" href="#contact">Discuss your next product decision <ArrowRight size={15} aria-hidden="true" /></a></div>
+          <div className="client-proof-preview">
+            <div className="client-logo-preview" aria-label="Neutral client logo placement preview; no client relationships are represented"><span><strong>Placeholder logo</strong>Logo placement 01<small>Approval required</small></span><span><strong>Placeholder logo</strong>Logo placement 02<small>Approval required</small></span><span><strong>Placeholder logo</strong>Logo placement 03<small>Approval required</small></span><span><strong>Placeholder logo</strong>Logo placement 04<small>Approval required</small></span></div>
+            <article className="case-study-preview"><p>Case study layout preview</p><h3>Product decision → delivery</h3><dl><div><dt>Context</dt><dd>Approved client context appears here.</dd></div><div><dt>Workstream</dt><dd>Approved scope and methods appear here.</dd></div><div><dt>Approval required</dt><dd>Publication needs approved evidence and permission.</dd></div></dl><small>Preview only — no client, partnership, or outcome is represented.</small></article>
+            <a className="editorial-text-link focus-ring" href="#contact">Discuss your next product decision <ArrowRight size={15} aria-hidden="true" /></a>
+          </div>
         </section>
 
         <section id="services" className="editorial-section capabilities-section" aria-labelledby="services-title">
