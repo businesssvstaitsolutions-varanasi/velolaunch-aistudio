@@ -25,6 +25,36 @@ export type Product = {
   order: number;
 };
 
+export type Service = {
+  code: string;
+  slug: string;
+  title: string;
+  summary: string;
+  description: string;
+  tags: readonly string[];
+  deliverables: readonly string[];
+  process: readonly string[];
+};
+
+export type PublicProduct = {
+  slug: string;
+  name: string;
+  category: string;
+  summary: string;
+  availability: "prelaunch" | "available" | "private";
+  public: boolean;
+};
+
+export type OfferListing = {
+  productSlug: string;
+  askingPrice: string;
+  currency: string;
+  leadingBid: string | null;
+  bidCount: number;
+  status: "open" | "review" | "closed";
+  public: boolean;
+};
+
 export const siteConfig = {
   name: "VeloLaunch",
   parent: "Smart Vista IT Solutions",
@@ -85,26 +115,59 @@ export function getVisibleProducts(mode: LaunchMode, list = products) {
     .sort((a, b) => a.order - b.order);
 }
 
-export const services = [
+export const services: readonly Service[] = [
   {
     code: "01",
-    title: "AI product engineering",
-    description:
-      "Define, design, and build intelligent software around the decisions and workflows that matter.",
+    slug: "ai-powered-development",
+    title: "AI-Powered Development",
+    summary: "Smart product systems shaped around decisions, workflows, and the people who use them.",
+    description: "We define, design, and build intelligent software where AI has a clear job, appropriate controls, and a durable place in the product architecture.",
+    tags: ["AI workflows", "Product design", "Intelligent UX", "System controls"],
+    deliverables: ["Product and AI opportunity framing", "Experience and interaction design", "Build-ready system architecture", "Measured delivery plan"],
+    process: ["Frame the operating decision", "Prototype the product behavior", "Engineer the working system", "Improve from evidence"],
   },
   {
     code: "02",
-    title: "Agentic systems",
-    description:
-      "Turn models, tools, and operating context into systems with clear controls and useful human oversight.",
+    slug: "web-app-development",
+    title: "Web App Development",
+    summary: "Responsive web products designed to stay legible as the underlying system becomes more capable.",
+    description: "We build web applications that connect clear product flows, reliable software foundations, and the integrations needed to make work happen in context.",
+    tags: ["Web products", "SaaS systems", "Integrations", "Product platforms"],
+    deliverables: ["Interaction and interface system", "Responsive application build", "Integration architecture", "Release-ready quality controls"],
+    process: ["Map the product surface", "Design the critical workflows", "Build with stable contracts", "Prepare a useful release"],
   },
   {
     code: "03",
-    title: "Product-scale delivery",
-    description:
-      "Move from an early product signal to a durable software foundation without losing technical clarity.",
+    slug: "mobile-app-development",
+    title: "Mobile App Development",
+    summary: "Mobile product experiences for the moments that need to happen away from the desk.",
+    description: "We design and develop mobile experiences around the constraints of real environments, including context, speed, usability, and reliable handoff to the wider system.",
+    tags: ["Mobile UX", "Cross-platform", "Field workflows", "Product releases"],
+    deliverables: ["Mobile experience design", "Cross-platform build plan", "System and API integration", "Release preparation"],
+    process: ["Understand the mobile moment", "Prototype the task flow", "Build the connected application", "Prepare the release path"],
+  },
+  {
+    code: "04",
+    slug: "cloud-devops",
+    title: "Cloud & DevOps",
+    summary: "Software foundations that make a product safer to change, observe, and operate.",
+    description: "We shape the delivery environment around the product’s real needs: dependable deployment, clear operational signals, and an architecture that can grow without obscuring risk.",
+    tags: ["Cloud delivery", "Deployment", "Observability", "Engineering practice"],
+    deliverables: ["Delivery environment assessment", "Deployment workflow design", "Operational visibility plan", "Platform change roadmap"],
+    process: ["Assess the current foundation", "Make delivery repeatable", "Expose the useful signals", "Create room for the next change"],
   },
 ] as const;
+
+export const publicProducts: readonly PublicProduct[] = [];
+export const publicOffers: readonly OfferListing[] = [];
+
+export function getService(slug?: string) {
+  return services.find((service) => service.slug === slug);
+}
+
+export function getPublicProduct(slug?: string) {
+  return publicProducts.find((product) => product.slug === slug && product.public);
+}
 
 export const principles = [
   {

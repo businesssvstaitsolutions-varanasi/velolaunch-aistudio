@@ -2,6 +2,8 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navigation } from "@/components/Navigation";
 import { ConsultationForm } from "@/components/ConsultationForm";
+import { ServiceCard } from "@/components/ServiceCard";
+import { SiteFooter } from "@/components/SiteFooter";
 import { principles, services, siteConfig } from "@/content/site";
 
 export default function Home() {
@@ -36,15 +38,7 @@ export default function Home() {
             <h2 id="services-title">The work is connected on purpose.</h2>
           </header>
           <div className="capabilities-layout">
-            <div className="capability-list">
-              {services.map((service) => (
-                <article className="capability-row" key={service.code}>
-                  <span>{service.code}</span>
-                  <div><h3>{service.title}</h3><p>{service.description}</p></div>
-                  <ArrowUpRight size={17} aria-hidden="true" />
-                </article>
-              ))}
-            </div>
+            <div className="capability-list service-card-stack">{services.map((service) => <ServiceCard service={service} key={service.slug} />)}</div>
             <figure className="editorial-inset-image">
               <img src={siteConfig.assets.supportVertical} alt="VeloLaunch product-development artwork showing a luminous portal and product systems." loading="lazy" />
               <figcaption>VeloLaunch / product development field</figcaption>
@@ -52,9 +46,14 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="products" className="editorial-section home-products" aria-labelledby="products-title">
+          <header className="section-heading"><p className="section-tag">04 — Our products</p><h2 id="products-title">Published when the product is ready to be evaluated.</h2></header>
+          <div className="home-products-panel"><p>VeloLaunch product records, availability, and offer terms are released only when they are approved for the people making the next decision.</p><div><a className="button-ink focus-ring" href="/products">Explore our products <ArrowUpRight size={16} aria-hidden="true" /></a><a className="editorial-text-link focus-ring" href="/offers">View the offer board <ArrowUpRight size={15} aria-hidden="true" /></a></div></div>
+        </section>
+
         <section id="principles" className="editorial-section principles-section" aria-labelledby="principles-title">
           <header className="section-heading">
-            <p className="section-tag">03 — Principles</p>
+            <p className="section-tag">05 — Principles</p>
             <h2 id="principles-title">Clarity is a technical decision.</h2>
           </header>
           <div className="principles-grid">
@@ -78,7 +77,7 @@ export default function Home() {
         <section id="company" className="editorial-company" aria-labelledby="company-title">
           <figure className="company-image"><img src={siteConfig.assets.launchTable} alt="A dark engineering workstation with precision-made product artifacts." loading="lazy" /><figcaption>VL / Product material study</figcaption></figure>
           <div className="company-copy">
-            <p className="section-tag">04 — Company</p>
+            <p className="section-tag">06 — Company</p>
             <h2 id="company-title">Less theater. More product.</h2>
             <p>VeloLaunch is an AI-first software development company by {siteConfig.parent}. We partner with leaders who need a considered product direction, a capable system, and a path to durable delivery.</p>
             <a className="editorial-text-link focus-ring" href="#contact">Bring us the hard problem <ArrowRight size={15} aria-hidden="true" /></a>
@@ -87,7 +86,7 @@ export default function Home() {
 
         <section id="contact" className="editorial-contact" aria-labelledby="contact-title">
           <div>
-            <p className="section-tag">05 — Start here</p>
+            <p className="section-tag">07 — Start here</p>
             <h2 id="contact-title">A useful next conversation starts with the truth.</h2>
             <p>Tell us what needs to become real. We will use the next conversation to understand the decision, the system, and the work in front of you.</p>
           </div>
@@ -95,11 +94,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="editorial-footer">
-        <span>VeloLaunch — {siteConfig.parent}</span>
-        <a className="focus-ring" href="/operations">Staff access</a>
-        <span>© {new Date().getFullYear()}</span>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 import { COOKIE_NAME } from "@shared/const";
-import { createConsultation, listConsultations, updateConsultationStatus } from "./db";
+import { createConsultation, listConsultations, listPublicProductOffers, updateConsultationStatus } from "./db";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
@@ -45,6 +45,9 @@ export const appRouter = router({
         await updateConsultationStatus(input.id, input.status);
         return { success: true } as const;
       }),
+  }),
+  offers: router({
+    listPublic: publicProcedure.query(() => listPublicProductOffers()),
   }),
 });
 

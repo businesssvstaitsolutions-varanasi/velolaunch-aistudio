@@ -1,6 +1,6 @@
 import { desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { ConsultationStatus, InsertUser, consultations, users } from "../drizzle/schema";
+import { ConsultationStatus, InsertUser, consultations, productOffers, users } from "../drizzle/schema";
 import { ENV } from "./_core/env";
 
 let database: ReturnType<typeof drizzle> | null = null;
@@ -72,4 +72,10 @@ export async function updateConsultationStatus(id: number, status: ConsultationS
   const db = await getDb();
   if (!db) throw new Error("Consultation storage is unavailable");
   await db.update(consultations).set({ status, updatedAt: new Date() }).where(eq(consultations.id, id));
+}
+
+export async function listPublicProductOffers() {
+  const db = await getDb();
+  if (!db) throw new Error("Offer storage is unavailable");
+  return db.select().from(productOffers).where(eq(productOffers.public, 1)).orderBy(desc(productOffers.updatedAt));
 }

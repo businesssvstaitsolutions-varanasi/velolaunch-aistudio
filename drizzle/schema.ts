@@ -23,7 +23,23 @@ export const consultations = mysqlTable("consultations", {
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
 });
 
+export const productOffers = mysqlTable("productOffers", {
+  id: int("id").autoincrement().primaryKey(),
+  productName: varchar("productName", { length: 180 }).notNull(),
+  productSlug: varchar("productSlug", { length: 180 }).notNull().unique(),
+  summary: text("summary").notNull(),
+  askingPrice: varchar("askingPrice", { length: 64 }).notNull(),
+  currency: varchar("currency", { length: 8 }).notNull(),
+  leadingBid: varchar("leadingBid", { length: 64 }),
+  bidCount: int("bidCount").default(0).notNull(),
+  status: mysqlEnum("status", ["open", "review", "closed"]).default("review").notNull(),
+  public: int("public").default(0).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 export type Consultation = typeof consultations.$inferSelect;
 export type ConsultationStatus = Consultation["status"];
+export type ProductOffer = typeof productOffers.$inferSelect;

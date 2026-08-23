@@ -3,9 +3,9 @@ import { Menu, X } from "lucide-react";
 import { BrandMark } from "@/components/BrandMark";
 
 const links = [
-  { href: "#services", label: "Capabilities" },
-  { href: "#principles", label: "Principles" },
-  { href: "#company", label: "Company" },
+  { href: "/services", label: "Services" },
+  { href: "/products", label: "Products" },
+  { href: "/offers", label: "Offer board" },
 ];
 
 export function Navigation() {
