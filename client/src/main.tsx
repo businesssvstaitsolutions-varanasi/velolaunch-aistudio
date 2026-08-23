@@ -10,7 +10,14 @@ import "./index.css";
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js").catch(error => {
+    let refreshingForWorker = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (refreshingForWorker) return;
+      refreshingForWorker = true;
+      window.location.reload();
+    });
+
+    navigator.serviceWorker.register("/sw.js", { updateViaCache: "none" }).catch(error => {
       console.warn("[PWA] Service worker registration failed", error);
     });
   });

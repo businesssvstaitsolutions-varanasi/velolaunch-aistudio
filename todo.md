@@ -122,3 +122,10 @@
 - [x] Inspect and correct the technology-logo marquee so it visibly moves right to left.
 - [x] Add manifest, app icons, and service-worker registration for an installable PWA.
 - [x] Validate marquee direction, installation metadata, offline fallback, and production build before checkpointing.
+
+# Deterministic Marquee Correction
+
+- [x] Diagnose why the current live technology ticker can appear static.
+- [x] Replace the ticker motion with a deterministic right-to-left implementation.
+- [x] Directly verify visible desktop and mobile marquee movement before checkpointing.
+- [x] Add a narrow-cycle test confirming continued leftward deterministic movement at mobile-sized widths.

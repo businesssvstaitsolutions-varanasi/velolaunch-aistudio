@@ -22,7 +22,7 @@ describe("PWA installation assets", () => {
   it("provides a service worker with a cached navigation fallback", () => {
     const worker = readPublicFile("sw.js");
 
-    expect(worker).toContain('const CACHE_NAME = "velolaunch-shell-v1"');
+    expect(worker).toContain('const CACHE_NAME = "velolaunch-shell-v2"');
     expect(worker).toContain('request.mode === "navigate"');
     expect(worker).toContain('caches.match("/")');
   });

@@ -99,7 +99,8 @@
 .technology-marquee-track {
   width: max-content;
   gap: 0;
-  animation: technology-ticker 18s linear infinite;
+  animation: none !important;
+  transform: translate3d(0, 0, 0);
   will-change: transform;
 }
 

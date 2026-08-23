@@ -5,7 +5,8 @@ import { ConsultationForm } from "@/components/ConsultationForm";
 import { CompanyVideo } from "@/components/CompanyVideo";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SiteFooter } from "@/components/SiteFooter";
-import { principles, services, siteConfig, technologyEcosystem } from "@/content/site";
+import { TechnologyMarquee } from "@/components/TechnologyMarquee";
+import { principles, services, siteConfig } from "@/content/site";
 
 export default function Home() {
   return (
@@ -51,11 +52,7 @@ export default function Home() {
 
         <section id="ecosystem" className="technology-ecosystem" aria-labelledby="ecosystem-title">
           <div className="technology-ecosystem-head"><p className="section-tag">03 — Technology ecosystem</p><p id="ecosystem-title">Examples of the tools we evaluate for product work. Names are shown for context only; they do not imply partnership or endorsement.</p></div>
-          <div className="technology-marquee" aria-label="Technology ecosystem examples">
-            <div className="technology-marquee-track">
-              {[0, 1].map((setIndex) => <div className="technology-marquee-set" aria-hidden={setIndex === 1 ? "true" : undefined} key={setIndex}>{technologyEcosystem.map((brand) => <span className="technology-logo" role="img" aria-label={brand.name} key={brand.name}><img src={brand.logo} alt="" /></span>)}</div>)}
-            </div>
-          </div>
+          <TechnologyMarquee />
         </section>
 
         <section id="products" className="editorial-section home-products" aria-labelledby="products-title">

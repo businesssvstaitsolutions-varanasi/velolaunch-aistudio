@@ -9,3 +9,5 @@ After reload, the service worker was active and controlling the page. The live p
 The active cache is `velolaunch-shell-v1`. Both the homepage shell and manifest were present in the cache while the page was controlled by the service worker, confirming the configured offline navigation fallback is ready after installation.
 
 The final live animation check compared the marquee transform over 500 milliseconds: it advanced from -40.4191px to -61.6332px while reduced motion was disabled, explicitly confirming continuous right-to-left movement.
+
+The deterministic replacement was verified independently of CSS animation: the marquee's inline transform advanced from `translate3d(-550.33px, 0px, 0px)` to `translate3d(-605.981px, 0px, 0px)` over 600 milliseconds, while computed CSS animation was `none`. This confirms requestAnimationFrame is directly producing visible leftward movement.
