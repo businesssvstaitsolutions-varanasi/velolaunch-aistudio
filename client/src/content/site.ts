@@ -33,7 +33,7 @@ export const siteConfig = {
   launchMode: "PRELAUNCH" as LaunchMode,
   contactPath: "#contact",
   assets: {
-    mark: "/manus-storage/VeloLaunch_82dd907a.ico",
+    mark: "/manus-storage/velolaunch-logo-transparent-trimmed_9c5c5059.png",
     heroArtwork: "/manus-storage/velolaunch-hero-artwork_6ca194d6.png",
     supportVertical: "/manus-storage/velolaunch-support-vertical_3a1d25eb.png",
     supportHorizon: "/manus-storage/velolaunch-support-horizon_531822cd.png",

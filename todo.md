@@ -44,3 +44,9 @@
 - [x] Stage the two newly supplied VeloLaunch visuals as managed website assets.
 - [x] Add the supporting visuals to complementary homepage sections without replacing the hero artwork.
 - [x] Verify the updated visual hierarchy on desktop and mobile before checkpointing.
+
+# Transparent Logo Update
+
+- [x] Stage the supplied transparent VeloLaunch logo as a managed website asset.
+- [x] Replace the header mark and browser favicon with the transparent logo.
+- [x] Verify the updated logo presentation and production build before checkpointing.
