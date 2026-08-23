@@ -619,6 +619,9 @@
 
 @media (min-width: 701px) { .products-forthcoming > header { display: grid; grid-template-columns: minmax(0, 1fr); }.product-discovery-controls { grid-column: 1 / -1; justify-content: flex-end; width: 100%; } }
 
+/* Opening-statement refinement: compact the editorial block without compromising its rail hierarchy. */
+@media (min-width: 1100px) { .editorial-statement { align-items: start; min-height: 0; padding-top: clamp(2.75rem, 4vw, 4.2rem); padding-bottom: clamp(2.75rem, 4vw, 4.2rem); }.editorial-statement-aside { min-height: clamp(10rem, 12vw, 13rem); }.editorial-statement-main { gap: clamp(1.15rem, 1.8vw, 1.65rem); }.editorial-statement-summary { max-width: 33rem; } }
+
 /* Opening-statement repair: preserve the editorial rail while tightening headline-to-summary rhythm. */
 .editorial-statement { align-items: stretch; min-height: 0; padding-top: clamp(4.25rem, 6vw, 6.4rem); padding-bottom: clamp(4.25rem, 6vw, 6.4rem); }
 .editorial-statement-main { display: grid; align-content: start; gap: clamp(1.6rem, 3vw, 2.8rem); }

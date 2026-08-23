@@ -15,6 +15,8 @@ describe("opening editorial statement", () => {
     expect(styles).toContain(".editorial-statement-main { display: grid;");
     expect(styles).toContain("grid-template-columns: minmax(0, 1fr) minmax(16rem, 29rem)");
     expect(styles).toContain(".editorial-statement-summary { margin-top: 0; }");
+    expect(styles).toContain(".editorial-statement-aside { min-height: clamp(10rem, 12vw, 13rem);");
+    expect(styles).toContain(".editorial-statement-main { gap: clamp(1.15rem, 1.8vw, 1.65rem);");
     expect(styles).toContain("@media (max-width: 700px)");
   });
 });

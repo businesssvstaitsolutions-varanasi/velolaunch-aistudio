@@ -316,3 +316,9 @@
 - [x] Inspect the existing category-filter control and responsive Products-page layout.
 - [x] Add accessible keyword search that combines with category filtering.
 - [x] Verify search results, no-results state, mobile layout, and quality checks before checkpointing.
+
+# Opening Statement Composition Refinement
+
+- [x] Inspect the rail, headline, and supporting-copy geometry shown in the latest supplied reference.
+- [x] Rebalance the desktop opening-statement columns and vertical rhythm.
+- [x] Verify wide desktop and mobile layouts, then run quality checks before checkpointing.
