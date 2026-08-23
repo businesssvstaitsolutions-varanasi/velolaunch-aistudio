@@ -86,3 +86,9 @@
 - [x] Make the header logo return visitors reliably to the main homepage.
 - [x] Add an accessible auto-moving technology ecosystem marquee with contextual brand names and no partnership implication.
 - [x] Verify the refined homepage and service-return behavior across desktop and mobile before checkpointing.
+
+# Full-Width Company Video
+
+- [x] Reflow the company section so the supplied video can span the full available width.
+- [x] Preserve the supplied video’s native aspect ratio without cropping or forced cover behavior.
+- [x] Verify the full-width video and supporting company copy on desktop and mobile before checkpointing.

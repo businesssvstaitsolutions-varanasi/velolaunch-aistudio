@@ -87,14 +87,14 @@ export default function Home() {
           </figure>
         </section>
 
-        <section id="company" className="editorial-company" aria-labelledby="company-title">
-          <CompanyVideo src={siteConfig.assets.companyVideo} />
+        <section id="company" className="company-feature" aria-labelledby="company-title">
           <div className="company-copy">
             <p className="section-tag">06 — Company</p>
             <h2 id="company-title">Less theater. More product.</h2>
             <p>VeloLaunch is an AI-first software development company by {siteConfig.parent}. We partner with leaders who need a considered product direction, a capable system, and a path to durable delivery.</p>
             <a className="editorial-text-link focus-ring" href="#contact">Bring us the hard problem <ArrowRight size={15} aria-hidden="true" /></a>
           </div>
+          <CompanyVideo src={siteConfig.assets.companyVideo} />
         </section>
 
         <section id="contact" className="editorial-contact" aria-labelledby="contact-title">
