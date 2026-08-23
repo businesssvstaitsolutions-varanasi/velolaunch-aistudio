@@ -66,3 +66,8 @@
 - [x] Add a database-backed public offer-listing model with no seeded product or bid records.
 - [x] Create a professional footer and connect primary, service, product, and offer-board navigation.
 - [x] Validate all new routes, responsive layouts, and bid-board interaction safeguards before checkpointing.
+
+# Header Logo Sizing
+
+- [x] Increase the VeloLaunch header logo slightly without disrupting the title or attribution.
+- [x] Verify the adjusted lockup on desktop and mobile before checkpointing.
