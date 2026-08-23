@@ -65,3 +65,7 @@ With user confirmation, `velolaunch@gmail.com` was submitted for the default Ape
 The refined footer was reviewed at 1280px desktop and 375px mobile widths. Desktop presents a branded rail, refined link groups, and a clear baseline; mobile preserves the same content in a legible stacked layout with two-column navigation where space permits.
 
 Direct live footer inspection confirmed the branded rail, start-conversation CTA, all three link groups, and baseline are present at both 1280px desktop and 375px mobile widths. Desktop resolves three link columns and a three-part baseline, while mobile resolves the intended two-column link grid and stacked baseline.
+
+The Principles headline was reviewed at 1280px and 375px widths. It remains on one uninterrupted line across the desktop heading track, while mobile continues to wrap naturally without overflow.
+
+Direct browser measurement confirmed the headline uses one 51.7px line within a 977px desktop track at 1280px width, with no overflow. At 375px mobile width, it uses two readable 42.3px lines and still fits its 338px content track.

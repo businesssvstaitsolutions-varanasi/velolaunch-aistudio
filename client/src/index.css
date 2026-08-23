@@ -517,3 +517,5 @@
 .footer-baseline a:hover { color: #a9c8ff; }
 @media (max-width: 760px) { .site-footer-pro { padding: 0 1.2rem; }.footer-content { grid-template-columns: 1fr; gap: 2.6rem; padding: 2.5rem 0; }.footer-links { gap: 1.3rem; }.footer-baseline { grid-template-columns: 1fr; gap: 0.55rem; }.footer-baseline > span:nth-child(2), .footer-baseline a { justify-self: start; }.footer-rail { align-items: flex-start; flex-direction: column; gap: 0.7rem; } }
 @media (max-width: 480px) { .footer-links { grid-template-columns: 1fr 1fr; }.footer-link-group:last-child { grid-column: 1 / -1; }.footer-brand-lockup strong { font-size: 1.26rem; } }
+
+@media (min-width: 1100px) { .principles-section .section-heading { grid-template-columns: 12rem minmax(0, 1fr); }.principles-section .section-heading h2 { max-width: none; font-size: clamp(2.5rem, 4.3vw, 4.4rem); white-space: nowrap; } }

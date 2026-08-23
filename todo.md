@@ -236,3 +236,10 @@
 - [x] Refine the footer into a more professional high-quality closing experience without adding unapproved claims.
 - [x] Validate desktop and mobile footer layout, navigation, and quality checks before checkpointing.
 - [x] Directly inspect the branded rail, link groups, CTA, and baseline in true desktop and mobile browser viewports.
+
+# Principles Headline Continuity
+
+- [x] Inspect the Principles section headline sizing and line-wrap rule.
+- [x] Keep “Clarity is a technical decision.” on one line at desktop width.
+- [x] Validate desktop continuity and mobile readability before checkpointing.
+- [x] Directly measure desktop single-line continuity and mobile wrapping in live browser viewports.
