@@ -104,3 +104,9 @@
 - [x] Audit the public homepage on desktop and mobile to identify remaining unintended blank spaces.
 - [x] Tighten the affected section spacing without compromising readable hierarchy or the full-width company video.
 - [x] Verify the refined layout and production build before checkpointing.
+
+# Marquee Motion and Intro Statement Correction
+
+- [x] Inspect and restore continuous automatic movement for the technology-logo marquee.
+- [x] Recompose the introductory statement to remove the unused gap shown in the supplied reference.
+- [x] Validate marquee motion and introductory spacing on desktop and mobile before checkpointing.

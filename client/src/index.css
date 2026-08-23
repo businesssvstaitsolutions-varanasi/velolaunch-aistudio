@@ -66,11 +66,21 @@
 
 .editorial-statement {
   align-items: start;
-  row-gap: 1.15rem;
+  column-gap: clamp(1.5rem, 4vw, 4rem);
+  row-gap: 0;
 }
 
-.editorial-statement > p:last-child {
-  align-self: start;
+.editorial-statement-aside {
+  display: grid;
+  align-content: start;
+  gap: clamp(1.5rem, 3vw, 2.75rem);
+}
+
+.editorial-statement-summary {
+  max-width: 31rem;
+  color: #4a4945;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .section-heading {
@@ -84,6 +94,10 @@
 .technology-ecosystem {
   padding-top: clamp(2.25rem, 3.5vw, 3.25rem);
   padding-bottom: clamp(2.25rem, 3.5vw, 3.25rem);
+}
+
+.technology-marquee-track {
+  animation-duration: 22s;
 }
 
 .editorial-art-interlude {
@@ -112,6 +126,10 @@
 
   .section-heading {
     margin-bottom: 1.5rem;
+  }
+
+  .editorial-statement-aside {
+    gap: 1.25rem;
   }
 
   .technology-ecosystem {
