@@ -45,6 +45,13 @@ export type PublicProduct = {
   public: boolean;
 };
 
+export type ForthcomingProduct = {
+  slug: string;
+  title: string;
+  description: string;
+  category: "Browser" | "Finance" | "Education" | "Productivity";
+};
+
 export type OfferListing = {
   productSlug: string;
   askingPrice: string;
@@ -163,24 +170,38 @@ export const services: readonly Service[] = [
 export const publicProducts: readonly PublicProduct[] = [];
 export const publicOffers: readonly OfferListing[] = [];
 
-export const forthcomingHomepageProducts = [
+export const forthcomingProducts = [
   {
+    slug: "apex-turbo-smart-tab-organizer",
     title: "Apex Turbo Smart Tab Organizer and Memory Saver",
     description: "A forthcoming browser companion designed to organize active tabs and keep working sessions easier to manage.",
+    category: "Browser",
   },
   {
+    slug: "finaura-ai-finance-vault",
     title: "FinAura AI - Powered Finance Vault",
     description: "A forthcoming finance workspace for bringing important financial records and AI-assisted guidance into one private vault.",
+    category: "Finance",
   },
   {
+    slug: "plutolearn-ai-edtech-platform",
     title: "PlutoLearn AI - Powered EdTech Platform",
     description: "A forthcoming learning platform for structured study, progress guidance, and AI-assisted educational experiences.",
+    category: "Education",
   },
   {
+    slug: "velotools-powerful-tools",
     title: "VeloTools - 1000+ Powerful Tools",
     description: "A forthcoming collection of practical tools being prepared to simplify common digital work in one place.",
+    category: "Productivity",
   },
-] as const;
+] as const satisfies readonly ForthcomingProduct[];
+
+export const forthcomingHomepageProducts = forthcomingProducts;
+
+export function getForthcomingProduct(slug?: string) {
+  return forthcomingProducts.find((product) => product.slug === slug);
+}
 
 export const technologyEcosystem = [
   { name: "Amazon AWS", logo: "/manus-storage/aws_dd46d96f.png" },

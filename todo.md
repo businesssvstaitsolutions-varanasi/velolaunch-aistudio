@@ -301,3 +301,12 @@
 - [x] Inspect the existing Products route and the supplied four-card visual reference.
 - [x] Render the approved four forthcoming-product cards on the dedicated Products page.
 - [x] Verify desktop/mobile card consistency and run quality checks before checkpointing.
+
+# Product Discovery and Release Notifications
+
+- [x] Inspect existing product routes, waitlist submission flow, and approved forthcoming-product data.
+- [x] Define safe route data and release-notification behavior for all four forthcoming products.
+- [x] Create dedicated forthcoming-product detail pages with clear pre-release disclosures.
+- [x] Add Notify Me actions to product cards that capture interest for the selected product.
+- [x] Add accessible category filters to the Products page without fabricating product metadata.
+- [x] Verify routes, filters, notification capture, responsive layout, and quality checks before checkpointing.

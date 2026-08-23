@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 
 const home = readFileSync("client/src/pages/Home.tsx", "utf8");
 const content = readFileSync("client/src/content/site.ts", "utf8");
+const card = readFileSync("client/src/components/ForthcomingProductCard.tsx", "utf8");
 const styles = readFileSync("client/src/index.css", "utf8");
 
 describe("forthcoming homepage products", () => {
@@ -11,8 +12,9 @@ describe("forthcoming homepage products", () => {
     expect(content).toContain("FinAura AI - Powered Finance Vault");
     expect(content).toContain("PlutoLearn AI - Powered EdTech Platform");
     expect(content).toContain("VeloTools - 1000+ Powerful Tools");
-    expect(home).toContain("Releasing Soon");
+    expect(home).toContain("ForthcomingProductCard");
     expect(home).toContain("forthcomingHomepageProducts.map");
+    expect(card).toContain("Releasing Soon");
   });
 
   it("uses four horizontal desktop cards with responsive wrapping", () => {

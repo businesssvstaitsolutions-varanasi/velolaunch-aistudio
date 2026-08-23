@@ -2,14 +2,16 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 const productsPage = readFileSync("client/src/pages/Products.tsx", "utf8");
+const card = readFileSync("client/src/components/ForthcomingProductCard.tsx", "utf8");
 const styles = readFileSync("client/src/index.css", "utf8");
 
 describe("dedicated Products page forthcoming cards", () => {
   it("reuses the approved homepage forthcoming-product records with safe release status", () => {
-    expect(productsPage).toContain("forthcomingHomepageProducts");
+    expect(productsPage).toContain("forthcomingProducts");
     expect(productsPage).toContain("products-forthcoming-grid");
-    expect(productsPage).toContain("VeloLaunch product");
-    expect(productsPage).toContain("Releasing Soon");
+    expect(productsPage).toContain("ForthcomingProductCard");
+    expect(card).toContain("VeloLaunch product");
+    expect(card).toContain("Releasing Soon");
   });
 
   it("uses the shared four-card layout and provides a mobile-safe route presentation", () => {
