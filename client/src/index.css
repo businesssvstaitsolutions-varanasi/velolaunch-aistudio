@@ -596,6 +596,13 @@
 .desktop-nav .nav-cta { flex: 0 0 auto; justify-self: auto; }
 @media (max-width: 850px) { .site-nav { grid-template-columns: minmax(0, 1fr) auto; }.desktop-nav { display: none; } }
 
+/* Opening-statement repair: preserve the editorial rail while tightening headline-to-summary rhythm. */
+.editorial-statement { align-items: stretch; min-height: 0; padding-top: clamp(4.25rem, 6vw, 6.4rem); padding-bottom: clamp(4.25rem, 6vw, 6.4rem); }
+.editorial-statement-main { display: grid; align-content: start; gap: clamp(1.6rem, 3vw, 2.8rem); }
+.editorial-statement-summary { margin-top: 0; }
+@media (min-width: 1100px) { .editorial-statement-main { grid-template-columns: minmax(0, 1fr) minmax(16rem, 29rem); }.editorial-statement-main h2 { grid-column: 1 / -1; }.editorial-statement-summary { grid-column: 2; justify-self: end; } }
+@media (max-width: 700px) { .editorial-statement-main { grid-template-columns: 1fr; gap: 1.65rem; }.editorial-statement-summary { margin-top: 0; } }
+
 .home-products .section-heading { margin-bottom: clamp(2.9rem, 5vw, 4.6rem); }
 .home-products .home-product-grid { gap: clamp(1.2rem, 1.9vw, 1.75rem); border-top: 0; padding-top: 0; }
 .home-products .forthcoming-product-card { min-height: 17rem; padding: clamp(1.2rem, 1.8vw, 1.65rem); }

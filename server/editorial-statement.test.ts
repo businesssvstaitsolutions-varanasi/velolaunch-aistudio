@@ -13,6 +13,8 @@ describe("opening editorial statement", () => {
 
   it("uses balanced desktop and mobile statement compositions", () => {
     expect(styles).toContain(".editorial-statement-main { display: grid;");
+    expect(styles).toContain("grid-template-columns: minmax(0, 1fr) minmax(16rem, 29rem)");
+    expect(styles).toContain(".editorial-statement-summary { margin-top: 0; }");
     expect(styles).toContain("@media (max-width: 700px)");
   });
 });

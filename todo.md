@@ -289,3 +289,9 @@
 - [x] Inspect the desktop header wrap shown in the supplied screenshot and identify the conflicting layout rules.
 - [x] Recompose the desktop header so booking, phone, navigation, and CTA remain on one balanced row.
 - [x] Verify desktop and mobile header behavior, then run the quality checks before checkpointing.
+
+# Opening Statement Layout Regression
+
+- [x] Inspect the excessive blank space shown between the opening-statement headline and supporting copy.
+- [x] Rebalance the desktop statement grid and rail so the composition is intentional and compact.
+- [x] Verify wide desktop and mobile statement layouts, then run quality checks before checkpointing.
