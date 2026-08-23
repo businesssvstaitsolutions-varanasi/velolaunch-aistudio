@@ -47,6 +47,18 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="ecosystem" className="technology-ecosystem" aria-labelledby="ecosystem-title">
+          <div className="technology-ecosystem-head"><p className="section-tag">03 — Technology ecosystem</p><p id="ecosystem-title">Examples of the tools we evaluate for product work. Names are shown for context only; they do not imply partnership or endorsement.</p></div>
+          <div className="technology-marquee" aria-label="Technology ecosystem examples">
+            <div className="technology-marquee-track">
+              {[
+                "Amazon AWS", "Google GCP", "Oracle Cloud", "GitHub Copilot", "Windsurf", "Cursor", "Manus AI", "Anthropic", "Google DeepMind",
+                "Amazon AWS", "Google GCP", "Oracle Cloud", "GitHub Copilot", "Windsurf", "Cursor", "Manus AI", "Anthropic", "Google DeepMind",
+              ].map((name, index) => <span key={`${name}-${index}`}>{name}</span>)}
+            </div>
+          </div>
+        </section>
+
         <section id="products" className="editorial-section home-products" aria-labelledby="products-title">
           <header className="section-heading"><p className="section-tag">04 — Our products</p><h2 id="products-title">Published when the product is ready to be evaluated.</h2></header>
           <div className="home-products-panel"><p>VeloLaunch product records, availability, and offer terms are released only when they are approved for the people making the next decision.</p><div><a className="button-ink focus-ring" href="/products">Explore our products <ArrowUpRight size={16} aria-hidden="true" /></a><a className="editorial-text-link focus-ring" href="/offers">View the offer board <ArrowUpRight size={15} aria-hidden="true" /></a></div></div>

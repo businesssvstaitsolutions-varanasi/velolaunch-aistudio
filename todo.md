@@ -77,3 +77,12 @@
 - [x] Stage the supplied company-section video as a managed website asset.
 - [x] Replace the “Less theater. More product.” still image with in-view video playback and an audible-autoplay fallback.
 - [x] Verify the company video placement and responsive behavior before checkpointing.
+
+# Homepage Flow and Technology Marquee
+
+- [x] Tighten excessive homepage section whitespace without reducing readable hierarchy.
+- [x] Correct the homepage section sequence so labels remain continuous and intentional.
+- [x] Route the “All services” detail-page return action to the main homepage services section.
+- [x] Make the header logo return visitors reliably to the main homepage.
+- [x] Add an accessible auto-moving technology ecosystem marquee with contextual brand names and no partnership implication.
+- [x] Verify the refined homepage and service-return behavior across desktop and mobile before checkpointing.
