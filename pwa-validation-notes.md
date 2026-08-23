@@ -61,3 +61,7 @@ The combined forthcoming-product cards and waitlist form were reviewed on deskto
 The waitlist success path is covered through an isolated tRPC mutation test, which confirms a valid email and product selection are forwarded to waitlist storage without adding test records to the live database. Invalid-email feedback is browser-tested and honeypot rejection is schema-tested.
 
 With user confirmation, `velolaunch@gmail.com` was submitted for the default Apex Turbo Smart Tab Organizer and Memory Saver selection. The live form displayed its interest-list success message. A separate live submission with the hidden honeypot populated was rejected and displayed the generic retry message, without creating an interest record.
+
+The refined footer was reviewed at 1280px desktop and 375px mobile widths. Desktop presents a branded rail, refined link groups, and a clear baseline; mobile preserves the same content in a legible stacked layout with two-column navigation where space permits.
+
+Direct live footer inspection confirmed the branded rail, start-conversation CTA, all three link groups, and baseline are present at both 1280px desktop and 375px mobile widths. Desktop resolves three link columns and a three-part baseline, while mobile resolves the intended two-column link grid and stacked baseline.
