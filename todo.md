@@ -204,3 +204,9 @@
 - [x] Center each capability-tag group inside its service card across breakpoints.
 - [x] Validate desktop and mobile tag alignment, then run quality checks before checkpointing.
 - [x] Directly confirm centered tag-row geometry in live desktop and mobile service cards.
+
+# Forthcoming Homepage Products
+
+- [x] Inspect the current homepage Products section and preserve its existing heading and navigation.
+- [x] Add four horizontal forthcoming-product cards with supplied titles, concise descriptions, and “Releasing Soon” status labels.
+- [x] Validate the product-card grid, statuses, and responsive layout before checkpointing.

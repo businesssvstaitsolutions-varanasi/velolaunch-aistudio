@@ -465,5 +465,14 @@
   .website-chatbot-messages { max-height: 16.5rem; }
   .website-chatbot-launcher { padding: 0.72rem 0.85rem; }
 }
-
 .service-card-tags { justify-content: center; }
+
+.home-product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; border-top: 1px solid var(--ink); margin-top: 1.5rem; padding-top: 1rem; }
+.forthcoming-product-card { display: grid; align-content: space-between; min-height: 15rem; border: 1px solid var(--ink); background: #111214; color: #f4f4f0; padding: 1.1rem; }
+.forthcoming-product-card-head { display: flex; align-items: start; justify-content: space-between; gap: 0.7rem; color: #a9c8ff; font: 500 0.52rem/1.2 "DM Mono", monospace; letter-spacing: 0.045em; text-transform: uppercase; }
+.forthcoming-product-card-head strong { flex: none; border: 1px solid rgb(169 200 255 / 0.46); border-radius: 999px; color: #dbe9ff; padding: 0.26rem 0.38rem; font: inherit; white-space: nowrap; }
+.forthcoming-product-card h3 { max-width: 15ch; font-size: clamp(1.05rem, 1.45vw, 1.35rem); font-weight: 600; letter-spacing: -0.045em; line-height: 1; }
+.forthcoming-product-card p { margin-top: 0.8rem; color: #a9acb2; font-size: 0.75rem; line-height: 1.55; }
+.home-products-panel { margin-top: 1.5rem; }
+@media (max-width: 1024px) { .home-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .home-product-grid { grid-template-columns: 1fr; gap: 0.7rem; }.forthcoming-product-card { min-height: 11.5rem; }.forthcoming-product-card h3 { max-width: 23ch; } }

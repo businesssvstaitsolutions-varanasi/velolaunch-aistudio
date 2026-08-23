@@ -7,7 +7,7 @@ import { CallbackPopup } from "@/components/CallbackPopup";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SiteFooter } from "@/components/SiteFooter";
 import { TechnologyMarquee } from "@/components/TechnologyMarquee";
-import { principles, services, siteConfig } from "@/content/site";
+import { forthcomingHomepageProducts, principles, services, siteConfig } from "@/content/site";
 
 export default function Home() {
   return (
@@ -58,6 +58,20 @@ export default function Home() {
 
         <section id="products" className="editorial-section home-products" aria-labelledby="products-title">
           <header className="section-heading"><p className="section-tag">04 — Our products</p><h2 id="products-title">Published when the product is ready to be evaluated.</h2></header>
+          <div className="home-product-grid" aria-label="Forthcoming products">
+            {forthcomingHomepageProducts.map((product) => (
+              <article className="forthcoming-product-card" key={product.title}>
+                <div className="forthcoming-product-card-head">
+                  <span>VeloLaunch product</span>
+                  <strong>Releasing Soon</strong>
+                </div>
+                <div>
+                  <h3>{product.title}</h3>
+                  <p>{product.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
           <div className="home-products-panel"><p>VeloLaunch product records, availability, and offer terms are released only when they are approved for the people making the next decision.</p><div><a className="button-ink focus-ring" href="/products">Explore our products <ArrowUpRight size={16} aria-hidden="true" /></a><a className="editorial-text-link focus-ring" href="/offers">View the offer board <ArrowUpRight size={15} aria-hidden="true" /></a></div></div>
         </section>
 

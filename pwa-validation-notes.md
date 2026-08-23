@@ -43,3 +43,5 @@ The technology ecosystem now uses a static grid rather than animated panels. Liv
 The service-card capability tags now use centered wrapped alignment. Desktop review confirmed the tag clusters sit at the visual center of each dark service card, and the 375px mobile review confirmed their wrapped rows remain centered and legible.
 
 Direct live geometry checks confirmed the shared tag groups use `justify-content: center`. At both 375px mobile width and 1280px desktop width, all four service cards reported zero-pixel row-center offsets for every wrapped tag line.
+
+The homepage Products section now presents the four supplied forthcoming products. Desktop review confirmed a four-card horizontal row with a visible Releasing Soon label per card; the 375px mobile review confirmed the cards stack cleanly with their titles, descriptions, and statuses retained.

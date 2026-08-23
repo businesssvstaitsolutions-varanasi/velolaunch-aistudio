@@ -163,6 +163,25 @@ export const services: readonly Service[] = [
 export const publicProducts: readonly PublicProduct[] = [];
 export const publicOffers: readonly OfferListing[] = [];
 
+export const forthcomingHomepageProducts = [
+  {
+    title: "Apex Turbo Smart Tab Organizer and Memory Saver",
+    description: "A forthcoming browser companion designed to organize active tabs and keep working sessions easier to manage.",
+  },
+  {
+    title: "FinAura AI - Powered Finance Vault",
+    description: "A forthcoming finance workspace for bringing important financial records and AI-assisted guidance into one private vault.",
+  },
+  {
+    title: "PlutoLearn AI - Powered EdTech Platform",
+    description: "A forthcoming learning platform for structured study, progress guidance, and AI-assisted educational experiences.",
+  },
+  {
+    title: "VeloTools - 1000+ Powerful Tools",
+    description: "A forthcoming collection of practical tools being prepared to simplify common digital work in one place.",
+  },
+] as const;
+
 export const technologyEcosystem = [
   { name: "Amazon AWS", logo: "/manus-storage/aws_dd46d96f.png" },
   { name: "Google Cloud", logo: "/manus-storage/gcp_20cad8d6.svg" },
