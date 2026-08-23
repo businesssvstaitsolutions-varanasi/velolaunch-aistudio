@@ -191,3 +191,9 @@
 - [x] Directly inspect desktop and mobile fade moments to confirm exactly five logos remain framed throughout the cycle.
 - [x] Re-run the type check, tests, and production build before checkpointing.
 - [x] Freeze the final crossfade at its midpoint on a mobile viewport and confirm the five-slot frame remains aligned.
+
+# Static Technology Logo Layout
+
+- [x] Review the marquee integration and retain the ten approved technology logos.
+- [x] Replace marquee behavior with a stable, non-animated all-ten-logo presentation.
+- [x] Validate all logo visibility on desktop and mobile, then run quality checks before checkpointing.
