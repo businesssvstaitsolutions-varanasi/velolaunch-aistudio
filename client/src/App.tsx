@@ -4,6 +4,8 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { WebsiteChatbot } from "@/components/WebsiteChatbot";
+import { SmoothHashScroll } from "@/components/SmoothHashScroll";
+import About from "@/pages/About";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -15,6 +17,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Products from "./pages/Products";
 import ServiceDetail from "./pages/ServiceDetail";
 import Services from "./pages/Services";
+import WhyVeloLaunch from "./pages/WhyVeloLaunch";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -26,6 +29,8 @@ function Router() {
       <Route path="/products" component={Products} />
       <Route path="/products/:slug" component={ProductDetail} />
       <Route path="/offers" component={Offers} />
+      <Route path="/why-velolaunch" component={WhyVeloLaunch} />
+      <Route path="/about" component={About} />
       <Route path="/operations" component={Operations} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
@@ -41,6 +46,7 @@ function App() {
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
+          <SmoothHashScroll />
           <Router />
           {location !== "/operations" ? <WebsiteChatbot /> : null}
         </TooltipProvider>

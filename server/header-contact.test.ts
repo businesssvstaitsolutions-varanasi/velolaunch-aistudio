@@ -13,9 +13,9 @@ describe("header phone contact", () => {
   it("includes the requested product, service, company, work, and build navigation entries", () => {
     expect(navigation).toContain('{ href: "/products", label: "Products" }');
     expect(navigation).toContain('{ href: "/services", label: "Services" }');
-    expect(navigation).toContain('{ href: "/#principles", label: "Why VeloLaunch" }');
+    expect(navigation).toContain('{ href: "/why-velolaunch", label: "Why VeloLaunch" }');
     expect(navigation).toContain('{ href: "/#work", label: "Work" }');
-    expect(navigation).toContain('{ href: "/#company", label: "About" }');
+    expect(navigation).toContain('{ href: "/about", label: "About" }');
     expect(navigation).toContain("Let’s Build");
   });
 

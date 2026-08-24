@@ -1,0 +1,8 @@
+import { ArrowRight } from "lucide-react";
+import { Navigation } from "@/components/Navigation";
+import { SiteFooter } from "@/components/SiteFooter";
+import { principles, siteConfig } from "@/content/site";
+
+export default function WhyVeloLaunch() {
+  return <div id="top" className="route-shell"><Navigation /><main className="route-main company-page-main"><section className="route-hero company-route-hero" aria-labelledby="why-title"><p>VeloLaunch / Why VeloLaunch</p><h1 id="why-title">Clarity is a<br /><em>technical decision.</em></h1><span>{siteConfig.positioning}</span></section><section className="company-page-intro" aria-labelledby="why-intro-title"><p className="section-tag">How we think</p><div><h2 id="why-intro-title">Work becomes useful when the operating reality is clear.</h2><p>VeloLaunch brings product thinking, AI systems, and software engineering into a single accountable delivery practice.</p></div></section><section className="company-principles" aria-labelledby="principles-title"><header><p className="section-tag">Working principles</p><h2 id="principles-title">The decisions behind the build.</h2></header><div>{principles.map((principle) => <article key={principle.index}><span>{principle.index}</span><h3>{principle.name}</h3><p>{principle.copy}</p></article>)}</div></section><section className="company-page-cta"><p className="section-tag">Start with the truth</p><h2>Bring us the hard product decision.</h2><a className="detail-primary-link focus-ring" href="/#contact">Let’s Build <ArrowRight size={16} aria-hidden="true" /></a></section></main><SiteFooter /></div>;
+}

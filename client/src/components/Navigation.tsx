@@ -6,9 +6,9 @@ import { BookingModal } from "@/components/BookingModal";
 const links = [
   { href: "/products", label: "Products" },
   { href: "/services", label: "Services" },
-  { href: "/#principles", label: "Why VeloLaunch" },
+  { href: "/why-velolaunch", label: "Why VeloLaunch" },
   { href: "/#work", label: "Work" },
-  { href: "/#company", label: "About" },
+  { href: "/about", label: "About" },
 ];
 
 export function Navigation() {

@@ -328,3 +328,10 @@
 - [x] Inspect current header links and available homepage destinations for the requested labels.
 - [x] Add Products, Services, Why VeloLaunch, Work, About, and Let’s Build to desktop and mobile navigation.
 - [x] Verify destination links, header fit, responsive behavior, and quality checks before checkpointing.
+
+# Dedicated Company Pages and Smooth Navigation
+
+- [x] Inspect current routes, approved company/principle content, and in-page navigation targets.
+- [x] Create dedicated Why VeloLaunch and About pages using approved, non-fabricated material.
+- [x] Route header navigation to the new pages and implement reduced-motion-safe smooth scrolling for on-page links.
+- [x] Verify routes, scrolling behavior, responsive layouts, and quality checks before checkpointing.
