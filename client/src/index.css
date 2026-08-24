@@ -606,6 +606,10 @@
 .desktop-nav .nav-cta { flex: 0 0 auto; justify-self: auto; }
 @media (max-width: 850px) { .site-nav { grid-template-columns: minmax(0, 1fr) auto; }.desktop-nav { display: none; } }
 
+/* Expanded header navigation stays compact before collapsing to the existing mobile menu. */
+.desktop-nav { gap: clamp(0.65rem, 1vw, 1.1rem); }.desktop-nav .nav-links { gap: clamp(0.7rem, 1.1vw, 1.2rem); }.desktop-nav .nav-link { white-space: nowrap; }
+@media (max-width: 1250px) { .nav-phone, .nav-booking { display: none; } }
+
 .products-forthcoming { border-top: 1px solid var(--ink); padding-top: 1rem; }
 .products-forthcoming > header { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 1.5rem; }
 .products-forthcoming > header h2 { max-width: 23rem; font-size: clamp(1.65rem, 3vw, 2.8rem); font-weight: 600; letter-spacing: -0.06em; line-height: 0.9; text-align: right; }

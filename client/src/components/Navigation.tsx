@@ -4,9 +4,11 @@ import { BrandMark } from "@/components/BrandMark";
 import { BookingModal } from "@/components/BookingModal";
 
 const links = [
-  { href: "/services", label: "Services" },
   { href: "/products", label: "Products" },
-  { href: "/offers", label: "Offer board" },
+  { href: "/services", label: "Services" },
+  { href: "/#principles", label: "Why VeloLaunch" },
+  { href: "/#work", label: "Work" },
+  { href: "/#company", label: "About" },
 ];
 
 export function Navigation() {
@@ -24,7 +26,7 @@ export function Navigation() {
           </div>
           <a className="nav-phone focus-ring" href="tel:+19746271143" aria-label="Call VeloLaunch at +1 9746-2711-143"><Phone size={13} aria-hidden="true" />+1 9746-2711-143</a>
           <button className="nav-booking focus-ring" type="button" onClick={() => setBookingOpen(true)}>Book a Call</button>
-          <a className="nav-cta focus-ring" href="#contact">Start a conversation</a>
+          <a className="nav-cta focus-ring" href="#contact">Let’s Build</a>
         </div>
         <button className="mobile-menu-button focus-ring" type="button" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
           {menuOpen ? <X size={19} /> : <Menu size={20} />}
@@ -34,7 +36,7 @@ export function Navigation() {
         {links.map((link) => <a key={link.href} href={link.href} onClick={closeMenu}>{link.label}</a>)}
         <a href="tel:+19746271143" onClick={closeMenu}>+1 9746-2711-143</a>
         <button type="button" onClick={() => { closeMenu(); setBookingOpen(true); }}>Book a Call</button>
-        <a href="#contact" onClick={closeMenu}>Start a conversation</a>
+        <a href="#contact" onClick={closeMenu}>Let’s Build</a>
       </div> : null}
       <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
     </header>

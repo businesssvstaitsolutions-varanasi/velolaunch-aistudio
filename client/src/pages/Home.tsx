@@ -36,7 +36,7 @@ export default function Home() {
         <section className="opening-proof-strip" aria-label="How VeloLaunch approaches product work">
           <dl><div><dt>Decision-led</dt><dd>Start with operating reality.</dd></div><div><dt>AI-conscious</dt><dd>Keep human judgment in the loop.</dd></div><div><dt>Built to evolve</dt><dd>Design for the next decision.</dd></div></dl>
         </section>
-        <section className="client-proof-section" aria-labelledby="client-proof-title">
+        <section id="work" className="client-proof-section" aria-labelledby="client-proof-title">
           <div className="client-proof-intro"><p className="section-tag">01B — Client proof</p><h2 id="client-proof-title">Client work is shared when permission is clear.</h2></div>
           <div className="client-proof-preview">
             <div className="client-logo-preview" aria-label="Neutral client logo placement preview; no client relationships are represented"><span><strong>Placeholder logo</strong>Logo placement 01<small>Approval required</small></span><span><strong>Placeholder logo</strong>Logo placement 02<small>Approval required</small></span><span><strong>Placeholder logo</strong>Logo placement 03<small>Approval required</small></span><span><strong>Placeholder logo</strong>Logo placement 04<small>Approval required</small></span></div>

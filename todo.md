@@ -322,3 +322,9 @@
 - [x] Inspect the rail, headline, and supporting-copy geometry shown in the latest supplied reference.
 - [x] Rebalance the desktop opening-statement columns and vertical rhythm.
 - [x] Verify wide desktop and mobile layouts, then run quality checks before checkpointing.
+
+# Header Navigation Update
+
+- [x] Inspect current header links and available homepage destinations for the requested labels.
+- [x] Add Products, Services, Why VeloLaunch, Work, About, and Let’s Build to desktop and mobile navigation.
+- [x] Verify destination links, header fit, responsive behavior, and quality checks before checkpointing.
