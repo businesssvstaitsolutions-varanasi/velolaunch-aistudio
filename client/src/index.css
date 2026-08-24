@@ -653,3 +653,7 @@ html { scroll-behavior: smooth; }
 .home-products .product-waitlist-privacy { margin-top: 0.15rem; }
 .home-products .home-products-panel { margin-top: clamp(2.8rem, 5vw, 4.8rem); padding-top: clamp(1.55rem, 2.5vw, 2.25rem); }
 @media (max-width: 600px) { .home-products .section-heading { margin-bottom: 2.4rem; }.home-products .forthcoming-product-card { min-height: 12.5rem; }.home-products .product-waitlist, .home-products .home-products-panel { margin-top: 2.6rem; } }
+
+/* Capability cards are intentionally two-up at every width, including compact phones. */
+.capabilities-layout .service-card-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: clamp(0.55rem, 1.2vw, 1rem); border-top: 0; }.capabilities-layout .service-card { min-height: 18rem; }
+@media (max-width: 429px) { .capabilities-layout { gap: 1.25rem; }.capabilities-layout .service-card { min-height: 0; padding: 0.75rem; }.capabilities-layout .service-card h3 { font-size: 1rem; line-height: 1.02; }.capabilities-layout .service-card p { font-size: 0.64rem; line-height: 1.45; }.capabilities-layout .service-card-tags { gap: 0.24rem; margin-top: 0.65rem; }.capabilities-layout .service-card-tags span { padding: 0.22rem 0.32rem; font-size: 0.38rem; } }

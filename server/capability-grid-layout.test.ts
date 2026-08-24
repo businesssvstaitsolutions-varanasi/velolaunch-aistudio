@@ -12,9 +12,9 @@ describe("homepage capability grid", () => {
     expect(styles).toContain("grid-template-rows: repeat(2, minmax(0, 1fr))");
   });
 
-  it("retains the established single-column mobile fallback", () => {
-    expect(styles).toContain("@media (max-width: 850px) { .service-matrix");
-    expect(styles).toContain(".service-card-stack { grid-template-columns: 1fr; }");
-    expect(styles).toContain("@media (min-width: 430px) { .capabilities-layout .service-card-stack");
+  it("enforces the two-column layout even at compact phone widths", () => {
+    expect(styles).toContain("Capability cards are intentionally two-up at every width");
+    expect(styles).toContain(".capabilities-layout .service-card-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr))");
+    expect(styles).toContain("@media (max-width: 429px) { .capabilities-layout");
   });
 });

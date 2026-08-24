@@ -354,3 +354,9 @@
 - [x] Inspect why the capability cards remain stacked at the reported tablet-width viewport.
 - [x] Apply a two-column capability-card grid at the reported 467px-plus breakpoint and larger sizes.
 - [x] Verify the reported viewport, tablet/desktop two-column behavior, narrow-phone stacking, and quality checks before checkpointing.
+
+# Definitive Capability Grid Correction
+
+- [x] Inspect the mobile media-rule conflict that still forces the reported device into one column.
+- [x] Render all four capability cards in two columns at every viewport width with compact phone styling.
+- [x] Verify the user’s mobile width, tablet, desktop, and quality checks before checkpointing.
