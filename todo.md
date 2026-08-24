@@ -348,3 +348,9 @@
 - [x] Inspect the existing capability-card grid and breakpoint rules.
 - [x] Render the four capability cards in two desktop columns beneath the capabilities heading.
 - [x] Verify desktop and mobile grid behavior, then run quality checks before checkpointing.
+
+# Capability Grid Breakpoint Correction
+
+- [x] Inspect why the capability cards remain stacked at the reported tablet-width viewport.
+- [x] Apply a two-column capability-card grid at the reported 467px-plus breakpoint and larger sizes.
+- [x] Verify the reported viewport, tablet/desktop two-column behavior, narrow-phone stacking, and quality checks before checkpointing.

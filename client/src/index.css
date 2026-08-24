@@ -636,6 +636,8 @@ html { scroll-behavior: smooth; }
 
 @media (min-width: 851px) { .capabilities-layout .service-card-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 1rem; border-top: 0; }.capabilities-layout .service-card { min-height: 18rem; } }
 
+@media (min-width: 430px) { .capabilities-layout .service-card-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 0.8rem; border-top: 0; }.capabilities-layout .service-card { min-height: 18rem; } }
+
 /* Opening-statement repair: preserve the editorial rail while tightening headline-to-summary rhythm. */
 .editorial-statement { align-items: stretch; min-height: 0; padding-top: clamp(4.25rem, 6vw, 6.4rem); padding-bottom: clamp(4.25rem, 6vw, 6.4rem); }
 .editorial-statement-main { display: grid; align-content: start; gap: clamp(1.6rem, 3vw, 2.8rem); }
