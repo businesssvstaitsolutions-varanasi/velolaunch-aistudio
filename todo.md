@@ -367,3 +367,10 @@
 - [x] Add reduced-motion-safe hover and focus micro-interactions to the four Work cards.
 - [x] Optimize public image delivery, dimensions, and loading priority without changing approved imagery.
 - [x] Test the hero at representative mobile and tablet viewports, plus complete quality checks before checkpointing.
+
+# GitHub Connector Verification and Code Push
+
+- [ ] Inspect GitHub connector availability and the current VeloLaunch repository state.
+- [ ] Fetch a small read-only GitHub data point and summarize connector capabilities.
+- [ ] Push the current VeloLaunch code to https://github.com/velolaunch-aistudio/velolaunch-officialwebsite.git.
+- [ ] Verify the remote branch and latest commit after the push.
