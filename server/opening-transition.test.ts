@@ -28,4 +28,10 @@ describe("opening statement transition", () => {
     expect(home).toContain("Preview only — no client, partnership, or outcome is represented.");
     expect(home).not.toContain("Trusted by");
   });
+
+  it("adds restrained hover feedback to the four Work-section placeholder cards", () => {
+    expect(styles).toContain(".client-logo-preview span { transition: transform 220ms");
+    expect(styles).toContain("@media (hover: hover) and (prefers-reduced-motion: no-preference)");
+    expect(styles).toContain(".client-logo-preview span:hover");
+  });
 });

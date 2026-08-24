@@ -360,3 +360,10 @@
 - [x] Inspect the mobile media-rule conflict that still forces the reported device into one column.
 - [x] Render all four capability cards in two columns at every viewport width with compact phone styling.
 - [x] Verify the user’s mobile width, tablet, desktop, and quality checks before checkpointing.
+
+# Work Interactions, Image Performance, and Hero Validation
+
+- [x] Inspect Work-card styling, image asset formats and sizes, and responsive hero behavior.
+- [x] Add reduced-motion-safe hover and focus micro-interactions to the four Work cards.
+- [x] Optimize public image delivery, dimensions, and loading priority without changing approved imagery.
+- [x] Test the hero at representative mobile and tablet viewports, plus complete quality checks before checkpointing.

@@ -20,7 +20,7 @@ export default function Home() {
 
       <main id="main-content">
         <section className="hero-artwork" aria-labelledby="hero-title">
-          <picture className="hero-artwork-picture"><source media="(max-width: 850px), (min-width: 851px) and (max-width: 1024px) and (orientation: portrait)" srcSet={siteConfig.assets.heroArtworkMobile} /><img className="hero-artwork-image" src={siteConfig.assets.heroArtwork} alt="VeloLaunch metallic mark, rocket, and planetary launch artwork." fetchPriority="high" /></picture>
+          <picture className="hero-artwork-picture"><source media="(max-width: 850px), (min-width: 851px) and (max-width: 1024px) and (orientation: portrait)" srcSet={siteConfig.assets.heroArtworkMobile} /><img className="hero-artwork-image" src={siteConfig.assets.heroArtwork} alt="VeloLaunch metallic mark, rocket, and planetary launch artwork." fetchPriority="high" decoding="async" sizes="100vw" /></picture>
           <div className="hero-artwork-copy">
             <p className="hero-artwork-kicker">Product systems / 01</p>
             <h1 id="hero-title">Build for the moment things become <em>real.</em></h1>
@@ -53,7 +53,7 @@ export default function Home() {
           <div className="capabilities-layout">
             <div className="capability-list service-card-stack">{services.map((service) => <ServiceCard service={service} key={service.slug} />)}</div>
             <figure className="editorial-inset-image">
-              <img src={siteConfig.assets.supportVertical} alt="VeloLaunch product-development artwork showing a luminous portal and product systems." loading="lazy" />
+              <img src={siteConfig.assets.supportVertical} alt="VeloLaunch product-development artwork showing a luminous portal and product systems." loading="lazy" decoding="async" />
               <figcaption>VeloLaunch / product development field</figcaption>
             </figure>
           </div>
@@ -91,7 +91,7 @@ export default function Home() {
 
         <section className="editorial-art-interlude" aria-label="VeloLaunch product development artwork">
           <figure>
-            <img src={siteConfig.assets.supportHorizon} alt="VeloLaunch product-development artwork with a metallic mark traveling through a luminous landscape." loading="lazy" />
+            <img src={siteConfig.assets.supportHorizon} alt="VeloLaunch product-development artwork with a metallic mark traveling through a luminous landscape." loading="lazy" decoding="async" />
             <figcaption>VeloLaunch / From idea to impact</figcaption>
           </figure>
         </section>
