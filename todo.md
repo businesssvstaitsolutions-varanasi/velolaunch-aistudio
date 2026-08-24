@@ -335,3 +335,10 @@
 - [x] Create dedicated Why VeloLaunch and About pages using approved, non-fabricated material.
 - [x] Route header navigation to the new pages and implement reduced-motion-safe smooth scrolling for on-page links.
 - [x] Verify routes, scrolling behavior, responsive layouts, and quality checks before checkpointing.
+
+# Responsive Alternate Hero Artwork
+
+- [x] Inspect current homepage hero markup and breakpoint-specific artwork behavior.
+- [x] Prepare the user-supplied alternate artwork for responsive site delivery without viewing it again.
+- [x] Apply the alternate artwork at mobile and tablet-portrait widths only, retaining desktop artwork.
+- [x] Verify mobile, tablet portrait, desktop, and quality checks before checkpointing.

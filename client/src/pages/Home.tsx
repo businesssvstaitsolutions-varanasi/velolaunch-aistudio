@@ -20,7 +20,7 @@ export default function Home() {
 
       <main id="main-content">
         <section className="hero-artwork" aria-labelledby="hero-title">
-          <img className="hero-artwork-image" src={siteConfig.assets.heroArtwork} alt="VeloLaunch metallic mark, rocket, and planetary launch artwork." fetchPriority="high" />
+          <picture className="hero-artwork-picture"><source media="(max-width: 850px), (min-width: 851px) and (max-width: 1024px) and (orientation: portrait)" srcSet={siteConfig.assets.heroArtworkMobile} /><img className="hero-artwork-image" src={siteConfig.assets.heroArtwork} alt="VeloLaunch metallic mark, rocket, and planetary launch artwork." fetchPriority="high" /></picture>
           <div className="hero-artwork-copy">
             <p className="hero-artwork-kicker">Product systems / 01</p>
             <h1 id="hero-title">Build for the moment things become <em>real.</em></h1>

@@ -72,6 +72,7 @@ export const siteConfig = {
   assets: {
     mark: "/manus-storage/velolaunch-logo-transparent-trimmed_9c5c5059.png",
     heroArtwork: "/manus-storage/velolaunch-hero-artwork_6ca194d6.png",
+    heroArtworkMobile: "/manus-storage/velolaunch-hero-mobile-tablet_675b860c.png",
     supportVertical: "/manus-storage/velolaunch-support-vertical_3a1d25eb.png",
     supportHorizon: "/manus-storage/velolaunch-support-horizon_531822cd.png",
     companyVideo: "/manus-storage/velolaunch-company-video_d40b1a8e.mp4",
