@@ -634,6 +634,8 @@ html { scroll-behavior: smooth; }
 .hero-artwork-picture { display: contents; }
 @media (max-width: 850px), (min-width: 851px) and (max-width: 1024px) and (orientation: portrait) { .hero-artwork { display: block; min-height: 0; }.hero-artwork-picture { display: block; }.hero-artwork-image { position: relative; display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: center; }.hero-artwork-copy { min-height: 0; width: auto; margin: 0; padding: 1.1rem 1.15rem 1.35rem; background: #050607; }.hero-artwork-copy .hero-artwork-kicker, .hero-artwork-copy h1, .hero-artwork-copy > p:not(.hero-artwork-kicker) { display: none; }.hero-actions { margin-top: 0; } }
 
+@media (min-width: 851px) { .capabilities-layout .service-card-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 1rem; border-top: 0; }.capabilities-layout .service-card { min-height: 18rem; } }
+
 /* Opening-statement repair: preserve the editorial rail while tightening headline-to-summary rhythm. */
 .editorial-statement { align-items: stretch; min-height: 0; padding-top: clamp(4.25rem, 6vw, 6.4rem); padding-bottom: clamp(4.25rem, 6vw, 6.4rem); }
 .editorial-statement-main { display: grid; align-content: start; gap: clamp(1.6rem, 3vw, 2.8rem); }

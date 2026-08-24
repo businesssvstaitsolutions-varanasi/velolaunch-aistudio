@@ -342,3 +342,9 @@
 - [x] Prepare the user-supplied alternate artwork for responsive site delivery without viewing it again.
 - [x] Apply the alternate artwork at mobile and tablet-portrait widths only, retaining desktop artwork.
 - [x] Verify mobile, tablet portrait, desktop, and quality checks before checkpointing.
+
+# Homepage Capability Grid
+
+- [x] Inspect the existing capability-card grid and breakpoint rules.
+- [x] Render the four capability cards in two desktop columns beneath the capabilities heading.
+- [x] Verify desktop and mobile grid behavior, then run quality checks before checkpointing.
