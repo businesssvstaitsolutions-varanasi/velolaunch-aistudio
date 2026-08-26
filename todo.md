@@ -381,6 +381,6 @@
 
 # GitHub Synchronization Follow-up
 
-- [ ] Inspect pending local changes and the configured GitHub main branch before pushing.
-- [ ] Commit the local launch record and safely push the current main branch to GitHub.
-- [ ] Verify the remote main branch points to the latest commit.
+- [x] Inspect pending local changes and the configured GitHub main branch before pushing.
+- [x] Commit the local launch record and safely push the current main branch to GitHub.
+- [x] Verify the remote main branch points to the latest commit.
