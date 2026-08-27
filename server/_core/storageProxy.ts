@@ -1,5 +1,7 @@
 import type { Express } from "express";
 import { ENV } from "./env";
+import fs from "fs";
+import path from "path";
 
 export function registerStorageProxy(app: Express) {
   app.get("/manus-storage/*", async (req, res) => {
@@ -9,8 +11,24 @@ export function registerStorageProxy(app: Express) {
       return;
     }
 
+    // Attempt to serve from local directories first by stripping the hash
+    // Example: velolaunch-company-video_d40b1a8e.mp4 -> velolaunch-company-video.mp4
+    const match = key.match(/(.*?)(_[a-f0-9]+)?(\.[a-z0-9]+)$/i);
+    if (match) {
+      const baseName = `${match[1]}${match[3]}`;
+      const assetDirs = ['optimized', 'original', 'video', 'icons', 'technology-logos'];
+      
+      for (const dir of assetDirs) {
+        const fullPath = path.resolve(process.cwd(), dir, baseName);
+        if (fs.existsSync(fullPath)) {
+          res.sendFile(fullPath);
+          return;
+        }
+      }
+    }
+
     if (!ENV.forgeApiUrl || !ENV.forgeApiKey) {
-      res.status(500).send("Storage proxy not configured");
+      res.status(500).send("Storage proxy not configured and local file not found.");
       return;
     }
 
