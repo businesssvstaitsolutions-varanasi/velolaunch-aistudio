@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import { BrandMark } from "@/components/BrandMark";
 import { BookingModal } from "@/components/BookingModal";
+import { Drawer, DrawerContent } from "@/components/ui/drawer";
 
 const links = [
   { href: "/products", label: "Products" },
@@ -32,12 +33,37 @@ export function Navigation() {
           {menuOpen ? <X size={19} /> : <Menu size={20} />}
         </button>
       </nav>
-      {menuOpen ? <div className="mobile-menu" aria-label="Mobile navigation">
-        {links.map((link) => <a key={link.href} href={link.href} onClick={closeMenu}>{link.label}</a>)}
-        <a href="tel:+19746271143" onClick={closeMenu}>+1 9746-2711-143</a>
-        <button type="button" onClick={() => { closeMenu(); setBookingOpen(true); }}>Book a Call</button>
-        <a href="#contact" onClick={closeMenu}>Let’s Build</a>
-      </div> : null}
+
+      <Drawer open={menuOpen} onOpenChange={setMenuOpen}>
+        <DrawerContent className="bg-[#111110] border-none text-[#d8d6d0] px-6 pb-12 pt-8 rounded-t-2xl">
+          <div className="flex flex-col">
+            {links.map((link) => (
+              <a 
+                key={link.href} 
+                href={link.href} 
+                onClick={closeMenu}
+                className="text-lg font-medium py-4 border-b border-[#2a2a2a] transition-colors hover:text-white"
+              >
+                {link.label}
+              </a>
+            ))}
+            <a href="tel:+19746271143" onClick={closeMenu} className="text-lg font-medium py-4 border-b border-[#2a2a2a] transition-colors hover:text-white">
+              +1 9746-2711-143
+            </a>
+            <button 
+              type="button" 
+              onClick={() => { closeMenu(); setBookingOpen(true); }}
+              className="text-lg font-medium py-4 border-b border-[#2a2a2a] transition-colors hover:text-white text-left"
+            >
+              Book a Call
+            </button>
+            <a href="#contact" onClick={closeMenu} className="text-lg font-medium py-4 transition-colors hover:text-white text-blue-400">
+              Let’s Build
+            </a>
+          </div>
+        </DrawerContent>
+      </Drawer>
+
       <BookingModal open={bookingOpen} onOpenChange={setBookingOpen} />
     </header>
   );

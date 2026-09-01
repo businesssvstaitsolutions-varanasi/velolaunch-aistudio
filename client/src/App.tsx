@@ -10,6 +10,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { SplashScreen } from "./components/SplashScreen";
 import Home from "./pages/Home";
 import Operations from "./pages/Operations";
 import Offers from "./pages/Offers";
@@ -47,6 +48,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <SmoothHashScroll />
+          <SplashScreen />
           <Router />
           {location !== "/operations" ? <WebsiteChatbot /> : null}
         </TooltipProvider>
