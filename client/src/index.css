@@ -660,3 +660,266 @@ html { scroll-behavior: smooth; }
 
 .client-logo-preview span { transition: transform 220ms var(--ease-out), border-color 220ms var(--ease-out), box-shadow 220ms var(--ease-out), background 220ms var(--ease-out); }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) { .client-logo-preview span:hover { border-color: #6f91c8; background: linear-gradient(135deg, #fff, #d9e5f7); box-shadow: 0 0.65rem 1.25rem rgb(16 32 56 / 0.12); transform: translateY(-0.22rem); } }
+
+/* ==========================================================================
+   Header Dropdown & Released Product Styles
+   ========================================================================== */
+
+.nav-dropdown-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-products-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  color: #d8d6d0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.74rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 160ms var(--ease-out);
+}
+
+.nav-products-link:hover,
+.nav-dropdown-container:hover .nav-products-link {
+  color: #ffffff;
+}
+
+.nav-dropdown-chevron {
+  width: 10px;
+  height: 10px;
+  stroke-width: 2.5;
+  color: currentColor;
+  opacity: 0.75;
+  transition: transform 200ms ease, opacity 200ms ease;
+  vertical-align: middle;
+}
+
+.nav-dropdown-container:hover .nav-dropdown-chevron {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.65rem);
+  left: 0;
+  width: 20.5rem;
+  background: #111215;
+  border: 1px solid rgb(255 255 255 / 0.14);
+  border-radius: 0.75rem;
+  padding: 0.85rem;
+  box-shadow: 0 1.2rem 3rem rgb(0 0 0 / 0.65), 0 0 0 1px rgb(255 255 255 / 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 100;
+  animation: dropdownFadeIn 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  right: 0;
+  height: 0.75rem;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.nav-dropdown-kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.55rem;
+  padding: 0 0.2rem;
+  font: 600 0.52rem/1 "DM Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #85b3ff;
+}
+
+.nav-dropdown-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.7rem;
+  border-radius: 0.55rem;
+  background: rgb(255 255 255 / 0.03);
+  border: 1px solid rgb(255 255 255 / 0.07);
+  text-decoration: none;
+  transition: all 180ms ease;
+}
+
+.nav-dropdown-item:hover {
+  background: rgb(16 185 129 / 0.1);
+  border-color: rgb(16 185 129 / 0.35);
+  transform: translateY(-1px);
+}
+
+.nav-dropdown-item-icon {
+  flex: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.45rem;
+  overflow: hidden;
+  background: #082f28;
+  border: 1px solid rgb(52 211 153 / 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-dropdown-item-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-dropdown-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.nav-dropdown-item-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.nav-dropdown-item-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.nav-dropdown-released-tag {
+  font: 700 0.5rem/1 "DM Mono", monospace;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.42rem;
+  border-radius: 999px;
+  background: rgb(16 185 129 / 0.18);
+  color: #34d399;
+  border: 1px solid rgb(52 211 153 / 0.45);
+}
+
+.nav-dropdown-item-desc {
+  margin-top: 0.2rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: #9ba0a6;
+}
+
+.nav-dropdown-divider {
+  height: 1px;
+  background: rgb(255 255 255 / 0.08);
+  margin: 0.65rem 0 0.5rem;
+}
+
+.nav-dropdown-catalog-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #a9acb2;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.nav-dropdown-catalog-link:hover {
+  color: #ffffff;
+}
+
+/* Released Product Badge & Actions Across Site */
+.badge-released {
+  flex: none;
+  border: 1px solid rgb(52 211 153 / 0.6) !important;
+  border-radius: 999px;
+  background: rgb(16 185 129 / 0.15);
+  color: #6ee7b7 !important;
+  padding: 0.26rem 0.48rem;
+  font: inherit;
+  white-space: nowrap;
+  box-shadow: 0 0 10px rgb(16 185 129 / 0.15);
+}
+
+.product-card-released {
+  border-color: rgb(52 211 153 / 0.32) !important;
+  background: linear-gradient(180deg, #121816 0%, #111214 100%) !important;
+  box-shadow: 0 0.5rem 2rem rgb(0 0 0 / 0.35);
+}
+
+.product-launch-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #34d399 !important;
+  font: 600 0.64rem/1 "DM Mono", monospace !important;
+  letter-spacing: 0.035em;
+  text-decoration: none;
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.3rem;
+  background: rgb(16 185 129 / 0.12);
+  border: 1px solid rgb(52 211 153 / 0.3);
+  transition: all 160ms ease;
+}
+
+.product-launch-link:hover {
+  background: rgb(16 185 129 / 0.22);
+  color: #a7f3d0 !important;
+  border-color: rgb(52 211 153 / 0.55);
+}
+
+.detail-launch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #10b981 !important;
+  color: #03100d !important;
+  font-weight: 700 !important;
+  border: 1px solid #34d399 !important;
+  padding: 0.85rem 1.4rem !important;
+  box-shadow: 0 0.25rem 1.5rem rgb(16 185 129 / 0.35);
+  transition: all 180ms ease;
+}
+
+.detail-launch-btn:hover {
+  background: #34d399 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 2rem rgb(16 185 129 / 0.5);
+}
+
+.released-product-disclosure {
+  border-color: rgb(52 211 153 / 0.35) !important;
+  background: rgb(16 185 129 / 0.04);
+  padding: clamp(1.8rem, 3vw, 2.5rem);
+  border-radius: 0.75rem;
+}
+

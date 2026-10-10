@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How the Apex Tabs Chrome extension by VeloLaunch handles tab information: what it reads, what it stores on your device, and what it never collects.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy Policy — Apex Tabs</title>
+  <link rel="icon" type="image/png" href="assets/apex-tabs-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="site-nav container" aria-label="Primary navigation">
+      <div class="nav-row">
+        <a class="brand" href="index.html" aria-label="Apex Tabs home" data-image-wrapper>
+          <img class="brand-mark" src="assets/apex-tabs-icon.png" width="128" height="128" alt="" data-local-image>
+          <span class="brand-copy">
+            <strong>Apex Tabs</strong>
+            <span>Smart Tab Organizer</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-controls="nav-panel" aria-expanded="false" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+
+        <div class="nav-panel" id="nav-panel">
+          <div class="nav-links">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#product">Product</a>
+            <a href="index.html#how-it-works">How it works</a>
+            <a href="index.html#privacy">Privacy</a>
+          </div>
+          <div class="nav-availability">
+            <button class="button button-disabled button-small" type="button" disabled>Chrome listing coming soon</button>
+            <span class="availability-note">The public link is not yet available.</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="legal" tabindex="-1">
+    <div class="legal-header" data-surface="forest">
+      <div class="container">
+        <p class="eyebrow">Apex Tabs · Legal</p>
+        <h1 id="policy-title">Privacy Policy</h1>
+        <p class="legal-lede">How the Apex Tabs Chrome extension and this website handle your information.</p>
+        <p class="legal-dates">Last updated <time datetime="2026-10-09">October 9, 2026</time><span aria-hidden="true"> · </span><span class="visually-hidden">. </span>Effective <time datetime="2026-10-09">October 9, 2026</time></p>
+      </div>
+    </div>
+
+    <div class="container legal-layout">
+      <nav class="legal-toc" aria-labelledby="toc-title">
+        <h2 id="toc-title">On this page</h2>
+        <ol>
+          <li><a href="#summary">At a glance</a></li>
+          <li><a href="#information">Information Apex Tabs accesses</a></li>
+          <li><a href="#storage">How information is stored</a></li>
+          <li><a href="#not-collected">What Apex Tabs does not collect</a></li>
+          <li><a href="#third-parties">Third parties</a></li>
+          <li><a href="#permissions">Permissions explained</a></li>
+          <li><a href="#limited-use">Chrome Web Store Limited Use</a></li>
+          <li><a href="#retention">Data retention and deletion</a></li>
+          <li><a href="#children">Children’s privacy</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#website">This website</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <div class="legal-body">
+        <section class="legal-section" id="summary">
+          <h2>At a glance</h2>
+          <p>This policy explains what the Apex Tabs browser extension (“Apex Tabs”) accesses, where that information is kept, and the choices you have. Apex Tabs is published by VeloLaunch, a subdivision of Smart Vista IT Solutions (“we”, “us”). The policy also covers this website.</p>
+          <ul class="legal-glance">
+            <li>Apex Tabs works inside Chrome on your device. There is no account, no sign-in, and no analytics, and the extension sends no data to VeloLaunch or any other server.</li>
+            <li>It reads the address, title, icon address, and state of your open tabs so it can search, sort, group, snooze, save, and suspend them. It cannot read or change the content of web pages.</li>
+            <li>What it saves (snoozed tabs, saved sessions, and your settings) stays in Chrome’s local extension storage on your device. It does not use Chrome’s sync storage.</li>
+            <li>We do not sell, share, or transfer your information.</li>
+            <li>You can delete snoozed tabs and saved sessions in the extension. Uninstalling Apex Tabs removes the data it keeps in Chrome’s extension storage.</li>
+            <li>One caveat: site icons (favicons) are images, and your browser may load them from the website that hosts them.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section" id="information">
+          <h2>Information Apex Tabs accesses, and why</h2>
+          <p>Apex Tabs only uses information that Chrome makes available through the permissions described in <a href="#permissions">Permissions explained</a>. It uses that information on your device to provide its features.</p>
+
+          <h3>Your open tabs</h3>
+          <ul>
+            <li><strong>Web address (URL) and page title.</strong> Used to group tabs by domain or by your keyword topics (matched against the address and title only), find duplicate tabs, search, sort by title or domain, check your protected sites, show tabs in the popup, and remember the tabs you snooze, save in a session, or suspend.</li>
+            <li><strong>Icon address.</strong> The address of the site icon (favicon) that Chrome reports for a tab. Used to show the icon next to the tab, and saved with snoozed tabs, sessions, and suspended pages.</li>
+            <li><strong>Tab state.</strong> Tab and window identifiers, tab group, position, whether a tab is active, pinned, playing audio, or discarded by Chrome, and when it was last accessed. Used to move, group, and manage tabs, apply eligibility rules (for example, auto-snooze skips active, pinned, and audio-playing tabs), show status badges and filters, and sort by recent activity.</li>
+          </ul>
+
+          <h3>Tab groups and windows</h3>
+          <ul>
+            <li><strong>Tab groups.</strong> Group titles, identifiers, and collapsed state, used to find an existing group by name. Apex Tabs sets the title and color of the groups it organizes.</li>
+            <li><strong>Windows.</strong> Only the number of open windows. Apex Tabs also opens a new window when you restore a saved session.</li>
+          </ul>
+
+          <h3>Information you enter</h3>
+          <ul>
+            <li>The names you give saved sessions.</li>
+            <li>Protected sites: hostnames you list so Apex Tabs leaves those tabs alone.</li>
+            <li>Custom topic rules: a name, a color, and keywords.</li>
+            <li>Settings: grouping strategy, automatic grouping on or off, auto-snooze on or off and its idle time, and light or dark theme.</li>
+          </ul>
+
+          <h3>Activity kept only in memory</h3>
+          <p>While it runs, Apex Tabs notes when each tab was last activated so it can detect idle tabs and sort tabs. This record is never saved. It is lost whenever Chrome stops the extension’s background service worker.</p>
+
+          <h3>What Apex Tabs does not access</h3>
+          <p>Apex Tabs does not read the content of web pages, form entries, cookies, browsing history, bookmarks, downloads, your account identity, your location, or what you type on websites. It has no content scripts and no host permissions.</p>
+        </section>
+
+        <section class="legal-section" id="storage">
+          <h2>How information is stored</h2>
+          <p>Apex Tabs saves information with Chrome’s local extension storage (<code>chrome.storage.local</code>), which stays on the device where the extension is installed. It saves:</p>
+          <dl class="legal-list">
+            <div>
+              <dt>Snoozed tabs</dt>
+              <dd>Address, title, icon address, scheduled wake time, and when the tab was snoozed.</dd>
+            </div>
+            <div>
+              <dt>Saved sessions</dt>
+              <dd>The name you choose, plus the address, title, and icon address of every tab in the window when you saved it, the save time, and the tab count.</dd>
+            </div>
+            <div>
+              <dt>Settings</dt>
+              <dd>Grouping strategy, automatic grouping, auto-snooze and its idle time, protected sites, and topic rules.</dd>
+            </div>
+            <div>
+              <dt>Theme</dt>
+              <dd>Light or dark, saved when you switch themes.</dd>
+            </div>
+            <div>
+              <dt>Memory estimate</dt>
+              <dd>A single running total of estimated memory saved, counted at about 60 MB per suspended tab.</dd>
+            </div>
+          </dl>
+
+          <h3>No sync</h3>
+          <p>Apex Tabs does not use Chrome’s sync storage, so the extension does not send this information through your Google account to your other devices.</p>
+
+          <h3>Scheduled wake-ups</h3>
+          <p>Snooze wake-ups are Chrome alarms. Each alarm holds only an identifier and a wake time, not the tab’s address or title.</p>
+
+          <h3>Suspended tabs</h3>
+          <p>When Apex Tabs suspends a tab, it replaces the page with its own lightweight page and places the original address, title, icon address, and suspend time in that page’s own address (<code>chrome-extension://…/suspended.html?url=…</code>). This stays in the tab for as long as the tab exists. Restoring the tab navigates back to the original address. A suspended tab that you save in a session is saved with this suspended-page address, which includes the original address.</p>
+          <p>Because this information is part of a tab address, Chrome may handle it like any other address, for example in your local browsing history, when restoring a previous browsing session, or in Chrome Sync if you have turned that on. That is Chrome’s own behavior, controlled by your Chrome settings, not something Apex Tabs does.</p>
+
+          <h3>Other local items</h3>
+          <ul>
+            <li>Apex Tabs can read one older theme preference from its own page storage (<code>localStorage</code>) if it exists. Current code never writes there.</li>
+            <li>For troubleshooting, the extension writes some tab titles and addresses to its own developer console in Chrome. These messages stay on your device and are not sent anywhere.</li>
+            <li>Apex Tabs does not use cookies, IndexedDB, or Chrome’s session storage.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section" id="not-collected">
+          <h2>What Apex Tabs does not collect</h2>
+          <ul>
+            <li><strong>No accounts.</strong> Apex Tabs has no sign-in and does not use Chrome’s identity features.</li>
+            <li><strong>No servers.</strong> The extension makes no network requests of its own. It has no code that uploads, syncs, or backs up your data, and VeloLaunch does not receive your tabs, sessions, or settings.</li>
+            <li><strong>No analytics or tracking.</strong> No analytics, telemetry, crash or error reporting, or third-party SDKs.</li>
+            <li><strong>No page access.</strong> No content scripts or host permissions, so Apex Tabs cannot read or change the pages you visit.</li>
+            <li><strong>No remote code.</strong> All of the extension’s scripts, styles, and icons are bundled with it.</li>
+            <li><strong>No selling or sharing.</strong> We do not sell, share, or transfer your information.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section" id="third-parties">
+          <h2>Third parties</h2>
+          <ul>
+            <li><strong>Websites that host site icons.</strong> Apex Tabs shows the icon address Chrome provides for a tab in Current Tabs, Memory, Snoozed, and on its suspended page. Your browser may load that image from the site that hosts it (normally a site you already visited) or from its cache. No referrer is sent. Icons saved with snoozed tabs can be loaded again later when the Snoozed list is shown. Apex Tabs does not use a third-party favicon service.</li>
+            <li><strong>Websites you reopen.</strong> Waking a snoozed tab, restoring a session, or restoring a suspended tab opens the saved address, just as if you visited it yourself. Those sites handle your visit under their own policies.</li>
+            <li><strong>Google and Chrome.</strong> Apex Tabs is built for Chrome and is intended for distribution through the Chrome Web Store, which Google operates. The public listing is coming soon. Chrome installs and updates extensions; Apex Tabs’ code takes no part in that. Google’s own privacy policy covers Chrome, the Chrome Web Store, and Chrome features such as history and sync.</li>
+            <li><strong>Company websites.</strong> Links to VeloLaunch and Smart Vista IT Solutions, in the extension and on this website, open those sites only when you select them, without sending a referrer.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section" id="permissions">
+          <h2>Permissions explained</h2>
+          <table class="legal-table">
+            <caption>Permissions Apex Tabs requests</caption>
+            <thead>
+              <tr>
+                <th scope="col">Permission</th>
+                <th scope="col">Why Apex Tabs needs it</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><code>tabs</code></th>
+                <td>Read the address, title, and icon address of open tabs, and manage tabs: search, sort and move, group, pin, switch to, open, close, snooze, suspend, and restore.</td>
+              </tr>
+              <tr>
+                <th scope="row"><code>tabGroups</code></th>
+                <td>Find an existing Chrome tab group by name and set the title and color of groups when organizing tabs.</td>
+              </tr>
+              <tr>
+                <th scope="row"><code>storage</code></th>
+                <td>Save snoozed tabs, sessions, settings, theme, and the memory estimate on your device with <code>chrome.storage.local</code>.</td>
+              </tr>
+              <tr>
+                <th scope="row"><code>alarms</code></th>
+                <td>Reopen snoozed tabs at their scheduled time and, only while auto-snooze is on, check for idle tabs once a minute.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Apex Tabs requests no host permissions or optional permissions and declares no content scripts. Opening a window to restore a session needs no extra permission, and its keyboard shortcuts are Chrome extension commands, not permissions.</p>
+        </section>
+
+        <section class="legal-section" id="limited-use">
+          <h2>Chrome Web Store Limited Use</h2>
+          <p class="legal-callout">The use of information that Apex Tabs receives from Chrome extension APIs will adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank" rel="noopener noreferrer">Chrome Web Store User Data Policy, including the Limited Use requirements</a>.</p>
+          <p>In practice, this information is used only on your device to provide Apex Tabs’ tab-management features. It is not transferred to anyone, used for advertising, used to determine creditworthiness or for lending, or read by people at VeloLaunch, because it never leaves your device.</p>
+        </section>
+
+        <section class="legal-section" id="retention">
+          <h2>Data retention and deletion</h2>
+          <ul>
+            <li><strong>Snoozed tabs</strong> are kept until the tab reopens at its wake time, or until you wake or delete it in Snoozed, one at a time or all at once. If a scheduled wake-up does not run, the entry stays until you wake or delete it.</li>
+            <li><strong>Saved sessions</strong> are kept until you delete that session. Restoring a session does not delete it, and sessions do not expire.</li>
+            <li><strong>Protected sites and topic rules</strong> are kept until you remove them. Remove protected sites one at a time in Options or reset the list in the popup’s Settings and save; remove topic rules in Options and save.</li>
+            <li><strong>Other settings and your theme</strong> are kept until you change them.</li>
+            <li><strong>The memory estimate</strong> is kept until you uninstall Apex Tabs. There is no reset control.</li>
+            <li><strong>Suspended-page addresses</strong> exist only while the suspended tab is open. Any copies Chrome keeps, such as in history, are controlled by Chrome’s own settings.</li>
+            <li><strong>In-memory activity times</strong> are cleared whenever the background service worker stops.</li>
+          </ul>
+
+          <h3>Delete everything</h3>
+          <p>Apex Tabs has no single “erase all” button. To remove everything it keeps in Chrome’s extension storage, uninstall the extension (for example, from <code>chrome://extensions</code>). Chrome clears an extension’s local storage when the extension is removed.</p>
+
+          <h3>Your choices and rights</h3>
+          <p>Privacy laws such as the GDPR and the CCPA give people rights to access, correct, or delete their personal information and to opt out of its sale. Because Apex Tabs keeps its information only on your device and VeloLaunch does not receive it, we hold no copy to provide, correct, or delete for you. You can view and delete it, and change your settings, directly in the extension as described above. We do not sell personal information.</p>
+        </section>
+
+        <section class="legal-section" id="children">
+          <h2>Children’s privacy</h2>
+          <p>Apex Tabs does not collect personal information from anyone, including children. It has no accounts, and the information it stores stays in Chrome on the device where it is installed.</p>
+        </section>
+
+        <section class="legal-section" id="security">
+          <h2>Security</h2>
+          <ul>
+            <li>Apex Tabs does not transmit your information, so it is not exposed in transit or held on a server.</li>
+            <li>The extension loads no remote code. It cannot read web pages, and it does not accept messages from websites or other extensions.</li>
+            <li>Saved information is protected by the security of your device and Chrome profile. Anyone who can use your Chrome profile can open Apex Tabs and see your snoozed tabs and saved sessions.</li>
+          </ul>
+          <p>No method of storage is perfectly secure, so we cannot guarantee absolute security.</p>
+        </section>
+
+        <section class="legal-section" id="website">
+          <h2>This website</h2>
+          <p>This website (the Apex Tabs home page and this policy):</p>
+          <ul>
+            <li>uses no cookies, analytics, advertising, tracking pixels, embedded content, forms, or web fonts;</li>
+            <li>loads every image, style, and script from the site itself, with a Content Security Policy that blocks third-party resources and outbound connections, and pages that send no referrer;</li>
+            <li>runs one small script that only opens and closes the mobile menu and handles missing images, and it stores nothing in your browser.</li>
+          </ul>
+          <p>Like most web servers, the server that hosts this site may automatically record basic request details, such as your IP address, browser type, and the pages you request. This site adds no tracking of its own.</p>
+        </section>
+
+        <section class="legal-section" id="changes">
+          <h2>Changes to this policy</h2>
+          <p>If Apex Tabs or this website changes how information is handled, we will update this page and the “Last updated” date at the top.</p>
+        </section>
+
+        <section class="legal-section" id="contact">
+          <h2>Contact</h2>
+          <p>For questions about this policy or Apex Tabs’ privacy practices, contact VeloLaunch:</p>
+          <ul>
+            <!-- TODO(privacy-contact): privacy@velolaunch.in is a PLACEHOLDER. No contact email exists in the repository. Confirm or replace this address before publishing. -->
+            <li>Email: <a href="mailto:privacy@velolaunch.in">privacy@velolaunch.in</a></li>
+            <!-- /TODO(privacy-contact) -->
+            <li>Website: <a href="https://www.velolaunch.in" target="_blank" rel="noopener noreferrer">www.velolaunch.in</a></li>
+          </ul>
+          <p>Apex Tabs is a product by VeloLaunch, a subdivision of <a href="https://www.smartvistaitsolutions.in" target="_blank" rel="noopener noreferrer">Smart Vista IT Solutions</a>.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-surface="forest">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-on-dark" href="index.html" aria-label="Apex Tabs home" data-image-wrapper>
+          <img class="brand-mark" src="assets/apex-tabs-icon.png" width="128" height="128" alt="" loading="lazy" decoding="async" data-local-image>
+          <span class="brand-copy"><strong>Apex Tabs</strong><span>Smart Tab Organizer</span></span>
+        </a>
+        <p>A product by VeloLaunch, a subdivision of Smart Vista IT Solutions.</p>
+        <p class="company-links"><a href="https://www.velolaunch.in" target="_blank" rel="noopener noreferrer">VeloLaunch</a><a href="https://www.smartvistaitsolutions.in" target="_blank" rel="noopener noreferrer">Smart Vista IT Solutions</a></p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#product">Product</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#shortcuts">Shortcuts</a>
+        <a href="index.html#privacy">Privacy</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

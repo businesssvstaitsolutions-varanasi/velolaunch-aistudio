@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, Phone, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Menu, Phone, X } from "lucide-react";
 import { BrandMark } from "@/components/BrandMark";
 import { BookingModal } from "@/components/BookingModal";
 import { Drawer, DrawerContent } from "@/components/ui/drawer";
@@ -15,6 +15,7 @@ const links = [
 export function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [bookingOpen, setBookingOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
 
   return (
@@ -23,13 +24,96 @@ export function Navigation() {
         <BrandMark showAttribution />
         <div className="desktop-nav">
           <div className="nav-links">
-            {links.map((link) => <a key={link.href} className="nav-link focus-ring" href={link.href}>{link.label}</a>)}
+            {links.map((link) => {
+              if (link.href === "/products") {
+                return (
+                  <div
+                    key={link.href}
+                    className="nav-dropdown-container"
+                    onMouseEnter={() => setDropdownOpen(true)}
+                    onMouseLeave={() => setDropdownOpen(false)}
+                  >
+                    <a
+                      href="/products"
+                      className="nav-link nav-products-link focus-ring"
+                      aria-expanded={dropdownOpen}
+                      aria-haspopup="true"
+                    >
+                      Our Products
+                      <ChevronDown
+                        size={10}
+                        className={`nav-dropdown-chevron ${dropdownOpen ? "rotate-180" : ""}`}
+                        aria-hidden="true"
+                      />
+                    </a>
+                    {dropdownOpen && (
+                      <div className="nav-dropdown-menu" role="menu">
+                        <div className="nav-dropdown-kicker">
+                          <span>Featured Product</span>
+                          <span className="nav-dropdown-live-dot" />
+                        </div>
+                        <a
+                          href="/our-apps/apexturbo-landingpage/"
+                          className="nav-dropdown-item focus-ring"
+                          role="menuitem"
+                          onClick={() => setDropdownOpen(false)}
+                        >
+                          <div className="nav-dropdown-item-icon">
+                            <img
+                              src="/our-apps/apexturbo-landingpage/assets/apex-tabs-icon.png"
+                              alt=""
+                              width="32"
+                              height="32"
+                            />
+                          </div>
+                          <div className="nav-dropdown-item-body">
+                            <div className="nav-dropdown-item-title-row">
+                              <span className="nav-dropdown-item-name">Apex Turbo</span>
+                              <span className="nav-dropdown-released-tag">Released</span>
+                            </div>
+                            <p className="nav-dropdown-item-desc">
+                              Smart Tab Organizer & Memory Saver
+                            </p>
+                          </div>
+                        </a>
+                        <div className="nav-dropdown-divider" />
+                        <a
+                          href="/products"
+                          className="nav-dropdown-catalog-link focus-ring"
+                          onClick={() => setDropdownOpen(false)}
+                        >
+                          <span>Explore all products</span>
+                          <ArrowRight size={13} aria-hidden="true" />
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+              return (
+                <a key={link.href} className="nav-link focus-ring" href={link.href}>
+                  {link.label}
+                </a>
+              );
+            })}
           </div>
-          <a className="nav-phone focus-ring" href="tel:+19746271143" aria-label="Call VeloLaunch at +1 9746-2711-143"><Phone size={13} aria-hidden="true" />+1 9746-2711-143</a>
-          <button className="nav-booking focus-ring" type="button" onClick={() => setBookingOpen(true)}>Book a Call</button>
-          <a className="nav-cta focus-ring" href="#contact">Let’s Build</a>
+          <a className="nav-phone focus-ring" href="tel:+19746271143" aria-label="Call VeloLaunch at +1 9746-2711-143">
+            <Phone size={13} aria-hidden="true" />+1 9746-2711-143
+          </a>
+          <button className="nav-booking focus-ring" type="button" onClick={() => setBookingOpen(true)}>
+            Book a Call
+          </button>
+          <a className="nav-cta focus-ring" href="#contact">
+            Let’s Build
+          </a>
         </div>
-        <button className="mobile-menu-button focus-ring" type="button" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
+        <button
+          className="mobile-menu-button focus-ring"
+          type="button"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
           {menuOpen ? <X size={19} /> : <Menu size={20} />}
         </button>
       </nav>
@@ -37,27 +121,75 @@ export function Navigation() {
       <Drawer open={menuOpen} onOpenChange={setMenuOpen}>
         <DrawerContent className="bg-[#111110] border-none text-[#d8d6d0] px-6 pb-12 pt-8 rounded-t-2xl">
           <div className="flex flex-col">
-            {links.map((link) => (
-              <a 
-                key={link.href} 
-                href={link.href} 
+            <div className="py-3 border-b border-[#2a2a2a]">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-sm font-semibold tracking-wider uppercase text-neutral-400">Our Products</span>
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Released</span>
+              </div>
+              <a
+                href="/our-apps/apexturbo-landingpage/"
+                onClick={closeMenu}
+                className="flex items-center justify-between p-3 rounded-lg bg-[#18191b] hover:bg-[#222428] border border-[#2e3035] transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <img
+                    src="/our-apps/apexturbo-landingpage/assets/apex-tabs-icon.png"
+                    alt="Apex Turbo"
+                    className="w-8 h-8 rounded"
+                  />
+                  <div>
+                    <div className="font-semibold text-white flex items-center gap-2 text-base">
+                      Apex Turbo
+                      <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300">
+                        Released
+                      </span>
+                    </div>
+                    <div className="text-xs text-neutral-400">Smart Tab Organizer & Memory Saver</div>
+                  </div>
+                </div>
+                <ArrowRight size={16} className="text-neutral-400" />
+              </a>
+              <a
+                href="/products"
+                onClick={closeMenu}
+                className="block text-xs text-neutral-400 hover:text-white mt-2 pl-1"
+              >
+                All products catalogue &rarr;
+              </a>
+            </div>
+
+            {links.filter((l) => l.href !== "/products").map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
                 onClick={closeMenu}
                 className="text-lg font-medium py-4 border-b border-[#2a2a2a] transition-colors hover:text-white"
               >
                 {link.label}
               </a>
             ))}
-            <a href="tel:+19746271143" onClick={closeMenu} className="text-lg font-medium py-4 border-b border-[#2a2a2a] transition-colors hover:text-white">
+            <a
+              href="tel:+19746271143"
+              onClick={closeMenu}
+              className="text-lg font-medium py-4 border-b border-[#2a2a2a] transition-colors hover:text-white"
+            >
               +1 9746-2711-143
             </a>
-            <button 
-              type="button" 
-              onClick={() => { closeMenu(); setBookingOpen(true); }}
+            <button
+              type="button"
+              onClick={() => {
+                closeMenu();
+                setBookingOpen(true);
+              }}
               className="text-lg font-medium py-4 border-b border-[#2a2a2a] transition-colors hover:text-white text-left"
             >
               Book a Call
             </button>
-            <a href="#contact" onClick={closeMenu} className="text-lg font-medium py-4 transition-colors hover:text-white text-blue-400">
+            <a
+              href="#contact"
+              onClick={closeMenu}
+              className="text-lg font-medium py-4 transition-colors hover:text-white text-blue-400"
+            >
               Let’s Build
             </a>
           </div>

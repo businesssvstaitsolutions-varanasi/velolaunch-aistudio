@@ -50,6 +50,8 @@ export type ForthcomingProduct = {
   title: string;
   description: string;
   category: "Browser" | "Finance" | "Education" | "Productivity";
+  status?: "released" | "releasing-soon";
+  landingUrl?: string;
 };
 
 export type OfferListing = {
@@ -175,8 +177,10 @@ export const forthcomingProducts = [
   {
     slug: "apex-turbo-smart-tab-organizer",
     title: "Apex Turbo Smart Tab Organizer and Memory Saver",
-    description: "A forthcoming browser companion designed to organize active tabs and keep working sessions easier to manage.",
+    description: "Released Chrome browser companion designed to organize active tabs, group sessions, snooze tabs, and reduce browser memory.",
     category: "Browser",
+    status: "released",
+    landingUrl: "/our-apps/apexturbo-landingpage/",
   },
   {
     slug: "finaura-ai-finance-vault",

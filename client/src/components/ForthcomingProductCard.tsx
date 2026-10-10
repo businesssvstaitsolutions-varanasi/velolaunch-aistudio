@@ -35,5 +35,43 @@ export function ProductNotificationDialog({ product, compact = false }: { produc
 }
 
 export function ForthcomingProductCard({ product }: { product: ForthcomingProductRecord }) {
-  return <article className="forthcoming-product-card"><div className="forthcoming-product-card-head"><span>VeloLaunch product</span><strong>Releasing Soon</strong></div><div><p className="forthcoming-product-category">{product.category}</p><h3>{product.title}</h3><p>{product.description}</p></div><div className="forthcoming-product-actions"><a className="focus-ring" href={`/products/${product.slug}`}>View details <ArrowRight size={14} aria-hidden="true" /></a><ProductNotificationDialog product={product} compact /></div></article>;
+  const isReleased = (product as { status?: string }).status === "released" || product.slug === "apex-turbo-smart-tab-organizer";
+  const landingUrl = (product as { landingUrl?: string }).landingUrl || (isReleased ? "/our-apps/apexturbo-landingpage/" : undefined);
+
+  return (
+    <article className={`forthcoming-product-card${isReleased ? " product-card-released" : ""}`}>
+      <div className="forthcoming-product-card-head">
+        <span>VeloLaunch product</span>
+        {isReleased ? (
+          <strong className="badge-released">Released</strong>
+        ) : (
+          <strong>Releasing Soon</strong>
+        )}
+      </div>
+      <div>
+        <p className="forthcoming-product-category">{product.category}</p>
+        <h3>{product.title}</h3>
+        <p>{product.description}</p>
+      </div>
+      <div className="forthcoming-product-actions">
+        {isReleased && landingUrl ? (
+          <>
+            <a className="focus-ring product-launch-link" href={landingUrl}>
+              Open Landing Page <ArrowRight size={14} aria-hidden="true" />
+            </a>
+            <a className="focus-ring" href={`/products/${product.slug}`}>
+              Details
+            </a>
+          </>
+        ) : (
+          <>
+            <a className="focus-ring" href={`/products/${product.slug}`}>
+              View details <ArrowRight size={14} aria-hidden="true" />
+            </a>
+            <ProductNotificationDialog product={product} compact />
+          </>
+        )}
+      </div>
+    </article>
+  );
 }

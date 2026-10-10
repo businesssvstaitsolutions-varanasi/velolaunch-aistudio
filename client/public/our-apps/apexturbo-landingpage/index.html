@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apex Tabs helps Chrome users search, sort, group, snooze, save, and suspend tabs with clear local controls.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Apex Tabs — Smart Tab Organizer</title>
+  <link rel="icon" type="image/png" href="assets/apex-tabs-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="site-nav container" aria-label="Primary navigation">
+      <div class="nav-row">
+        <a class="brand" href="#top" aria-label="Apex Tabs home" data-image-wrapper>
+          <img class="brand-mark" src="assets/apex-tabs-icon.png" width="128" height="128" alt="" data-local-image>
+          <span class="brand-copy">
+            <strong>Apex Tabs</strong>
+            <span>Smart Tab Organizer</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-controls="nav-panel" aria-expanded="false" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+
+        <div class="nav-panel" id="nav-panel">
+          <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#product">Product</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="privacy.html">Privacy</a>
+          </div>
+          <div class="nav-availability">
+            <button class="button button-disabled button-small" type="button" disabled>Chrome listing coming soon</button>
+            <span class="availability-note">The public link is not yet available.</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-stage">
+        <div class="hero-intro">
+          <p class="eyebrow">Smart Tab Organizer</p>
+          <h1 class="hero-title" id="hero-title">Less tab clutter. <span class="hero-title-accent">More headspace.</span></h1>
+          <p class="hero-lede">Find what matters. Keep your browser organized.</p>
+        </div>
+
+        <div class="hero-media" data-image-wrapper>
+          <picture>
+            <source type="image/webp" srcset="assets/apex-tabs-hero-960.webp 960w, assets/apex-tabs-hero.webp 1920w" sizes="100vw">
+            <img class="hero-image" src="assets/apex-tabs-hero.png" width="1920" height="940" alt="Apex Tabs by VeloLaunch, Smart Tab Organizer: Less tab clutter. More headspace. Find what matters. Keep your browser organized. Highlights: search tabs, domains and URLs; sort tabs and close duplicates; switch between light and dark. Beside them, the Apex Tabs popup is shown in dark and light themes with Organize All, Snooze All, tab search, sorting, Close Duplicates, filters, and the Current Tabs list." fetchpriority="high" decoding="async" data-local-image>
+          </picture>
+          <span class="image-fallback" hidden>Apex Tabs hero image unavailable.</span>
+        </div>
+
+        <div class="hero-actions">
+          <div class="availability-group">
+            <button class="button button-disabled" type="button" disabled>Chrome Web Store · Coming soon</button>
+            <span class="availability-note">A public store URL has not been added yet.</span>
+          </div>
+          <a class="button button-secondary" href="#features">Explore Apex Tabs</a>
+          <p class="platform-note">Built for Chrome · Version 1.0</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="capability-strip" aria-labelledby="capability-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="capability-title">Apex Tabs at a glance</h2>
+        <ul class="capability-grid">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M8 4v16M8 9h13"></path></svg>
+            <span><strong>Made for Chrome</strong>Manifest V3 extension.</span>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            <span><strong>4 focused permissions</strong>Tabs, tab groups, storage, alarms.</span>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 21a8 8 0 0 0-16 0M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"></path><path d="m17 14 2 2 4-4"></path></svg>
+            <span><strong>No account required</strong>Core feature state is stored in Chrome’s local extension storage.</span>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 9 9c0-.7-.08-1.38-.23-2.03A6 6 0 0 1 12 3Z"></path></svg>
+            <span><strong>Light and dark themes</strong>Product themes for the browsing environment.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Five focused destinations</p>
+          <h2 id="features-title">One place for the full tab lifecycle.</h2>
+          <p>Move from a crowded window to a clearer next step without turning product screenshots into promises.</p>
+        </div>
+        <div class="feature-grid">
+          <a class="feature-card" href="#tabs">
+            <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18M8 4v5"></path></svg></span>
+            <h3>Tabs</h3>
+            <p>Search, sort, filter, identify state, close duplicates, and act on individual tabs in the current window.</p>
+            <span class="card-link">Explore Tabs <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="feature-card" href="#snoozed">
+            <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l3 2M5 3 2 6M19 3l3 3"></path></svg></span>
+            <h3>Snoozed</h3>
+            <p>Close eligible tabs for now and schedule their URLs to reopen; wake or delete one or all scheduled entries.</p>
+            <span class="card-link">Explore Snoozed <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="feature-card" href="#sessions">
+            <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h13l3 3v13H4z"></path><path d="M8 4v6h8V4M8 20v-6h8v6"></path></svg></span>
+            <h3>Sessions</h3>
+            <p>Name and save the current window’s URL set, then reopen it in a new window.</p>
+            <span class="card-link">Explore Sessions <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="feature-card" href="#memory">
+            <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"></rect><path d="M9 1v5M15 1v5M9 18v5M15 18v5M1 9h5M18 9h5M1 15h5M18 15h5"></path></svg></span>
+            <h3>Memory</h3>
+            <p>Move eligible inactive pages to Apex Tabs’ custom lightweight page, restore their URLs later, and view a labelled estimate.</p>
+            <span class="card-link">Explore Memory <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="feature-card" href="#settings">
+            <span class="icon-tile"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16M8 3v6M16 9v6M10 15v6"></path></svg></span>
+            <h3>Settings</h3>
+            <p>Configure auto-snooze timing, exact-host protection, product theme, and domain or keyword-topic grouping rules.</p>
+            <span class="card-link">Explore Settings <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section" id="product" aria-labelledby="product-title">
+      <div class="container section-heading product-intro">
+        <p class="eyebrow">The current product</p>
+        <h2 id="product-title">See each workflow in the extension.</h2>
+        <p>Every product image below comes from the current Apex Tabs extension. The surrounding copy explains the scope and limits that matter.</p>
+      </div>
+
+      <article class="showcase container" id="tabs" aria-labelledby="tabs-title">
+        <div class="showcase-copy">
+          <p class="destination-label">Current Tabs</p>
+          <h3 id="tabs-title">See the current window clearly.</h3>
+          <p>Search by title, domain, or URL, then sort by default order, title, domain, recent activity, or oldest activity. Filter for duplicates, pinned tabs, playing-audio tabs, or browser-discarded and Apex-suspended tabs.</p>
+          <p>Rows identify active, pinned, audio, duplicate, suspended, and browser-discarded state. Activate, pin, snooze, suspend, or close an individual tab from the dashboard.</p>
+          <ul class="detail-list">
+            <li>Close duplicates while keeping the active copy first, then a pinned copy when available.</li>
+            <li>Apply a sort to the browser’s current-window unpinned tabs while keeping pinned tabs at the front.</li>
+          </ul>
+          <h4>Group eligible tabs with rules you control</h4>
+          <p>When automatic grouping is enabled, Apex Tabs applies the selected domain rule or first matching custom keyword-topic rule to eligible new or updated ungrouped tabs. Under the same setting, Organize All applies that rule to eligible ungrouped tabs across all open Chrome windows. Tabs already in a Chrome group are left unchanged.</p>
+          <p class="limitation-note">These grouping paths skip missing URLs, <code>chrome://</code> pages, and <code>chrome-extension://</code> pages.</p>
+        </div>
+        <figure class="product-figure portrait-figure" data-image-wrapper>
+          <div class="screenshot-frame">
+            <img src="assets/tabs-dashboard-light.png" width="500" height="750" alt="Light-mode Current Tabs dashboard with search, sorting, duplicate controls, filters, metrics, and two tab rows." loading="lazy" decoding="async" data-local-image>
+            <span class="image-fallback" hidden>Current Tabs product screenshot unavailable.</span>
+          </div>
+          <figcaption>A sample Current Tabs view in the extension’s light theme.</figcaption>
+        </figure>
+      </article>
+
+      <article class="showcase showcase-reverse container" id="snoozed" aria-labelledby="snoozed-title">
+        <div class="showcase-copy">
+          <p class="destination-label">Snoozed</p>
+          <h3 id="snoozed-title">Close it now. Bring its URL back on schedule.</h3>
+          <p>Choose later today, tomorrow morning, this weekend, next week, or a future custom date and time. Apex Tabs closes the tab and schedules its URL to reopen automatically.</p>
+          <p>Snooze All covers eligible tabs in the current window and gives them a two-hour wake time. In Snoozed, wake or delete one entry, or wake or delete all entries together.</p>
+          <p class="limitation-note">Snoozing closes the tab and later reopens its URL, so form data, scroll position, and other in-page state are not promised. Individual popup snooze actions reject missing URLs and <code>chrome://</code>, <code>chrome-extension://</code>, <code>edge://</code>, <code>about:</code>, and <code>view-source:</code> pages.</p>
+        </div>
+        <figure class="product-figure portrait-figure" data-image-wrapper>
+          <div class="screenshot-frame">
+            <img src="assets/snoozed-tabs-light.png" width="498" height="745" alt="Snoozed Tabs screen with two scheduled tabs and Wake All Tabs and Delete All controls." loading="lazy" decoding="async" data-local-image>
+            <span class="image-fallback" hidden>Snoozed Tabs product screenshot unavailable.</span>
+          </div>
+          <figcaption>Sample scheduled entries with individual and bulk controls.</figcaption>
+        </figure>
+      </article>
+
+      <article class="showcase container" id="sessions" aria-labelledby="sessions-title">
+        <div class="showcase-copy">
+          <p class="destination-label">Sessions</p>
+          <h3 id="sessions-title">Save a window as a named session.</h3>
+          <p>Give a session a name to store the current window’s URLs, titles, and favicons locally. Restoring that saved URL set opens it in a new window.</p>
+          <aside class="limitation-note" aria-label="Current limitation">
+            <strong>Current limitation</strong>
+            <span>Pinned state and Chrome tab groups are not saved. Sessions are local, not editable, shared, synced, or cloud-backed.</span>
+          </aside>
+        </div>
+        <figure class="product-figure portrait-figure" data-image-wrapper>
+          <div class="screenshot-frame">
+            <img src="assets/saved-sessions-light.png" width="497" height="747" alt="Saved Sessions screen with a session-name field and three locally saved sessions." loading="lazy" decoding="async" data-local-image>
+            <span class="image-fallback" hidden>Saved Sessions product screenshot unavailable.</span>
+          </div>
+          <figcaption>A sample save form and locally saved session list.</figcaption>
+        </figure>
+      </article>
+
+      <article class="showcase showcase-reverse showcase-memory container" id="memory" aria-labelledby="memory-title">
+        <div class="showcase-copy">
+          <p class="destination-label">Memory</p>
+          <h3 id="memory-title">Suspend inactive pages, then restore their URLs.</h3>
+          <p>Apex Tabs replaces eligible inactive pages with its own lightweight extension page. It does not call Chrome’s native discard operation. Restoring navigates back to the original URL, so in-page state is not promised.</p>
+          <p>Bulk suspension works across all open Chrome windows. It excludes active, playing-audio, already Apex-suspended, exact-host protected, missing-URL, <code>chrome://</code>, and <code>chrome-extension://</code> tabs. Pinned tabs are not excluded by this bulk path.</p>
+          <p class="estimate-note">The dashboard estimates about 60 MB per Apex-suspended tab; actual savings vary by page.</p>
+        </div>
+        <div class="media-stack">
+          <figure class="product-figure portrait-figure" data-image-wrapper>
+            <div class="screenshot-frame">
+              <img src="assets/memory-management-light.png" width="498" height="748" alt="Memory screen showing an estimated memory figure, suspend and restore controls, and a suspended-tab list." loading="lazy" decoding="async" data-local-image>
+              <span class="image-fallback" hidden>Memory product screenshot unavailable.</span>
+            </div>
+            <figcaption>A sample Memory destination with explicitly estimated values.</figcaption>
+          </figure>
+          <figure class="product-figure wide-figure" data-image-wrapper>
+            <div class="screenshot-frame screenshot-frame-wide">
+              <img src="assets/suspended-tab-page-dark.png" width="1917" height="906" alt="Apex Tabs custom suspended-tab page with an estimated per-tab figure and a Wake up tab control." loading="lazy" decoding="async" data-local-image>
+              <span class="image-fallback" hidden>Suspended-tab page screenshot unavailable.</span>
+            </div>
+            <figcaption>The custom suspended-tab page in the extension’s dark theme.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="showcase container" id="settings" aria-labelledby="settings-title">
+        <div class="showcase-copy">
+          <p class="destination-label">Settings</p>
+          <h3 id="settings-title">Tune automation without giving up control.</h3>
+          <p>Enable auto-snooze and choose a whole-minute or whole-hour idle duration from 1 minute through 24 hours. When enabled, it closes eligible idle tabs across open windows and schedules their URLs to reopen two hours later.</p>
+          <p>Auto-snooze excludes active, pinned, playing-audio, exact-host protected, missing-URL, <code>chrome://</code>, and <code>chrome-extension://</code> tabs. It is separate from custom-page suspension.</p>
+          <p>The popup also offers light and dark extension themes. The separate full Options page manages domain rules and custom keyword-topic grouping rules. Automatic grouping and Organize All both require automatic grouping to be enabled.</p>
+          <p class="limitation-note"><strong>Protection is exact-host only:</strong> <code>example.com</code> does not include <code>www.example.com</code>.</p>
+        </div>
+        <figure class="product-figure portrait-figure" data-image-wrapper>
+          <div class="screenshot-frame">
+            <img src="assets/auto-snooze-settings-light.png" width="498" height="752" alt="Settings screen showing auto-snooze, idle-duration controls, and protected domains." loading="lazy" decoding="async" data-local-image>
+            <span class="image-fallback" hidden>Settings product screenshot unavailable.</span>
+          </div>
+          <figcaption>The popup Settings destination; grouping rules live on the separate full Options page.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="section how-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">A clear loop</p>
+          <h2 id="how-title">Review, act, and return.</h2>
+        </div>
+        <ol class="steps-grid">
+          <li>
+            <span class="step-number">01</span>
+            <h3>Review</h3>
+            <p>Open Apex Tabs to search, sort, filter, and inspect the current window.</p>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <h3>Act</h3>
+            <p>Close duplicates, snooze current-window work, save a session, suspend eligible inactive pages, or—when automatic grouping is enabled—use Organize All to apply the configured rule to eligible ungrouped tabs across all open Chrome windows.</p>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <h3>Return</h3>
+            <p>Wake scheduled tabs, restore a session or suspended URL, and refine auto-snooze and grouping behavior in Settings and Options.</p>
+          </li>
+        </ol>
+        <p class="operation-note"><strong>Snooze</strong> closes a tab and schedules its URL to reopen. <strong>Suspend</strong> keeps the tab slot but replaces the page with Apex Tabs’ lightweight page until you restore it.</p>
+      </div>
+    </section>
+
+    <section class="section shortcuts-section" id="shortcuts" aria-labelledby="shortcuts-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Keyboard productivity</p>
+          <h2 id="shortcuts-title">Keep common actions close.</h2>
+          <p>These are the default shortcuts; Chrome lets users rebind extension commands.</p>
+        </div>
+        <dl class="shortcut-grid">
+          <div class="shortcut-card">
+            <dt><kbd>Alt</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>O</kbd></dt>
+            <dd><strong>Organize All</strong>When automatic grouping is enabled, apply the configured rule to eligible ungrouped tabs across all open Chrome windows.</dd>
+          </div>
+          <div class="shortcut-card">
+            <dt><kbd>Alt</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>S</kbd></dt>
+            <dd><strong>Snooze current tab</strong>Snooze it for 3 hours when it has a non-empty URL that is neither a <code>chrome://</code> nor <code>chrome-extension://</code> page.</dd>
+          </div>
+          <div class="shortcut-card">
+            <dt><kbd>Alt</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>D</kbd></dt>
+            <dd><strong>Suspend eligible tabs</strong>Run the <a class="text-link" href="#memory">Memory section’s cross-window custom-page suspension</a> with its listed exclusions.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="privacy-band section" id="privacy" aria-labelledby="privacy-title" data-surface="forest">
+      <div class="container">
+        <div class="section-heading privacy-heading">
+          <p class="eyebrow">Grounded privacy</p>
+          <h2 id="privacy-title">Focused access, explained plainly.</h2>
+          <p>No account, cloud sync, or analytics in the current extension. Core feature state is stored locally in Chrome.</p>
+        </div>
+        <div class="privacy-grid">
+          <article>
+            <h3>Focused permissions</h3>
+            <dl class="permission-list">
+              <div><dt>Tabs</dt><dd>Inspect and manage open tabs.</dd></div>
+              <div><dt>Tab groups</dt><dd>Apply native Chrome grouping.</dd></div>
+              <div><dt>Storage</dt><dd>Keep local settings and saved items.</dd></div>
+              <div><dt>Alarms</dt><dd>Run scheduled wakeups and idle checks.</dd></div>
+            </dl>
+          </article>
+          <article>
+            <h3>What the current extension does not include</h3>
+            <ul class="privacy-list">
+              <li>Accounts or cloud sync</li>
+              <li>Analytics SDKs or AI services</li>
+              <li>Content scripts</li>
+              <li>Host permissions</li>
+            </ul>
+          </article>
+        </div>
+        <div class="privacy-caveat">
+          <p>Apex Tabs can display site favicons from URLs supplied by Chrome. Those favicon images may be requested from their host even though the extension uses a no-referrer policy.</p>
+          <p>VeloLaunch and Smart Vista IT Solutions links open external company sites only when selected. <a class="text-link" href="privacy.html">Read the complete Privacy Policy</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section" id="download" aria-labelledby="download-title">
+      <div class="container final-cta" data-surface="forest">
+        <div>
+          <p class="eyebrow">Apex Tabs for Chrome</p>
+          <h2 id="download-title">A calmer browser starts with clearer tabs.</h2>
+          <p>Bring rule-based grouping, scheduled snoozing, local saved sessions, and custom-page suspension into one focused extension.</p>
+        </div>
+        <div class="final-actions">
+          <div class="availability-group">
+            <button class="button button-light-disabled" type="button" disabled>Chrome Web Store · Coming soon</button>
+            <span class="availability-note">A public store URL has not been added yet.</span>
+          </div>
+          <a class="button button-on-dark" href="#how-it-works">See how Apex Tabs works</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-surface="forest">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-on-dark" href="#top" aria-label="Apex Tabs home" data-image-wrapper>
+          <img class="brand-mark" src="assets/apex-tabs-icon.png" width="128" height="128" alt="" loading="lazy" decoding="async" data-local-image>
+          <span class="brand-copy"><strong>Apex Tabs</strong><span>Smart Tab Organizer</span></span>
+        </a>
+        <p>A product by VeloLaunch, a subdivision of Smart Vista IT Solutions.</p>
+        <p class="company-links"><a href="https://www.velolaunch.in" target="_blank" rel="noopener noreferrer">VeloLaunch</a><a href="https://www.smartvistaitsolutions.in" target="_blank" rel="noopener noreferrer">Smart Vista IT Solutions</a></p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#features">Features</a>
+        <a href="#product">Product</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#shortcuts">Shortcuts</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

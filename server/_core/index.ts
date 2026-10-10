@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import { createServer } from "http";
 import net from "net";
+import path from "path";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { registerOAuthRoutes } from "./oauth";
 import { registerStorageProxy } from "./storageProxy";
@@ -43,6 +44,11 @@ async function startServer() {
       router: appRouter,
       createContext,
     })
+  );
+  // Serve our-apps directory directly
+  app.use(
+    "/our-apps",
+    express.static(path.resolve(import.meta.dirname, "../../our-apps"))
   );
   // development mode uses Vite, production mode uses static files
   if (process.env.NODE_ENV === "development") {
