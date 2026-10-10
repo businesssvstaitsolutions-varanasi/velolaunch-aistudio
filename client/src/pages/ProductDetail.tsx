@@ -7,8 +7,9 @@ import { getForthcomingProduct, getPublicProduct } from "@/content/site";
 
 export default function ProductDetail() {
   const [, params] = useRoute("/products/:slug");
-  const forthcomingProduct = getForthcomingProduct(params?.slug);
-  const publicProduct = getPublicProduct(params?.slug);
+  const slug = (params as any)?.slug;
+  const forthcomingProduct = getForthcomingProduct(slug);
+  const publicProduct = getPublicProduct(slug);
   const isReleased = (forthcomingProduct as { status?: string })?.status === "released" || forthcomingProduct?.slug === "apex-turbo-smart-tab-organizer";
   const landingUrl = (forthcomingProduct as { landingUrl?: string })?.landingUrl || "/our-apps/apexturbo-landingpage/";
 

@@ -7,7 +7,7 @@ import { getService } from "@/content/site";
 
 export default function ServiceDetail() {
   const [, params] = useRoute("/services/:slug");
-  const service = getService(params?.slug);
+  const service = getService((params as any)?.slug);
   if (!service) return <div className="route-shell"><Navigation /><main className="not-published"><h1>Service not found.</h1><a href="/services">Return to services <ArrowRight size={16} /></a></main><SiteFooter /></div>;
   return <div id="top" className="route-shell"><Navigation /><main className="detail-main">
     <a className="back-link" href="/#services"><ArrowLeft size={15} aria-hidden="true" /> Back to VeloLaunch services</a>
