@@ -419,6 +419,7 @@ code {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: var(--space-2);
   min-block-size: 48px;
   padding: var(--space-3) var(--space-6);
   border: 1px solid transparent;
@@ -428,6 +429,18 @@ code {
   text-align: center;
   text-decoration: none;
   transition: color var(--duration-fast) var(--ease-standard), background-color var(--duration-fast) var(--ease-standard), border-color var(--duration-fast) var(--ease-standard);
+}
+
+.button-primary {
+  border-color: var(--emerald-500);
+  background: var(--emerald-500);
+  color: var(--night-950);
+}
+
+.button-primary:hover {
+  border-color: var(--mint-300);
+  background: var(--mint-300);
+  color: var(--night-950);
 }
 
 .button-secondary {
@@ -453,6 +466,22 @@ code {
   min-block-size: 44px;
   padding: var(--space-2) var(--space-3);
   font-size: .78rem;
+}
+
+.button-icon {
+  inline-size: 20px;
+  block-size: 20px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.button-small .button-icon {
+  inline-size: 16px;
+  block-size: 16px;
 }
 
 .hero {
