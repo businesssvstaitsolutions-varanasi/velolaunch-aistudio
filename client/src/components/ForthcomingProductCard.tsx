@@ -35,8 +35,8 @@ export function ProductNotificationDialog({ product, compact = false }: { produc
 }
 
 export function ForthcomingProductCard({ product }: { product: ForthcomingProductRecord }) {
-  const isReleased = (product as { status?: string }).status === "released" || product.slug === "apex-turbo-smart-tab-organizer";
-  const landingUrl = (product as { landingUrl?: string }).landingUrl || (isReleased ? "/our-apps/apexturbo-landingpage/" : undefined);
+  const isReleased = (product as { status?: string }).status === "released" || product.slug === "apex-tabs-smart-tab-organizer" || product.slug === "apex-turbo-task-planner";
+  const landingUrl = (product as { landingUrl?: string }).landingUrl || (isReleased ? "/our-apps/apex-tabs-organiser-membooster-landingpage/" : undefined);
 
   return (
     <article className={`forthcoming-product-card${isReleased ? " product-card-released" : ""}`}>

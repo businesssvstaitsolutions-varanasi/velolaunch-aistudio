@@ -773,6 +773,10 @@ html { scroll-behavior: smooth; }
   transition: all 180ms ease;
 }
 
+.nav-dropdown-item + .nav-dropdown-item {
+  margin-top: 0.5rem;
+}
+
 .nav-dropdown-item:hover {
   background: rgb(16 185 129 / 0.1);
   border-color: rgb(16 185 129 / 0.35);

@@ -175,12 +175,20 @@ export const publicOffers: readonly OfferListing[] = [];
 
 export const forthcomingProducts = [
   {
-    slug: "apex-turbo-smart-tab-organizer",
-    title: "Apex Turbo Smart Tab Organizer and Memory Saver",
+    slug: "apex-tabs-smart-tab-organizer",
+    title: "Apex Tabs — Smart Tab Organizer & Memory Booster",
     description: "Released Chrome browser companion designed to organize active tabs, group sessions, snooze tabs, and reduce browser memory.",
     category: "Browser",
     status: "released",
-    landingUrl: "/our-apps/apexturbo-landingpage/",
+    landingUrl: "/our-apps/apex-tabs-organiser-membooster-landingpage/",
+  },
+  {
+    slug: "apex-turbo-task-planner",
+    title: "Apex Turbo — Task Planner & Focus Timer",
+    description: "A blazing-fast, distraction-free Chrome task planner and deep focus Pomodoro timer with streaks, scratchpad notes, and 100% offline local privacy.",
+    category: "Productivity",
+    status: "released",
+    landingUrl: "/our-apps/apex-turbo-task-planner-landingpage/",
   },
   {
     slug: "finaura-ai-finance-vault",
@@ -205,6 +213,9 @@ export const forthcomingProducts = [
 export const forthcomingHomepageProducts = forthcomingProducts;
 
 export function getForthcomingProduct(slug?: string) {
+  if (slug === "apex-turbo-smart-tab-organizer") {
+    return forthcomingProducts.find((product) => product.slug === "apex-tabs-smart-tab-organizer");
+  }
   return forthcomingProducts.find((product) => product.slug === slug);
 }
 

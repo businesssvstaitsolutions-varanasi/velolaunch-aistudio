@@ -5,10 +5,10 @@ import { Navigation } from "@/components/Navigation";
 import { SiteFooter } from "@/components/SiteFooter";
 import { forthcomingProducts, publicProducts } from "@/content/site";
 
-const categories = ["All", ...forthcomingProducts.map((product) => product.category)] as const;
+const categories = ["All", ...Array.from(new Set(forthcomingProducts.map((product) => product.category)))];
 
 export default function Products() {
-  const [category, setCategory] = useState<(typeof categories)[number]>("All");
+  const [category, setCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState("");
   const visibleProducts = useMemo(() => {
     const query = searchQuery.trim().toLocaleLowerCase();

@@ -10,8 +10,8 @@ export default function ProductDetail() {
   const slug = (params as any)?.slug;
   const forthcomingProduct = getForthcomingProduct(slug);
   const publicProduct = getPublicProduct(slug);
-  const isReleased = (forthcomingProduct as { status?: string })?.status === "released" || forthcomingProduct?.slug === "apex-turbo-smart-tab-organizer";
-  const landingUrl = (forthcomingProduct as { landingUrl?: string })?.landingUrl || "/our-apps/apexturbo-landingpage/";
+  const isReleased = (forthcomingProduct as { status?: string })?.status === "released" || forthcomingProduct?.slug === "apex-tabs-smart-tab-organizer" || forthcomingProduct?.slug === "apex-turbo-task-planner";
+  const landingUrl = (forthcomingProduct as { landingUrl?: string })?.landingUrl || "/our-apps/apex-tabs-organiser-membooster-landingpage/";
 
   return (
     <div id="top" className="route-shell">
@@ -42,11 +42,11 @@ export default function ProductDetail() {
             {isReleased ? (
               <section className="forthcoming-detail-disclosure released-product-disclosure">
                 <p className="section-tag">Official Release</p>
-                <h2>Apex Turbo is live and ready to experience.</h2>
-                <p>Apex Turbo Smart Tab Organizer and Memory Saver is officially released. Explore tab search, auto-snooze, custom-page memory suspension, and local privacy directly on its dedicated landing site.</p>
+                <h2>{forthcomingProduct.title} is live and ready to experience.</h2>
+                <p>{forthcomingProduct.description} Explore features, demo previews, and privacy details directly on its dedicated landing site.</p>
                 <div style={{ marginTop: "1.5rem" }}>
                   <a className="button-ink focus-ring" href={landingUrl}>
-                    Explore Apex Turbo <ArrowRight size={15} aria-hidden="true" />
+                    Explore Product <ArrowRight size={15} aria-hidden="true" />
                   </a>
                 </div>
               </section>
