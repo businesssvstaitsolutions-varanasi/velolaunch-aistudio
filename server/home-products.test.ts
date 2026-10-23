@@ -7,8 +7,9 @@ const card = readFileSync("client/src/components/ForthcomingProductCard.tsx", "u
 const styles = readFileSync("client/src/index.css", "utf8");
 
 describe("forthcoming homepage products", () => {
-  it("lists the four supplied forthcoming products with a releasing-soon status", () => {
-    expect(content).toContain("Apex Turbo Smart Tab Organizer and Memory Saver");
+  it("lists the forthcoming products with a releasing-soon or released status", () => {
+    expect(content).toContain("Apex Tabs");
+    expect(content).toContain("Apex Turbo");
     expect(content).toContain("FinAura AI - Powered Finance Vault");
     expect(content).toContain("PlutoLearn AI - Powered EdTech Platform");
     expect(content).toContain("VeloTools - 1000+ Powerful Tools");

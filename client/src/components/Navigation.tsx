@@ -122,8 +122,8 @@ export function Navigation() {
               );
             })}
           </div>
-          <a className="nav-phone focus-ring" href="tel:+19746271143" aria-label="Call VeloLaunch at +1 9746-2711-143">
-            <Phone size={13} aria-hidden="true" />+1 9746-2711-143
+          <a className="nav-phone focus-ring" href="tel:+917518077446" aria-label="Call VeloLaunch at +91 7518077446">
+            <Phone size={13} aria-hidden="true" />+91 7518077446
           </a>
           <button className="nav-booking focus-ring" type="button" onClick={() => setBookingOpen(true)}>
             Book a Call
@@ -217,11 +217,11 @@ export function Navigation() {
               </a>
             ))}
             <a
-              href="tel:+19746271143"
+              href="tel:+917518077446"
               onClick={closeMenu}
               className="text-lg font-medium py-4 border-b border-[#2a2a2a] transition-colors hover:text-white"
             >
-              +1 9746-2711-143
+              +91 7518077446
             </a>
             <button
               type="button"

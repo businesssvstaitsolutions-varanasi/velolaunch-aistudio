@@ -6,8 +6,8 @@ const styles = readFileSync("client/src/index.css", "utf8");
 
 describe("header phone contact", () => {
   it("adds the supplied number to both desktop and mobile navigation", () => {
-    expect(navigation).toContain("+1 9746-2711-143");
-    expect(navigation).toContain('href="tel:+19746271143"');
+    expect(navigation).toContain("+91 7518077446");
+    expect(navigation).toContain('href="tel:+917518077446"');
   });
 
   it("includes the requested product, service, company, work, and build navigation entries", () => {
