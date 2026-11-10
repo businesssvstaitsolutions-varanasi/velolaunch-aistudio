@@ -407,3 +407,11 @@
 - [x] Eliminate iframe preview reset issues where hard full-page navigations caused preview containers to reload the root URL.
 - [x] Add auto-scroll to top on route change while maintaining smooth scrolling for in-page hash anchors.
 - [x] Validate TypeScript checks (0 errors), Vitest test suite (62/62 passing), and production build.
+
+# Apex Tornado Privacy Policy Page
+
+- [x] Create comprehensive, Chrome Web Store compliant `privacy.html` for Apex Tornado with 100% offline, zero-telemetry disclosure, and granular permission breakdowns.
+- [x] Style legal layout with sticky Table of Contents, responsive cards, and dark/light theme support in `styles.css`.
+- [x] Add links to `privacy.html` in `index.html` (footer legal column and Zero Telemetry section).
+- [x] Synchronize files into `client/public/our-apps/apex-tornado-landingpage/`.
+- [x] Verify live endpoint (HTTP 200), TypeScript checks (0 errors), Vitest test suite (62/62 passing), and git synchronization.
