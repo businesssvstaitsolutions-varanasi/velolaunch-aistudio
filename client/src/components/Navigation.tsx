@@ -56,6 +56,8 @@ export function Navigation() {
                           href="/our-apps/apex-tabs-organiser-membooster-landingpage/"
                           className="nav-dropdown-item focus-ring"
                           role="menuitem"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           onClick={() => setDropdownOpen(false)}
                         >
                           <div className="nav-dropdown-item-icon">
@@ -80,6 +82,8 @@ export function Navigation() {
                           href="/our-apps/apex-turbo-task-planner-landingpage/"
                           className="nav-dropdown-item focus-ring"
                           role="menuitem"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           onClick={() => setDropdownOpen(false)}
                         >
                           <div className="nav-dropdown-item-icon" style={{ background: "#1c1917", borderColor: "rgba(249, 115, 22, 0.3)" }}>
@@ -98,6 +102,33 @@ export function Navigation() {
                             </div>
                             <p className="nav-dropdown-item-desc">
                               Task Planner & Focus Timer
+                            </p>
+                          </div>
+                        </a>
+                        <a
+                          href="/our-apps/apex-tornado-landingpage/"
+                          className="nav-dropdown-item focus-ring"
+                          role="menuitem"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setDropdownOpen(false)}
+                        >
+                          <div className="nav-dropdown-item-icon" style={{ background: "#1f1012", borderColor: "rgba(239, 68, 68, 0.3)" }}>
+                            <img
+                              src="/our-apps/apex-tornado-landingpage/assets/icon128.png"
+                              alt=""
+                              width="32"
+                              height="32"
+                              style={{ borderRadius: "0.35rem" }}
+                            />
+                          </div>
+                          <div className="nav-dropdown-item-body">
+                            <div className="nav-dropdown-item-title-row">
+                              <span className="nav-dropdown-item-name">Apex Tornado</span>
+                              <span className="nav-dropdown-released-tag" style={{ background: "rgba(239, 68, 68, 0.18)", color: "#f87171", borderColor: "rgba(248, 113, 113, 0.45)" }}>Released</span>
+                            </div>
+                            <p className="nav-dropdown-item-desc">
+                              Browser Cleaner & Maintenance Agent
                             </p>
                           </div>
                         </a>
@@ -149,10 +180,12 @@ export function Navigation() {
             <div className="py-3 border-b border-[#2a2a2a] flex flex-col gap-2">
               <div className="flex items-center justify-between mb-1">
                 <span className="text-sm font-semibold tracking-wider uppercase text-neutral-400">Our Products</span>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">2 Released</span>
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">3 Released</span>
               </div>
               <a
                 href="/our-apps/apex-tabs-organiser-membooster-landingpage/"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={closeMenu}
                 className="flex items-center justify-between p-3 rounded-lg bg-[#18191b] hover:bg-[#222428] border border-[#2e3035] transition-all"
               >
@@ -176,6 +209,8 @@ export function Navigation() {
               </a>
               <a
                 href="/our-apps/apex-turbo-task-planner-landingpage/"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={closeMenu}
                 className="flex items-center justify-between p-3 rounded-lg bg-[#18191b] hover:bg-[#222428] border border-[#2e3035] transition-all"
               >
@@ -193,6 +228,31 @@ export function Navigation() {
                       </span>
                     </div>
                     <div className="text-xs text-neutral-400">Task Planner & Focus Timer</div>
+                  </div>
+                </div>
+                <ArrowRight size={16} className="text-neutral-400" />
+              </a>
+              <a
+                href="/our-apps/apex-tornado-landingpage/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
+                className="flex items-center justify-between p-3 rounded-lg bg-[#18191b] hover:bg-[#222428] border border-[#2e3035] transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <img
+                    src="/our-apps/apex-tornado-landingpage/assets/icon128.png"
+                    alt="Apex Tornado"
+                    className="w-8 h-8 rounded"
+                  />
+                  <div>
+                    <div className="font-semibold text-white flex items-center gap-2 text-base">
+                      Apex Tornado
+                      <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-red-500/20 text-red-300">
+                        Released
+                      </span>
+                    </div>
+                    <div className="text-xs text-neutral-400">Browser Cleaner & Maintenance Agent</div>
                   </div>
                 </div>
                 <ArrowRight size={16} className="text-neutral-400" />

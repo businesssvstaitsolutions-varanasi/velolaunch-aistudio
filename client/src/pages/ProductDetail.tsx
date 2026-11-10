@@ -10,7 +10,11 @@ export default function ProductDetail() {
   const slug = (params as any)?.slug;
   const forthcomingProduct = getForthcomingProduct(slug);
   const publicProduct = getPublicProduct(slug);
-  const isReleased = (forthcomingProduct as { status?: string })?.status === "released" || forthcomingProduct?.slug === "apex-tabs-smart-tab-organizer" || forthcomingProduct?.slug === "apex-turbo-task-planner";
+  const isReleased =
+    (forthcomingProduct as { status?: string })?.status === "released" ||
+    forthcomingProduct?.slug === "apex-tabs-smart-tab-organizer" ||
+    forthcomingProduct?.slug === "apex-turbo-task-planner" ||
+    forthcomingProduct?.slug === "apex-tornado-browser-cleaner";
   const landingUrl = (forthcomingProduct as { landingUrl?: string })?.landingUrl || "/our-apps/apex-tabs-organiser-membooster-landingpage/";
 
   return (
@@ -28,7 +32,7 @@ export default function ProductDetail() {
               <span>{forthcomingProduct.description}</span>
               <div className="detail-product-actions">
                 {isReleased ? (
-                  <a className="button-ink detail-launch-btn focus-ring" href={landingUrl}>
+                  <a className="button-ink detail-launch-btn focus-ring" href={landingUrl} target="_blank" rel="noopener noreferrer">
                     Open Landing Page <ArrowRight size={16} aria-hidden="true" />
                   </a>
                 ) : (
@@ -45,7 +49,7 @@ export default function ProductDetail() {
                 <h2>{forthcomingProduct.title} is live and ready to experience.</h2>
                 <p>{forthcomingProduct.description} Explore features, demo previews, and privacy details directly on its dedicated landing site.</p>
                 <div style={{ marginTop: "1.5rem" }}>
-                  <a className="button-ink focus-ring" href={landingUrl}>
+                  <a className="button-ink focus-ring" href={landingUrl} target="_blank" rel="noopener noreferrer">
                     Explore Product <ArrowRight size={15} aria-hidden="true" />
                   </a>
                 </div>

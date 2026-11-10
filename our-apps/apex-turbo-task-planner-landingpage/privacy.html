@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -329,20 +329,16 @@
                                     Allows Apex Turbo to trigger native operating system desktop notifications when your scheduled task reminder fires or when you test reminder notifications from Settings.
                                 </td>
                             </tr>
-                            <tr>
-                                <th scope="row">
-                                    <span class="legal-perm-code">downloads</span>
-                                </th>
-                                <td>
-                                    Used exclusively when you click the <strong>"Backup Tasks (JSON)"</strong> button in Settings to save your backup file directly to your local computer's Downloads directory.
-                                </td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
 
                 <div class="legal-callout">
                     <strong>Zero Host Permissions:</strong> Apex Turbo does not declare <code>&lt;all_urls&gt;</code> or any web domain patterns. The extension has zero access to network requests or web pages you visit.
+                </div>
+                <div class="legal-callout">
+                    <strong>Client-Side File Exports:</strong> Exporting backups (JSON) and notes (TXT) uses standard client-side HTML5 Blob downloads generated directly in your browser. Apex Turbo does not declare or require the elevated <code>downloads</code> permission.
                 </div>
             </section>
 

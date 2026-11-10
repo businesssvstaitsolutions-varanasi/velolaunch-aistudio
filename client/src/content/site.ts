@@ -191,6 +191,14 @@ export const forthcomingProducts = [
     landingUrl: "/our-apps/apex-turbo-task-planner-landingpage/",
   },
   {
+    slug: "apex-tornado-browser-cleaner",
+    title: "Apex Tornado — High-Octane Browser Cleaner & Maintenance Agent",
+    description: "A modern, high-performance Chromium browser extension for smart cache purging, tab reloading automation, granular cookie management, and memory recovery.",
+    category: "Browser",
+    status: "released",
+    landingUrl: "/our-apps/apex-tornado-landingpage/",
+  },
+  {
     slug: "finaura-ai-finance-vault",
     title: "FinAura AI - Powered Finance Vault",
     description: "A forthcoming finance workspace for bringing important financial records and AI-assisted guidance into one private vault.",
@@ -215,6 +223,9 @@ export const forthcomingHomepageProducts = forthcomingProducts;
 export function getForthcomingProduct(slug?: string) {
   if (slug === "apex-turbo-smart-tab-organizer") {
     return forthcomingProducts.find((product) => product.slug === "apex-tabs-smart-tab-organizer");
+  }
+  if (slug === "apex-tornado" || slug === "apex-tornado-browser-cleaner") {
+    return forthcomingProducts.find((product) => product.slug === "apex-tornado-browser-cleaner");
   }
   return forthcomingProducts.find((product) => product.slug === slug);
 }

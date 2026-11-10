@@ -384,3 +384,26 @@
 - [x] Inspect pending local changes and the configured GitHub main branch before pushing.
 - [x] Commit the local launch record and safely push the current main branch to GitHub.
 - [x] Verify the remote main branch points to the latest commit.
+
+# Apex Tornado Extension Integration
+
+- [x] Configure Apex Tornado in the central product registry (site.ts) as a released product with direct landing page URL.
+- [x] Add Apex Tornado with crimson brand styling and Released badge to the desktop navigation dropdown and mobile drawer.
+- [x] Integrate Apex Tornado into the forthcoming/released product cards and dedicated product detail route.
+- [x] Add Apex Tornado to the global site footer Explore links.
+- [x] Synchronize waitlist Zod validation enum in server routers to support all released product titles.
+- [x] Verify static assets distribution to client/public/our-apps/apex-tornado-landingpage/.
+- [x] Validate TypeScript checks (0 errors), Vitest test suite (62/62 passing), and production build.
+
+# Product Landing Page Navigation & Service Worker Fix
+
+- [x] Configure target="_blank" and rel="noopener noreferrer" for all standalone landing page links across Navigation, mobile drawer, product cards, detail pages, and footer.
+- [x] Bypass Service Worker caching for /our-apps/ requests in sw.js to ensure standalone HTML applications load reliably.
+- [x] Validate TypeScript checks and Vitest test suite pass completely.
+
+# SPA Client-Side Routing and Navigation Interception Fix
+
+- [x] Implement global capture-phase click interceptor in SmoothHashScroll to route internal navigation via Wouter History API (pushState) without browser document unloads.
+- [x] Eliminate iframe preview reset issues where hard full-page navigations caused preview containers to reload the root URL.
+- [x] Add auto-scroll to top on route change while maintaining smooth scrolling for in-page hash anchors.
+- [x] Validate TypeScript checks (0 errors), Vitest test suite (62/62 passing), and production build.

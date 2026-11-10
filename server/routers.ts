@@ -17,6 +17,9 @@ export const consultationInputSchema = z.object({
 
 const consultationStatusSchema = z.enum(["new", "reviewing", "closed"]);
 const forthcomingProductNames = [
+  "Apex Tabs — Smart Tab Organizer & Memory Booster",
+  "Apex Turbo — Task Planner & Focus Timer",
+  "Apex Tornado — High-Octane Browser Cleaner & Maintenance Agent",
   "Apex Turbo Smart Tab Organizer and Memory Saver",
   "FinAura AI - Powered Finance Vault",
   "PlutoLearn AI - Powered EdTech Platform",

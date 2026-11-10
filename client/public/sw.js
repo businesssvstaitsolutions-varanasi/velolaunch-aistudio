@@ -17,7 +17,12 @@ self.addEventListener("fetch", event => {
   const request = event.request;
   const url = new URL(request.url);
 
-  if (request.method !== "GET" || url.origin !== self.location.origin || url.pathname.startsWith("/api/")) return;
+  if (
+    request.method !== "GET" ||
+    url.origin !== self.location.origin ||
+    url.pathname.startsWith("/api/") ||
+    url.pathname.startsWith("/our-apps/")
+  ) return;
 
   const isDevelopmentModule = url.pathname.startsWith("/src/") || url.pathname.startsWith("/@") || url.pathname.startsWith("/node_modules/") || url.pathname.startsWith("/__manus__/");
   if (isDevelopmentModule) return;

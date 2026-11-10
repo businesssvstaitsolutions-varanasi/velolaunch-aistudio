@@ -35,7 +35,11 @@ export function ProductNotificationDialog({ product, compact = false }: { produc
 }
 
 export function ForthcomingProductCard({ product }: { product: ForthcomingProductRecord }) {
-  const isReleased = (product as { status?: string }).status === "released" || product.slug === "apex-tabs-smart-tab-organizer" || product.slug === "apex-turbo-task-planner";
+  const isReleased =
+    (product as { status?: string }).status === "released" ||
+    product.slug === "apex-tabs-smart-tab-organizer" ||
+    product.slug === "apex-turbo-task-planner" ||
+    product.slug === "apex-tornado-browser-cleaner";
   const landingUrl = (product as { landingUrl?: string }).landingUrl || (isReleased ? "/our-apps/apex-tabs-organiser-membooster-landingpage/" : undefined);
 
   return (
@@ -56,7 +60,7 @@ export function ForthcomingProductCard({ product }: { product: ForthcomingProduc
       <div className="forthcoming-product-actions">
         {isReleased && landingUrl ? (
           <>
-            <a className="focus-ring product-launch-link" href={landingUrl}>
+            <a className="focus-ring product-launch-link" href={landingUrl} target="_blank" rel="noopener noreferrer">
               Open Landing Page <ArrowRight size={14} aria-hidden="true" />
             </a>
             <a className="focus-ring" href={`/products/${product.slug}`}>

@@ -19,7 +19,7 @@ export function SiteFooter() {
           <a className="footer-principles-link" href="/#principles">Our working principles <ArrowUpRight size={13} aria-hidden="true" /></a>
         </section>
         <nav className="footer-links" aria-label="Footer navigation">
-          <div className="footer-link-group"><span>Explore</span><a href="/services">Services</a><a href="/products">Our Products</a><a href="/our-apps/apex-tabs-organiser-membooster-landingpage/">Apex Tabs</a><a href="/our-apps/apex-turbo-task-planner-landingpage/">Apex Turbo</a><a href="/offers">Offer Board</a></div>
+          <div className="footer-link-group"><span>Explore</span><a href="/services">Services</a><a href="/products">Our Products</a><a href="/our-apps/apex-tabs-organiser-membooster-landingpage/" target="_blank" rel="noopener noreferrer">Apex Tabs</a><a href="/our-apps/apex-turbo-task-planner-landingpage/" target="_blank" rel="noopener noreferrer">Apex Turbo</a><a href="/our-apps/apex-tornado-landingpage/" target="_blank" rel="noopener noreferrer">Apex Tornado</a><a href="/offers">Offer Board</a></div>
           <div className="footer-link-group"><span>Connect</span><a href="/#company">Company</a><a href="/#contact">Book a consultation</a><a href="mailto:hello@velolaunch.com">hello@velolaunch.com</a></div>
           <div className="footer-link-group"><span>Operations</span><a href="/operations">Staff access</a><a href="/#principles">Principles</a><a href="/#contact">Project enquiry <ArrowUpRight size={12} aria-hidden="true" /></a></div>
         </nav>
